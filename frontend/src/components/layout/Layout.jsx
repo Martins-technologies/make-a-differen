@@ -4,10 +4,11 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { CookieBanner } from './CookieBanner';
 import { ScrollToTop } from './ScrollToTop';
+import { PAGE_GUTTER } from './pageGutter';
 
 export function Layout() {
   return (
-    <>
+    <div className="min-h-screen" style={{ paddingInline: PAGE_GUTTER }}>
       <SkipLink />
       <ScrollToTop />
       <Header />
@@ -16,6 +17,6 @@ export function Layout() {
       </main>
       <Footer />
       <CookieBanner />
-    </>
+    </div>
   );
 }
