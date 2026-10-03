@@ -1,0 +1,492 @@
+{
+  "site": {
+    "name": "Make A Difference",
+    "tagline": "Des personnes plus fortes. Des familles plus saines. Des communautés plus rayonnantes."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "programs": "Programmes et services",
+    "courses": "Cours",
+    "employment": "Soutien à l'emploi",
+    "requestHelp": "Demander de l'aide",
+    "getInvolved": "S'impliquer",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "donate": "Faire un don"
+  },
+  "footer": {
+    "programs": "Programmes",
+    "programsServices": "Programmes et services",
+    "getInvolved": "S'impliquer",
+    "policies": "Politiques",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "accessibility": "Accessibilité",
+    "communityCare": "Soins communautaires",
+    "safeguarding": "Protection",
+    "inclusion": "Politique d'inclusion",
+    "donation": "Politique de dons",
+    "complaints": "Plaintes",
+    "copyright": "© {{year}} Make A Difference. Tous droits réservés.",
+    "aboutMission": "Notre mission",
+    "aboutApproach": "Notre approche",
+    "aboutTeam": "Notre équipe",
+    "programCourses": "Cours éducatifs",
+    "programSupplies": "Fournitures essentielles",
+    "programEmployment": "Soutien à l'emploi",
+    "programMentalHealth": "Information sur la santé mentale",
+    "programCommunity": "Connexions communautaires",
+    "getInvolvedVolunteer": "Bénévolat",
+    "getInvolvedDonateFunds": "Don financier",
+    "getInvolvedDonateSupplies": "Don de fournitures",
+    "getInvolvedPartner": "Devenir partenaire communautaire",
+    "resourcesHelpfulLinks": "Liens utiles",
+    "resourcesPartners": "Partenaires communautaires",
+    "resourcesNews": "Nouvelles et mises à jour",
+    "contactGetInTouch": "Nous joindre",
+    "contactLocations": "Emplacements",
+    "social": "Médias sociaux"
+  },
+  "common": {
+    "placeholder": "Page à venir — maquette en attente",
+    "skipToContent": "Aller au contenu principal",
+    "quickExit": "Sortie rapide",
+    "language": "Langue",
+    "cookieMessage": "Nous utilisons des témoins pour améliorer votre expérience.",
+    "acceptCookies": "Accepter",
+    "manageCookies": "Gérer les préférences"
+  },
+  "home": {
+    "meta": {
+      "title": "Make A Difference — Soutien, compétences et opportunités",
+      "description": "Organisme sans but lucratif canadien qui soutient les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles, et les personnes en difficulté partout au Canada."
+    },
+    "hero": {
+      "title": "Soutien, compétences et opportunités pour tous",
+      "titleLine1": "Soutien, compétences et",
+      "titleLine2": "opportunités pour tous",
+      "description": "Make A Difference est un organisme sans but lucratif canadien qui soutient les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles, ainsi que les personnes confrontées au chômage, à des difficultés financières ou à l'isolement social.",
+      "imageAlt": "Professionnels divers collaborant dans un espace communautaire lumineux",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image du bandeau d'accueil sera ajoutée ici.",
+      "cta": {
+        "programs": "Découvrir nos programmes",
+        "requestSupport": "Demander du soutien"
+      },
+      "trust": {
+        "label": "Nos résultats communautaires",
+        "strongerPeople": "Des personnes plus fortes",
+        "healthierFamilies": "Des familles plus saines",
+        "brighterCommunities": "Des communautés plus rayonnantes"
+      }
+    },
+    "whoWeSupport": {
+      "title": "Qui nous soutenons",
+      "description": "Nous accompagnons des personnes et des familles partout au Canada, en les rencontrant là où elles sont pour les aider à avancer vers un avenir plus prometteur.",
+      "learnMore": "En savoir plus sur qui nous soutenons",
+      "women": {
+        "title": "Femmes",
+        "description": "Renforcer la confiance, l'autonomie et des avenirs plus prometteurs.",
+        "illustrationAlt": "Illustration représentant les femmes que nous soutenons"
+      },
+      "youth": {
+        "title": "Enfants et jeunes",
+        "description": "Soutenir la croissance, l'apprentissage et les opportunités pour la prochaine génération.",
+        "illustrationAlt": "Illustration représentant les enfants et les jeunes"
+      },
+      "lgbtq": {
+        "title": "Communautés LGBTQ2S+",
+        "description": "Créer des communautés plus sûres et inclusives où chacun a sa place.",
+        "illustrationAlt": "Illustration du drapeau de la Fierté pour les communautés LGBTQ2S+"
+      },
+      "families": {
+        "title": "Parents et familles",
+        "description": "Renforcer les familles grâce à un soutien pratique et des ressources.",
+        "illustrationAlt": "Illustration représentant les parents et les familles"
+      }
+    },
+    "howWeHelp": {
+      "title": "Comment nous faisons la différence",
+      "description": "Nous offrons un soutien pratique, des occasions d'apprentissage et des liens pour aider les personnes et les familles à s'épanouir.",
+      "courses": {
+        "title": "Cours éducatifs",
+        "description": "Des compétences pratiques pour la vie quotidienne, le travail et l'épanouissement personnel."
+      },
+      "supplies": {
+        "title": "Fournitures essentielles",
+        "description": "Nourriture, vêtements et articles de première nécessité pour les personnes dans le besoin."
+      },
+      "employment": {
+        "title": "Aide à l'emploi",
+        "description": "Outils et soutien pour atteindre vos objectifs professionnels et plus d'autonomie."
+      },
+      "mentalHealth": {
+        "title": "Information sur la santé mentale",
+        "description": "Ressources fiables et conseils pour votre bien-être."
+      },
+      "community": {
+        "title": "Connexions communautaires",
+        "description": "Relier les personnes aux soutiens locaux et aux opportunités."
+      }
+    },
+    "featuredCourses": {
+      "title": "Cours en vedette",
+      "description": "Un apprentissage pratique pour développer compétences, confiance et avenirs plus prometteurs.",
+      "viewAll": "Voir tous les cours",
+      "cardAria": "Voir le cours {{title}}",
+      "cooking": {
+        "title": "Cuisine et nutrition",
+        "description": "Apprenez à préparer des repas sains et abordables pour vous et votre famille.",
+        "imageAlt": "Participante préparant des légumes frais dans une cuisine communautaire"
+      },
+      "mentalHealth": {
+        "title": "Santé mentale et bien-être",
+        "description": "Des outils pratiques pour une vie plus saine et plus sereine.",
+        "imageAlt": "Personne pratiquant une respiration calme lors d'une séance de bien-être"
+      },
+      "parenting": {
+        "title": "Compétences parentales",
+        "description": "Renforcez vos relations et votre confiance en tant que parent.",
+        "imageAlt": "Parent et enfant apprenant ensemble par le jeu"
+      },
+      "employment": {
+        "title": "Préparation à l'emploi",
+        "description": "Acquérez les compétences et la confiance pour saisir votre prochaine opportunité.",
+        "imageAlt": "Personne en recherche d'emploi travaillant sur ses objectifs de carrière"
+      }
+    },
+    "supportServices": {
+      "srTitle": "Aperçu du soutien et des services d'emploi"
+    },
+    "requestSupport": {
+      "title": "Demander du soutien",
+      "subtitle": "Obtenez de l'aide pour les articles essentiels et des liens vers les services communautaires.",
+      "viewMore": "Voir plus de services de soutien",
+      "food": {
+        "title": "Nourriture et articles ménagers",
+        "description": "Accès à la nourriture, aux vêtements et à d'autres articles essentiels."
+      },
+      "referrals": {
+        "title": "Orientation vers les services communautaires",
+        "description": "Liens vers des soutiens et ressources locales."
+      }
+    },
+    "employmentSupport": {
+      "title": "Soutien à l'emploi",
+      "subtitle": "Obtenez les outils et l'accompagnement pour avancer vers un emploi significatif.",
+      "viewMore": "Voir plus de services de soutien à l'emploi",
+      "resume": {
+        "title": "Aide au curriculum vitae",
+        "description": "Créez ou améliorez votre CV avec un accompagnement expert."
+      },
+      "interview": {
+        "title": "Préparation aux entrevues",
+        "description": "Renforcez votre confiance et préparez-vous aux entrevues."
+      }
+    },
+    "impact": {
+      "title": "Notre impact",
+      "description": "Créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
+      "peopleSupported": "Personnes soutenues",
+      "coursesCompleted": "Cours complétés",
+      "suppliesDistributed": "Fournitures distribuées",
+      "employmentOutcomes": "Résultats en emploi"
+    },
+    "getInvolved": {
+      "title": "S'impliquer",
+      "description": "Il existe de nombreuses façons de Make A Difference. Trouvez l'option qui vous convient.",
+      "volunteer": {
+        "title": "Bénévolat",
+        "description": "Partagez votre temps et vos compétences pour soutenir notre communauté.",
+        "imageAlt": "Bénévole soutenant des membres de la communauté à l'extérieur"
+      },
+      "donateFunds": {
+        "title": "Don financier",
+        "description": "Aidez-nous à offrir des programmes, des fournitures essentielles et du soutien.",
+        "imageAlt": "Mains tenant délicatement un cœur symbolisant le don"
+      },
+      "donateSupplies": {
+        "title": "Don de fournitures",
+        "description": "Contribuez des articles essentiels pour les personnes et les familles.",
+        "imageAlt": "Boîte de produits ménagers essentiels donnés"
+      },
+      "partner": {
+        "title": "Devenir partenaire communautaire",
+        "description": "Collaborez avec nous pour créer des communautés plus fortes et inclusives.",
+        "imageAlt": "Partenaires communautaires en réunion pour planifier des programmes inclusifs"
+      }
+    }
+  },
+  "coursesPage": {
+    "metaTitle": "Cours | Make A Difference",
+    "metaDescription": "Découvrez des cours pratiques en cuisine, bien-être, parentalité, finances, emploi, littératie numérique, anglais, sécurité et relations saines.",
+    "eyebrow": "Nos programmes",
+    "title": "Cours",
+    "intro": "Développez de nouvelles compétences, gagnez en confiance et créez de meilleures possibilités. Nos cours soutiennent les personnes et les familles avec des connaissances pratiques pour la vie de tous les jours.",
+    "heroImageAlt": "Espace réservé à l'image",
+    "exploreTitle": "Découvrir nos cours",
+    "exploreIntro": "Cliquez sur un cours pour en savoir plus. Chaque cours comprend une description, à qui il s'adresse, les résultats d'apprentissage et d'autres détails importants.",
+    "viewDetails": "Voir les détails",
+    "hideDetails": "Masquer les détails",
+    "cardImageAlt": "Espace réservé à l'image",
+    "register": "S'inscrire / Manifester son intérêt",
+    "collapseDetails": "Masquer les détails du cours",
+    "mentalHealthNote": "Ce cours est éducatif. Il ne remplace pas un diagnostic professionnel, un traitement ou des soins d'urgence.",
+    "detailImageAlt": "Espace réservé à l'image",
+    "fields": {
+      "description": "Description du cours",
+      "audience": "À qui s'adresse le cours",
+      "outcomes": "Résultats d'apprentissage",
+      "instructor": "Personne formatrice",
+      "schedule": "Date et durée",
+      "format": "Format",
+      "accessibility": "Accessibilité"
+    },
+    "shared": {
+      "instructor": "Les renseignements sur la personne formatrice seront fournis pour chaque cours à l'horaire.",
+      "schedule": "Les dates, l'horaire et la durée seront indiqués lorsque le cours sera offert.",
+      "format": "En ligne, en personne ou hybride.",
+      "accessibility": "Les mesures d'accessibilité et les accommodements offerts seront indiqués avec les détails du cours."
+    },
+    "items": {
+      "cooking": {
+        "title": "Cuisine et nutrition",
+        "summary": "Apprenez des techniques de cuisine pratiques et préparez des repas plus équilibrés.",
+        "tagline": "Apprenez des techniques de cuisine pratiques et préparez des repas plus sains et équilibrés pour vous et votre famille.",
+        "description": "Ce cours présente des compétences pratiques en cuisine et en nutrition pour aider les personnes et les familles à préparer des repas simples, équilibrés et abordables. Il porte sur la préparation quotidienne, les choix santé et la planification des repas.",
+        "audience": "Personnes, parents, familles et toute personne qui souhaite améliorer ses compétences en cuisine et comprendre les bases de la nutrition.",
+        "outcomes": [
+          "Planifier des repas simples et équilibrés",
+          "Préparer des repas du quotidien en sécurité",
+          "Faire des choix alimentaires pratiques",
+          "Comprendre les principes de base de la nutrition",
+          "Organiser les courses et la préparation des repas"
+        ]
+      },
+      "mentalHealth": {
+        "title": "Santé mentale et soins personnels",
+        "summary": "Développez des compétences pour le bien-être mental, la gestion du stress et les soins du quotidien.",
+        "tagline": "Développez des compétences pour le bien-être mental, la gestion du stress et les soins du quotidien.",
+        "description": "Ce cours propose des façons concrètes de soutenir le bien-être mental au quotidien. Il aborde le stress, les routines et les soins personnels, à votre rythme.",
+        "audience": "Adultes et proches aidants qui veulent des outils pratiques pour le bien-être, le stress et les soins du quotidien.",
+        "outcomes": [
+          "Reconnaître les signes de stress",
+          "Pratiquer des routines de soins simples",
+          "Utiliser des stratégies d'apaisement",
+          "Préparer un plan de soutien pour les journées difficiles",
+          "Savoir où trouver de l'aide supplémentaire"
+        ]
+      },
+      "parenting": {
+        "title": "Parentalité et développement de l'enfant",
+        "summary": "Soutenez la croissance de votre enfant avec des outils concrets pour une parentalité positive.",
+        "tagline": "Soutenez la croissance de votre enfant avec des outils concrets pour une parentalité positive.",
+        "description": "Ce cours partage des idées pratiques pour soutenir la croissance, la communication et les routines d'un enfant. Il respecte les différentes structures familiales.",
+        "audience": "Parents, proches aidants et membres de la famille qui veulent des outils concrets pour une parentalité positive.",
+        "outcomes": [
+          "Comprendre les étapes du développement",
+          "Communiquer avec calme et respect",
+          "Soutenir l'apprentissage par les routines",
+          "Répondre aux moments difficiles avec soin",
+          "Trouver des ressources pour les familles"
+        ]
+      },
+      "budgeting": {
+        "title": "Budget et littératie financière",
+        "summary": "Apprenez à gérer l'argent, à créer un budget et à préparer un avenir financier plus serein.",
+        "tagline": "Apprenez à gérer l'argent, à créer un budget et à préparer un avenir financier plus serein.",
+        "description": "Ce cours présente des compétences d'argent du quotidien, dont le budget, les choix de dépenses et la planification. Le langage est simple et les exemples sont réalistes.",
+        "audience": "Personnes et familles qui veulent gérer l'argent avec plus de confiance.",
+        "outcomes": [
+          "Suivre les revenus et les dépenses",
+          "Créer un budget simple",
+          "Prévoir les factures et les imprévus",
+          "Comparer les options avant de dépenser",
+          "Se fixer un objectif financier à court terme"
+        ]
+      },
+      "resume": {
+        "title": "CV et préparation aux entrevues",
+        "summary": "Obtenez du soutien pour préparer votre CV et vos entrevues.",
+        "tagline": "Obtenez du soutien pour préparer votre CV et vos entrevues.",
+        "description": "Ce cours aide à présenter clairement ses compétences dans un CV et à se préparer aux entrevues, en misant sur les forces et l'expérience.",
+        "audience": "Personnes en recherche d'emploi ou qui préparent un CV et une entrevue.",
+        "outcomes": [
+          "Nommer clairement ses compétences",
+          "Créer ou mettre à jour un CV",
+          "Se préparer aux questions courantes",
+          "S'exercer à se présenter avec confiance",
+          "Planifier les prochaines étapes de recherche"
+        ]
+      },
+      "workplace": {
+        "title": "Compétences en milieu de travail",
+        "summary": "Développez les compétences du milieu de travail d'aujourd'hui et explorez de nouvelles possibilités.",
+        "tagline": "Développez les compétences du milieu de travail d'aujourd'hui et explorez de nouvelles possibilités.",
+        "description": "Ce cours porte sur la communication, le travail d'équipe et les attentes courantes au travail, pour explorer de nouvelles possibilités avec plus de confiance.",
+        "audience": "Personnes qui entrent sur le marché du travail, changent d'emploi ou veulent plus d'assurance au travail.",
+        "outcomes": [
+          "Communiquer clairement avec les collègues",
+          "Comprendre les attentes courantes au travail",
+          "Collaborer sur des tâches communes",
+          "Demander de l'aide et de la rétroaction",
+          "Repérer les compétences à développer"
+        ]
+      },
+      "digital": {
+        "title": "Littératie numérique",
+        "summary": "Gagnez en confiance avec les ordinateurs, les outils en ligne et les services numériques.",
+        "tagline": "Gagnez en confiance avec les ordinateurs, les outils en ligne et les services numériques.",
+        "description": "Ce cours aide à se sentir à l'aise avec l'ordinateur, le courriel et les services en ligne du quotidien. Le rythme est soutenant et chaque étape est expliquée simplement.",
+        "audience": "Toute personne qui veut plus de confiance avec les ordinateurs, les téléphones et les services en ligne.",
+        "outcomes": [
+          "Utiliser un appareil avec plus d'aisance",
+          "Envoyer et gérer des courriels",
+          "Trouver de l'information fiable en ligne",
+          "Utiliser des services numériques en sécurité",
+          "Savoir où obtenir de l'aide technique"
+        ]
+      },
+      "english": {
+        "title": "Soutien en anglais",
+        "summary": "Améliorez votre anglais pour la vie quotidienne, le travail et la vie communautaire.",
+        "tagline": "Améliorez votre anglais pour la vie quotidienne, le travail et la vie communautaire.",
+        "description": "Ce cours soutient l'anglais du quotidien pour la vie, le travail et la communauté. La pratique porte sur l'écoute, la parole, la lecture et l'écriture.",
+        "audience": "Personnes qui veulent renforcer leur anglais pour la vie, le travail et la communauté.",
+        "outcomes": [
+          "Pratiquer des conversations du quotidien",
+          "Lire et écrire des messages simples",
+          "Enrichir le vocabulaire du travail et de la communauté",
+          "Poser des questions et confirmer sa compréhension",
+          "Utiliser l'anglais avec plus de confiance"
+        ]
+      },
+      "safety": {
+        "title": "Sécurité personnelle",
+        "summary": "Apprenez des conseils pratiques, à rester attentif et comment accéder au soutien.",
+        "tagline": "Apprenez des conseils pratiques, à rester attentif et comment accéder au soutien.",
+        "description": "Ce cours partage des renseignements pratiques sur la sécurité et des façons d'accéder au soutien. Le contenu est présenté avec soin, et chacun peut se retirer à tout moment.",
+        "audience": "Adultes qui veulent des renseignements concrets sur la sécurité et des façons claires de demander du soutien.",
+        "outcomes": [
+          "Reconnaître les situations qui semblent peu sûres",
+          "Préparer un plan de sécurité simple",
+          "Connaître des façons locales de demander de l'aide",
+          "Poser des limites dans la vie de tous les jours",
+          "Trouver des soutiens adaptés"
+        ]
+      },
+      "relationships": {
+        "title": "Relations saines",
+        "summary": "Renforcez la communication et créez des relations respectueuses et saines.",
+        "tagline": "Renforcez la communication et créez des relations respectueuses et saines.",
+        "description": "Ce cours explore la communication, le respect et les limites dans les relations. Il aide à bâtir des liens qui se sentent sûrs et réciproques.",
+        "audience": "Adultes qui veulent une communication plus claire et des relations plus respectueuses.",
+        "outcomes": [
+          "Pratiquer une communication claire et respectueuse",
+          "Reconnaître des dynamiques saines et malsaines",
+          "Poser des limites et les respecter",
+          "Traverser un conflit avec soin",
+          "Savoir où trouver du soutien relationnel"
+        ]
+      }
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "À propos — Make A Difference",
+      "description": "Make A Difference accompagne les femmes, les enfants, les personnes LGBTQ2S+ et les familles grâce à une éducation inclusive, des ressources concrètes, du soutien à l'emploi et des programmes communautaires bienveillants."
+    },
+    "purposeLabel": "Notre mission et notre vision",
+    "transparencyLabel": "Rapports et enregistrement",
+    "hero": {
+      "title": "À propos",
+      "description": "Make A Difference accompagne les femmes, les enfants, les personnes LGBTQ2S+ et les familles grâce à une éducation inclusive, des ressources concrètes, du soutien à l'emploi et des programmes communautaires bienveillants.",
+      "imageAlt": "Membres de la communauté vus de dos, ensemble, regardant une ville à l'horizon",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image du bandeau À propos sera ajoutée ici.",
+      "learn": "Apprendre.",
+      "grow": "Grandir.",
+      "belong": "Appartenir.",
+      "make": "Faire une différence."
+    },
+    "story": {
+      "title": "Notre histoire",
+      "description": "Make A Difference réunit l'éducation, l'aide concrète, le soutien à l'emploi, la participation communautaire et les dons sur une seule plateforme accessible. Nous accompagnons les femmes, les enfants, les personnes LGBTQ2S+ et les familles en les reliant aux ressources, aux possibilités et à la communauté dont ils ont besoin pour bâtir une vie plus forte, plus saine et plus inclusive partout au Canada.",
+      "imageAlt": "Une personne proche et un enfant partageant un moment ensemble à l'extérieur",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image de Notre histoire sera ajoutée ici."
+    },
+    "mission": {
+      "title": "Notre mission",
+      "description": "Accompagner les femmes, les enfants, les personnes LGBTQ2S+ et les familles grâce à une éducation inclusive, des ressources concrètes, du soutien à l'emploi et des programmes communautaires bienveillants."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "description": "Un Canada plus inclusif et plus équitable, où chaque personne et chaque famille a la possibilité d'apprendre, de grandir, d'appartenir et de bâtir un avenir plus lumineux."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "description": "Notre travail est guidé par des valeurs communes qui orientent la façon dont nous soutenons nos communautés et créons un changement durable.",
+      "items": {
+        "inclusion": "Inclusion",
+        "dignity": "Dignité",
+        "safety": "Sécurité",
+        "education": "Éducation",
+        "equity": "Équité",
+        "accountability": "Redevabilité",
+        "community": "Communauté"
+      }
+    },
+    "leadership": {
+      "title": "Direction et conseil",
+      "description": "Make A Difference est guidé par une équipe et un conseil engagés à faire avancer notre mission et à créer un changement utile et durable. Nos dirigeantes et dirigeants apportent une expérience diversifiée et une même volonté de bâtir des communautés plus fortes et plus inclusives.",
+      "profilePlaceholder": "Profil de direction à venir"
+    },
+    "partners": {
+      "title": "Partenaires communautaires",
+      "description": "Nous sommes fiers de travailler avec des partenaires communautaires qui partagent notre engagement envers des communautés plus fortes, plus saines et plus inclusives. Ensemble, nous élargissons l'accès aux ressources, créons de nouvelles possibilités et avons un plus grand impact.",
+      "logoPlaceholder": "Espace réservé pour le logo d'un partenaire communautaire"
+    },
+    "reports": {
+      "title": "Rapports annuels et transparence financière",
+      "description": "Nous nous engageons à la transparence et à une saine gestion. Nos rapports annuels et nos renseignements financiers seront offerts ici dès qu'ils seront disponibles.",
+      "action": "Voir les rapports (bientôt disponible)",
+      "note": "Les rapports annuels ne sont pas encore disponibles."
+    },
+    "registration": {
+      "title": "Renseignements d'enregistrement",
+      "description": "Make A Difference est un organisme sans but lucratif enregistré. Les renseignements sur son enregistrement de bienfaisance seront publiés ici dès qu'ils seront disponibles.",
+      "action": "Voir les détails d'enregistrement (bientôt disponible)",
+      "note": "Les détails d'enregistrement de bienfaisance ne sont pas encore disponibles."
+    }
+  },
+  "pages": {
+    "home": { "title": "Accueil" },
+    "about": { "title": "À propos" },
+    "programs": { "title": "Programmes et services" },
+    "courses": { "title": "Cours" },
+    "courseDetail": { "title": "Cours" },
+    "employment": { "title": "Soutien à l'emploi" },
+    "requestHelp": { "title": "Demander de l'aide" },
+    "getInvolved": { "title": "S'impliquer" },
+    "volunteer": { "title": "Bénévolat" },
+    "donate": { "title": "Faire un don" },
+    "donateThankYou": { "title": "Merci" },
+    "donateSupplies": { "title": "Don de fournitures" },
+    "partner": { "title": "Devenir partenaire" },
+    "resources": { "title": "Ressources" },
+    "eventDetail": { "title": "Événement" },
+    "events": { "title": "Événements" },
+    "contact": { "title": "Contact" },
+    "privacy": { "title": "Politique de confidentialité" },
+    "terms": { "title": "Conditions d'utilisation" },
+    "accessibility": { "title": "Déclaration d'accessibilité" },
+    "safeguarding": { "title": "Protection" },
+    "inclusionPolicy": { "title": "Politique d'inclusion" },
+    "donationPolicy": { "title": "Politique de dons" },
+    "complaints": { "title": "Procédure de plaintes" },
+    "adminLogin": { "title": "Connexion admin" },
+    "adminDashboard": { "title": "Administration" },
+    "notFound": { "title": "Page introuvable" },
+    "designPreview": { "title": "Aperçu du design" },
+    "resourceDetail": { "title": "Ressource" }
+  }
+}
