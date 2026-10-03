@@ -12,12 +12,6 @@ import { Container } from '@/components/ui/Container';
 
 import { Button, buttonVariants } from '@/components/ui/Button';
 
-import { LanguageSwitcher } from './LanguageSwitcher';
-
-import { AccessibilityToolbar } from './AccessibilityToolbar';
-
-import { QuickExit } from './QuickExit';
-
 import { MobileMenu } from './MobileMenu';
 
 import { Logo } from './Logo';
@@ -33,18 +27,6 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-surface shadow-header">
-      <div className="border-b border-border bg-bg py-2">
-        <Container className="flex flex-wrap items-center justify-between gap-2">
-          <AccessibilityToolbar />
-
-          <div className="flex items-center gap-2">
-            <QuickExit />
-
-            <LanguageSwitcher />
-          </div>
-        </Container>
-      </div>
-
       <Container className="flex min-h-[var(--header-height)] items-center justify-between gap-6 py-3">
         <Logo />
 

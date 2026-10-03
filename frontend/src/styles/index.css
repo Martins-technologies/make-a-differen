@@ -105,3 +105,9 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Kept outside Tailwind layers so production CSS cannot drop or override the side gutter. */
+html body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
