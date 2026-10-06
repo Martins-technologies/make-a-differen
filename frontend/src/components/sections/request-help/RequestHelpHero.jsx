@@ -1,71 +1,116 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
+import { buttonVariants } from '@/components/ui/Button';
+import { MergedMedia } from '@/components/ui/MergedMedia';
+import { cn } from '@/utils/cn';
+import { HomeIcon } from '../home/homeIcons';
 
 export function RequestHelpHero() {
   const { t } = useTranslation();
 
-  const scrollToForm = (e) => {
-    e.preventDefault();
-    const el = document.getElementById('request-help-form');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <Section className="relative overflow-hidden bg-bg py-8 md:py-12 lg:py-16">
-      <Container className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
-        {/* Text Content */}
-        <div className="space-y-6 lg:col-span-7">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-secondary">
-            {t('requestHelpPage.hero.eyebrow')}
-          </span>
+    <Section className="relative overflow-hidden py-8 md:py-12 lg:min-h-[32rem] lg:py-16">
+      {/* Desktop Background Image with Gradient Dissolve matching Homepage Hero */}
+      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
+        <MergedMedia
+          src="/images/request-help-hero.jpg"
+          alt={t('requestHelpPage.hero.imageAlt')}
+          placeholderLabel="Photo placeholder — Request Help hero image"
+          priority
+        />
+      </div>
 
-          <h1 className="font-sans text-4xl font-extrabold tracking-tight text-primary sm:text-5xl lg:text-6xl">
-            {t('requestHelpPage.hero.title')}
-          </h1>
+      <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-12 lg:gap-8">
+        <div className="space-y-6 sm:space-y-7 lg:col-span-7 lg:max-w-2xl">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <span className="h-0.5 w-6 bg-accent" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-wider text-accent">
+                {t('requestHelpPage.hero.eyebrow')}
+              </span>
+            </div>
 
-          <div className="space-y-3 text-body-lg text-primary/85">
-            <p className="leading-relaxed">
-              {t('requestHelpPage.hero.description')}
-            </p>
-            <p className="leading-relaxed font-medium text-primary/70">
-              {t('requestHelpPage.hero.privacyNotice')}
-            </p>
+            <h1 className="font-heading text-3xl font-bold leading-[1.12] tracking-tight text-primary sm:text-4xl md:text-5xl lg:text-[2.65rem] xl:text-[3.15rem]">
+              {t('requestHelpPage.hero.title')}
+            </h1>
+
+            <div className="space-y-3 text-body-lg text-primary/85 max-w-xl">
+              <p className="leading-relaxed">
+                {t('requestHelpPage.hero.description')}
+              </p>
+              <p className="leading-relaxed font-medium text-primary/70 text-sm sm:text-base">
+                {t('requestHelpPage.hero.privacyNotice')}
+              </p>
+            </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a
-              href="#request-help-form"
-              onClick={scrollToForm}
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent px-6 py-3.5 text-base font-semibold text-accent-contrast shadow-sm transition-all hover:bg-accent-600 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
+            <button
+              type="button"
+              className={cn(
+                buttonVariants({ variant: 'primary', size: 'lg' }),
+                'shrink-0 gap-2 rounded-lg bg-primary font-medium text-primary-contrast shadow-sm hover:bg-primary-700',
+              )}
             >
               <span>{t('requestHelpPage.hero.ctaSubmit')}</span>
-              <ChevronRight className="h-5 w-5 stroke-[2.5]" aria-hidden />
-            </a>
+              <ArrowRight className="h-4 w-4 stroke-[2.5]" aria-hidden />
+            </button>
 
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center rounded-2xl border-2 border-primary bg-transparent px-6 py-3 text-base font-semibold text-primary transition-all hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+              className={cn(
+                buttonVariants({ variant: 'outline', size: 'lg' }),
+                'shrink-0 rounded-lg border-2 border-primary bg-transparent font-medium text-primary hover:bg-primary/5',
+              )}
             >
               {t('requestHelpPage.hero.ctaContact')}
             </Link>
           </div>
+
+          {/* Trust Highlights matching Homepage Hero */}
+          <div
+            className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border/80 pt-6 sm:flex-nowrap sm:gap-x-5"
+            aria-label={t('home.hero.trust.label')}
+          >
+            <div className="flex shrink-0 items-center gap-2.5">
+              <HomeIcon name="mapleLeaf" className="h-5 w-5 shrink-0 text-accent" />
+              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
+                {t('home.hero.trust.strongerPeople')}
+              </span>
+            </div>
+
+            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
+
+            <div className="flex shrink-0 items-center gap-2.5">
+              <HomeIcon name="users" className="h-5 w-5 shrink-0 text-secondary" />
+              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
+                {t('home.hero.trust.healthierFamilies')}
+              </span>
+            </div>
+
+            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
+
+            <div className="flex shrink-0 items-center gap-2.5">
+              <HomeIcon name="leaf" className="h-5 w-5 shrink-0 text-secondary-400" />
+              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
+                {t('home.hero.trust.brighterCommunities')}
+              </span>
+            </div>
+          </div>
         </div>
 
-        {/* Hero Image */}
-        <div className="relative lg:col-span-5">
-          <div className="overflow-hidden rounded-3xl shadow-lg border border-border/60">
-            <img
-              src="/images/request-help-hero.jpg"
-              alt={t('requestHelpPage.hero.imageAlt')}
-              className="h-72 w-full object-cover object-top sm:h-96 lg:h-[420px]"
-            />
-          </div>
+        {/* Mobile Media View matching Homepage Hero */}
+        <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
+          <MergedMedia
+            src="/images/request-help-hero.jpg"
+            alt={t('requestHelpPage.hero.imageAlt')}
+            placeholderLabel="Photo placeholder — Request Help hero image"
+            edge="top"
+          />
         </div>
       </Container>
     </Section>
