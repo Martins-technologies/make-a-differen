@@ -34,3 +34,14 @@ Until files exist, the UI shows accessible `ImagePlaceholder` labels matching ea
 - `about-partner-1.png` through `about-partner-4.png` — approved partner logos only
 
 Leadership portraits are not wired until approved names and photos are provided. The page shows silhouette placeholders instead.
+
+## Employment support
+- `employment-hero.jpg` — two people meeting at a table with a laptop
+- `employment-resume.jpg` — resume and cover-letter assistance
+- `employment-interview.jpg` — interview preparation
+- `employment-workshops.jpg` — job-search workshop
+- `employment-communication.jpg` — workplace communication
+- `employment-skills.jpg` — skills and certification resources
+- `employment-directory.jpg` — inclusive-employer directory
+- `employment-appointment.jpg` — career-support appointment
+- `employment-opportunities.jpg` — job opportunities

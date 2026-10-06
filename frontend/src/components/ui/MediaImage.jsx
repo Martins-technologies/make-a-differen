@@ -16,6 +16,7 @@ export function MediaImage({
   roundedClassName = 'rounded-2xl',
   placeholderLabel,
   placeholderVariant = 'label',
+  fill = false,
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -23,15 +24,18 @@ export function MediaImage({
     return (
       <ImagePlaceholder
         label={placeholderLabel || alt}
-        aspect={aspect}
+        aspect={fill ? 'auto' : aspect}
         variant={placeholderVariant}
-        className={cn(roundedClassName, className)}
+        className={cn(roundedClassName, fill && 'h-full w-full', className)}
       />
     );
   }
 
   return (
-    <div className={cn('overflow-hidden', roundedClassName, className)} style={{ aspectRatio: aspect }}>
+    <div
+      className={cn('overflow-hidden', roundedClassName, fill && 'h-full w-full', className)}
+      style={fill ? undefined : { aspectRatio: aspect }}
+    >
       <img
         src={src}
         alt={alt}

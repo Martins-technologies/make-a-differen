@@ -458,6 +458,511 @@
       "note": "Les détails d'enregistrement de bienfaisance ne sont pas encore disponibles."
     }
   },
+  "employment": {
+    "meta": {
+      "title": "Soutien à l'emploi — Make A Difference",
+      "description": "Nous aidons les personnes à développer les compétences, la confiance et les liens dont elles ont besoin pour avancer vers un travail qui a du sens et une plus grande autonomie."
+    },
+    "hero": {
+      "eyebrow": "Soutien à l'emploi",
+      "titleLine1": "Du soutien",
+      "titleLine2": "aujourd'hui pour",
+      "titleLine3": "un avenir plus lumineux",
+      "description": "Nous aidons les personnes à développer les compétences, la confiance et les liens dont elles ont besoin pour avancer vers un travail qui a du sens et une plus grande autonomie.",
+      "imageAlt": "Deux personnes en rencontre de soutien à l'emploi, assises à une table avec un ordinateur portable",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image du bandeau Soutien à l'emploi sera ajoutée ici."
+    },
+    "services": {
+      "eyebrow": "Comment nous pouvons aider",
+      "title": "Trouver des services d'emploi",
+      "description": "Nos services de soutien à l'emploi sont conçus pour vous rejoindre là où vous en êtes et vous aider à franchir la prochaine étape vers vos objectifs.",
+      "items": {
+        "resume": {
+          "title": "Aide au curriculum vitae et à la lettre de présentation",
+          "description": "Obtenez un accompagnement personnalisé pour créer un curriculum vitae et une lettre de présentation qui mettent vos compétences en valeur.",
+          "imageAlt": "Personne qui reçoit de l'aide pour un curriculum vitae et une lettre de présentation",
+          "imagePlaceholder": "Espace réservé pour la photo. L'image d'aide au curriculum vitae sera ajoutée ici."
+        },
+        "interview": {
+          "title": "Préparation aux entrevues",
+          "description": "Gagnez en confiance grâce à des entrevues d'exercice et à des conseils utiles, afin d'être prêt pour la prochaine occasion.",
+          "imageAlt": "Personne qui se prépare à une entrevue d'emploi",
+          "imagePlaceholder": "Espace réservé pour la photo. L'image de préparation aux entrevues sera ajoutée ici."
+        },
+        "workshops": {
+          "title": "Ateliers de recherche d'emploi",
+          "description": "Participez à des ateliers interactifs pour apprendre des stratégies de recherche d'emploi, explorer des possibilités et développer de nouvelles compétences.",
+          "imageAlt": "Personnes qui participent à un atelier de recherche d'emploi",
+          "imagePlaceholder": "Espace réservé pour la photo. L'image des ateliers de recherche d'emploi sera ajoutée ici."
+        },
+        "communication": {
+          "title": "Communication en milieu de travail",
+          "description": "Développez des compétences de communication pour le milieu de travail, y compris les interactions professionnelles, le travail d'équipe et l'affirmation de soi.",
+          "imageAlt": "Personnes qui pratiquent la communication en milieu de travail",
+          "imagePlaceholder": "Espace réservé pour la photo. L'image de communication en milieu de travail sera ajoutée ici."
+        },
+        "skills": {
+          "title": "Ressources de compétences et de certification",
+          "description": "Découvrez des options de formation, des certifications et d'autres ressources pour miser sur vos forces et atteindre vos objectifs d'emploi.",
+          "imageAlt": "Personne qui se renseigne sur des ressources de compétences et de certification",
+          "imagePlaceholder": "Espace réservé pour la photo. L'image des compétences et certifications sera ajoutée ici."
+        },
+        "directory": {
+          "title": "Répertoire d'employeurs inclusifs",
+          "description": "Accédez à un répertoire d'employeurs engagés envers des pratiques d'embauche inclusives.",
+          "imageAlt": "Collègues dans un milieu de travail inclusif",
+          "imagePlaceholder": "Espace réservé pour la photo. L'image du répertoire d'employeurs inclusifs sera ajoutée ici."
+        }
+      }
+    },
+    "appointment": {
+      "title": "Prendre un rendez-vous de soutien de carrière",
+      "description": "Rencontrez un membre de notre équipe pour un accompagnement personnalisé. Nous pouvons vous aider à explorer vos objectifs, à créer un plan et à vous mettre en lien avec les bonnes ressources.",
+      "action": "Prendre un rendez-vous",
+      "imageAlt": "Membre de l'équipe de soutien de carrière prêt à rencontrer quelqu'un",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image du rendez-vous de soutien de carrière sera ajoutée ici."
+    },
+    "opportunities": {
+      "title": "Possibilités d'emploi",
+      "description": "Nous partageons des possibilités d'emploi provenant d'employeurs inclusifs pour vous aider à trouver un travail qui a du sens.",
+      "action": "Voir les possibilités d'emploi",
+      "imageAlt": "Personne qui explore des possibilités d'emploi sur un ordinateur portable",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image des possibilités d'emploi sera ajoutée ici."
+    },
+    "jobBoard": {
+      "title": "Un babillard d'emplois pour l'avenir",
+      "description": "Nous prévoyons présenter un babillard d'emplois sur cette page, afin de mettre en valeur des possibilités d'employeurs engagés envers l'embauche inclusive."
+    }
+  },
+  "programsPage": {
+    "meta": {
+      "title": "Programmes et services — Make A Difference",
+      "description": "Un aperçu de nos programmes et services qui soutiennent les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles, ainsi que les personnes en situation de difficulté partout au Canada."
+    },
+    "hero": {
+      "title": "Programmes et services",
+      "titleLine1": "Programmes et",
+      "titleLine2": "services",
+      "description": "Un aperçu de nos programmes et services qui soutiennent les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles, ainsi que les personnes en situation de difficulté partout au Canada.",
+      "imageAlt": "Quatre femmes souriant ensemble lors d'un programme communautaire",
+      "imagePlaceholder": "Espace réservé à la photo. L'image principale de Programmes et services sera ajoutée ici."
+    },
+    "imagePlaceholder": "Espace réservé à la photo. L'image {{title}} sera ajoutée ici.",
+    "categories": {
+      "women": {
+        "title": "Soutien aux femmes",
+        "description": "Aider les femmes à développer leurs compétences, à gagner en confiance et à bâtir un avenir plus prometteur.",
+        "imageAlt": "Des femmes réunies et souriantes lors d'un programme communautaire",
+        "items": [
+          "Éducation aux compétences de la vie",
+          "Préparation à l'emploi",
+          "Ressources de bien-être",
+          "Soutien parental",
+          "Orientation vers des services spécialisés"
+        ]
+      },
+      "children": {
+        "title": "Enfants et jeunes",
+        "description": "Offrir aux enfants et aux jeunes des occasions d'apprendre, de grandir et de se sentir soutenus.",
+        "imageAlt": "Deux enfants dessinant ensemble à une table de classe",
+        "items": [
+          "Activités éducatives",
+          "Programmes de nutrition et de cuisine",
+          "Ateliers de confiance et de développement social",
+          "Aide pour les fournitures scolaires",
+          "Programmes communautaires sûrs et inclusifs"
+        ]
+      },
+      "lgbtq": {
+        "title": "Soutien LGBTQ2S+",
+        "description": "Créer des espaces sûrs et inclusifs et des liens pour les personnes LGBTQ2S+.",
+        "imageAlt": "Trois ami·e·s souriant ensemble, l'un tenant un drapeau de la fierté",
+        "items": [
+          "Ressources éducatives inclusives",
+          "Liens entre pairs et avec la communauté",
+          "Aide à l'emploi",
+          "Information en santé mentale",
+          "Orientation vers des services canadiens affirmants"
+        ]
+      },
+      "family": {
+        "title": "Soutien familial et parental",
+        "description": "Renforcer les familles avec des outils pratiques et du soutien.",
+        "imageAlt": "Un père et deux enfants lisant un livre ensemble sur un canapé",
+        "items": [
+          "Cours pour parents",
+          "Nutrition familiale",
+          "Développement de l'enfant",
+          "Communication et résolution de conflits",
+          "Planification et budget du ménage"
+        ]
+      },
+      "supplies": {
+        "title": "Fournitures essentielles",
+        "description": "Fournir des articles essentiels pour aider les personnes et les familles à répondre à leurs besoins de base.",
+        "imageAlt": "Une bénévole remettant une boîte de fournitures à un membre de la communauté",
+        "items": [
+          "Alimentation",
+          "Vêtements",
+          "Produits d'hygiène",
+          "Fournitures scolaires",
+          "Articles pour bébés et parents",
+          "Aide saisonnière"
+        ]
+      }
+    },
+    "related": {
+      "title": "Explorer les pages connexes",
+      "description": "Apprenez-en davantage sur nos principaux programmes et services grâce à ces sous-pages directes.",
+      "courses": {
+        "title": "Cours",
+        "description": "Développez de nouvelles compétences et gagnez en confiance grâce à des occasions d'apprentissage pratiques."
+      },
+      "employment": {
+        "title": "Soutien à l'emploi",
+        "description": "Obtenez des outils et des conseils pour avancer vers un travail porteur de sens."
+      },
+      "requestHelp": {
+        "title": "Demander de l'aide",
+        "description": "Accédez à du soutien et à des articles essentiels, et établissez des liens avec des services communautaires."
+      }
+    }
+  },
+  "requestHelpPage": {
+    "meta": {
+      "title": "Demander de l'aide — Make A Difference",
+      "description": "Nous mettons en relation les personnes avec le bon soutien et les bonnes ressources dans notre communauté. Si vous avez besoin d'aide, vous pouvez soumettre une demande."
+    },
+    "hero": {
+      "eyebrow": "PROGRAMMES ET SERVICES",
+      "title": "Demander de l'aide",
+      "description": "Nous mettons en relation les personnes avec le bon soutien et les bonnes ressources dans notre communauté. Si vous avez besoin d'aide, vous pouvez soumettre une demande et notre équipe assurera un suivi.",
+      "privacyNotice": "Vos renseignements sont confidentiels et vous serez traité(e) avec respect, dignité et bienveillance.",
+      "ctaSubmit": "Soumettre une demande",
+      "ctaContact": "Nous appeler ou nous contacter",
+      "imageAlt": "Membre de l'équipe de soutien échangeant avec bienveillance avec un membre de la communauté"
+    },
+    "howWeHelp": {
+      "title": "Comment nous pouvons vous aider",
+      "description": "Nous pouvons vous aider à accéder à divers soutiens, notamment :",
+      "categories": {
+        "food": "Nourriture",
+        "clothing": "Vêtements",
+        "hygiene": "Produits d'hygiène",
+        "children": "Articles pour enfants",
+        "employment": "Aide à l'emploi",
+        "courses": "Inscription aux cours",
+        "community": "Orientation vers des services communautaires",
+        "other": "Autre assistance"
+      }
+    },
+    "form": {
+      "title": "Formulaire de demande d'aide",
+      "description": "Veuillez remplir le formulaire ci-dessous et un membre de notre équipe communiquera avec vous. Tous les renseignements restent confidentiels et seront traités avec respect.",
+      "fields": {
+        "name": {
+          "label": "Nom ou nom préféré",
+          "placeholder": "Votre nom"
+        },
+        "contactMethod": {
+          "label": "Moyen de contact sûr",
+          "placeholder": "Veuillez sélectionner",
+          "options": {
+            "phone": "Appel téléphonique",
+            "email": "Courriel",
+            "text": "Message texte (SMS)",
+            "phoneOrText": "Appel ou texte",
+            "any": "Tout moyen est sûr"
+          }
+        },
+        "location": {
+          "label": "Emplacement général",
+          "placeholder": "Ville ou communauté"
+        },
+        "assistanceType": {
+          "label": "Type d'assistance demandée",
+          "placeholder": "Veuillez sélectionner",
+          "options": {
+            "food": "Nourriture",
+            "clothing": "Vêtements",
+            "hygiene": "Produits d'hygiène",
+            "children": "Articles pour enfants",
+            "employment": "Aide à l'emploi",
+            "courses": "Inscription aux cours",
+            "community": "Orientation vers des services communautaires",
+            "other": "Autre assistance"
+          }
+        },
+        "language": {
+          "label": "Langue préférée",
+          "placeholder": "Veuillez sélectionner",
+          "options": {
+            "english": "Anglais",
+            "french": "Français",
+            "spanish": "Espagnol",
+            "arabic": "Arabe",
+            "mandarin": "Mandarin",
+            "cantonese": "Cantonais",
+            "punjabi": "Pendjabi",
+            "other": "Autre"
+          }
+        },
+        "accessibility": {
+          "label": "Besoins en matière d'accessibilité",
+          "placeholder": "Faites-le nous savoir"
+        },
+        "urgency": {
+          "label": "Urgence",
+          "placeholder": "Veuillez sélectionner",
+          "options": {
+            "routine": "Routinier (D'ici une semaine)",
+            "moderate": "Prochaines 24 à 48 heures",
+            "urgent": "Dès que possible"
+          }
+        },
+        "consent": {
+          "label": "J'autorise l'équipe de Make A Difference à me contacter concernant cette demande."
+        }
+      },
+      "submitButton": "Soumettre une demande",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Demande transmise avec succès",
+      "successMessage": "Merci! Votre demande a été soumise. Un membre de notre équipe vous contactera selon votre moyen de communication préféré.",
+      "errors": {
+        "nameRequired": "Veuillez entrer votre nom ou nom préféré.",
+        "contactMethodRequired": "Veuillez sélectionner un moyen de contact sûr.",
+        "locationRequired": "Veuillez indiquer votre ville ou communauté.",
+        "assistanceTypeRequired": "Veuillez sélectionner le type d'assistance demandée.",
+        "languageRequired": "Veuillez sélectionner votre langue préférée.",
+        "urgencyRequired": "Veuillez sélectionner le niveau d'urgence.",
+        "consentRequired": "Le consentement est requis pour vous contacter au sujet de votre demande."
+      }
+    },
+    "whatToExpect": {
+      "title": "À quoi vous attendre",
+      "description": "Après l'envoi de votre demande, notre équipe va :",
+      "steps": {
+        "step1": {
+          "title": "Examiner votre demande",
+          "description": "Nous prendrons connaissance des renseignements que vous partagez avec nous."
+        },
+        "step2": {
+          "title": "Assurer un suivi avec vous",
+          "description": "Un membre de notre équipe vous contactera par votre moyen de communication préféré."
+        },
+        "step3": {
+          "title": "Vous relier à des ressources",
+          "description": "Nous travaillerons avec vous pour vous connecter aux soutiens appropriés."
+        }
+      }
+    },
+    "emergencyNotice": {
+      "title": "Pas un service d'urgence",
+      "line1": "Make A Difference n'est pas un service d'urgence. Si vous ou quelqu'un d'autre êtes en danger immédiat, composez le 911.",
+      "line2": "Si vous êtes en crise ou avez besoin d'un soutien immédiat, contactez le 988 (Ligne d'aide en cas de crise de suicide) ou rendez-vous aux urgences les plus proches."
+    }
+  },
+  "getInvolvedPage": {
+    "meta": {
+      "title": "S'impliquer — Make A Difference",
+      "description": "Il existe de nombreuses façons de faire une différence. Que vous souhaitiez faire du bénévolat, un don ou devenir partenaire, votre engagement nous aide à bâtir des communautés plus fortes."
+    },
+    "hero": {
+      "eyebrow": "S'IMPLIQUER",
+      "title": "S'impliquer",
+      "description": "Il existe de nombreuses façons de faire une différence. Que vous souhaitiez offrir de votre temps en bénévolat, faire un don pour soutenir nos programmes ou devenir partenaire en tant qu'organisation, votre engagement aide à créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
+      "ctaVolunteer": "Bénévolat",
+      "ctaDonate": "Faire un don",
+      "imageAlt": "Bénévoles préparant joyeusement des boîtes de fournitures alimentaires"
+    },
+    "threeWays": {
+      "title": "Trois façons de s'impliquer",
+      "description": "Trouvez l'option qui vous convient. Chaque voie offre des moyens concrets de soutenir les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles partout au Canada.",
+      "paths": {
+        "volunteer": {
+          "title": "Bénévolat",
+          "description": "Partagez votre temps et vos compétences pour aider à offrir nos programmes et soutenir notre communauté.",
+          "bullets": [
+            "Enseignement ou animation",
+            "Mentorat",
+            "Distribution de fournitures",
+            "Événements",
+            "Administration",
+            "Collecte de fonds",
+            "Services professionnels"
+          ],
+          "cta": "En savoir plus sur le bénévolat"
+        },
+        "donate": {
+          "title": "Faire un don",
+          "description": "Aidez-nous à fournir des programmes, des fournitures essentielles et du soutien aux personnes et familles partout au Canada.",
+          "bullets": [
+            "Don ponctuel",
+            "Don mensuel",
+            "Parrainer un cours",
+            "Parrainer une famille",
+            "Donner des fournitures",
+            "Don d'entreprise jumelé"
+          ],
+          "cta": "En savoir plus sur les dons"
+        },
+        "partner": {
+          "title": "Devenir partenaire",
+          "description": "Ensemble, nous pouvons élargir les opportunités et créer des communautés plus inclusives, saines et résilientes.",
+          "bullets": [
+            "Organismes communautaires",
+            "Employeurs",
+            "Écoles",
+            "Fournisseurs de soins de santé",
+            "Détaillants et fournisseurs",
+            "Partenaires gouvernementaux et de financement"
+          ],
+          "cta": "En savoir plus sur les partenariats"
+        }
+      }
+    },
+    "waysToMakeDifference": {
+      "title": "Façons de faire la différence",
+      "description": "Peu importe la façon dont vous choisissez de vous impliquer, vous aiderez à créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
+      "learnMoreLink": "En savoir plus sur la façon de s'impliquer",
+      "cards": {
+        "time": {
+          "title": "Offrir de votre temps",
+          "description": "Offrez vos compétences et votre énergie pour soutenir nos programmes et initiatives communautaires."
+        },
+        "resources": {
+          "title": "Donner des ressources",
+          "description": "Faites un don pour aider à fournir des articles essentiels, des programmes et des opportunités."
+        },
+        "communities": {
+          "title": "Bâtir des communautés plus fortes",
+          "description": "Devenez partenaire pour étendre notre portée et créer des opportunités plus inclusives."
+        }
+      }
+    },
+    "readyToGetInvolved": {
+      "title": "Prêt(e) à vous impliquer?",
+      "description": "Choisissez la voie qui vous convient le mieux et aidez à faire une différence dès aujourd'hui.",
+      "ctaVolunteer": "Bénévolat",
+      "ctaDonate": "Faire un don",
+      "ctaPartner": "Devenir partenaire"
+    }
+  },
+  "volunteerPage": {
+    "meta": {
+      "title": "Faire du bénévolat avec nous — Make A Difference",
+      "description": "Offrez votre temps, partagez vos compétences et aidez à créer des communautés plus fortes, plus saines et plus inclusives partout au Canada."
+    },
+    "hero": {
+      "title": "Faire du bénévolat avec nous",
+      "description": "Offrez votre temps, partagez vos compétences et aidez à créer des communautés plus fortes, plus saines et plus inclusives partout au Canada. Ensemble, nous pouvons faire une réelle différence dans la vie des femmes, des enfants, des jeunes, des personnes LGBTQ2S+ et des familles.",
+      "imageAlt": "Bénévoles triant joyeusement des denrées alimentaires à une banque alimentaire"
+    },
+    "waysToVolunteer": {
+      "title": "Façons de faire du bénévolat",
+      "description": "Il existe de nombreuses façons de s'impliquer et de faire une différence. Trouvez une possibilité qui correspond à vos intérêts, à vos compétences et à votre disponibilité.",
+      "items": {
+        "teaching": {
+          "title": "Enseignement ou animation",
+          "description": "Partagez vos connaissances et aidez à offrir des cours éducatifs, des ateliers ou des séances de développement des compétences."
+        },
+        "mentorship": {
+          "title": "Mentorat",
+          "description": "Offrez des conseils et de l'encouragement pour aider les personnes à renforcer leur confiance, à développer des compétences et à progresser vers leurs objectifs."
+        },
+        "supplies": {
+          "title": "Distribution de fournitures",
+          "description": "Aidez à trier, organiser et distribuer des articles essentiels tels que de la nourriture, des vêtements et d'autres fournitures aux personnes et familles dans le besoin."
+        },
+        "events": {
+          "title": "Événements",
+          "description": "Soutenez des événements communautaires et des activités de sensibilisation en aidant à la planification, à la logistique et au soutien sur place."
+        },
+        "admin": {
+          "title": "Administration",
+          "description": "Aidez dans les tâches quotidiennes telles que la saisie de données, l'organisation de dossiers, les communications et tout autre soutien essentiel en coulisses."
+        },
+        "fundraising": {
+          "title": "Collecte de fonds",
+          "description": "Soutenez des activités et campagnes de collecte de fonds qui aident à maintenir et développer nos programmes et services."
+        },
+        "professional": {
+          "title": "Services professionnels",
+          "description": "Apportez vos compétences professionnelles et votre expertise (juridique, financière, ressources humaines, marketing ou autre domaine spécialisé) pour soutenir notre travail."
+        }
+      }
+    },
+    "application": {
+      "title": "Demande de bénévolat",
+      "description": "Vous souhaitez faire du bénévolat avec Make A Difference? Nous aimerions en savoir plus sur vous! Remplissez notre formulaire de bénévolat pour nous faire part de vos intérêts, de vos compétences et de votre disponibilité. Nous vous contacterons pour discuter des possibilités correspondant à vos objectifs et aux besoins de notre communauté.",
+      "cta": "Postuler au bénévolat",
+      "imageAlt": "Femme souriante remplissant une demande de bénévolat sur son ordinateur portable"
+    },
+    "otherWays": {
+      "title": "Autres façons de s'impliquer",
+      "description": "Le bénévolat n'est qu'une des nombreuses façons de Make A Difference. Découvrez d'autres opportunités de soutenir notre travail.",
+      "cards": {
+        "donateFunds": {
+          "title": "Faire un don financier",
+          "description": "Aidez-nous à offrir des programmes, des fournitures essentielles et du soutien."
+        },
+        "partner": {
+          "title": "Devenir partenaire communautaire",
+          "description": "Travailler avec nous pour créer des communautés plus fortes et plus inclusives."
+        },
+        "donateSupplies": {
+          "title": "Donner des fournitures",
+          "description": "Contribuer des articles essentiels pour les personnes et les familles."
+        }
+      }
+    }
+  },
+  "partnerPage": {
+    "meta": {
+      "title": "Devenir partenaire — Make A Difference",
+      "description": "Ensemble, nous pouvons créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada."
+    },
+    "hero": {
+      "title": "Devenir partenaire",
+      "description": "Ensemble, nous pouvons créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada. Nous collaborons avec des organismes, des entreprises, des écoles, des fournisseurs de soins de santé et tous les niveaux de gouvernement pour élargir les possibilités et le soutien aux personnes qui en ont le plus besoin.",
+      "imageAlt": "Équipe diversifiée de partenaires communautaires et d'affaires collaborant autour d'une table"
+    },
+    "whoWePartnerWith": {
+      "title": "Avec qui nous nous associons",
+      "description": "Nous travaillons avec un vaste réseau de partenaires qui partagent notre engagement à bâtir des communautés plus inclusives, saines et résilientes partout au Canada.",
+      "items": {
+        "community": {
+          "title": "Organismes communautaires",
+          "description": "Collaborer avec les organismes locaux pour élargir le soutien, partager les ressources et créer de plus grandes opportunités dans nos communautés."
+        },
+        "employers": {
+          "title": "Employeurs",
+          "description": "S'associer avec des entreprises pour soutenir l'engagement des employés, l'impact communautaire et des opportunités inclusives pour les personnes et les familles."
+        },
+        "schools": {
+          "title": "Écoles",
+          "description": "Travailler avec les écoles pour soutenir le bien-être des élèves, développer des compétences de vie et créer des voies vers un avenir plus prometteur."
+        },
+        "healthcare": {
+          "title": "Fournisseurs de soins de santé",
+          "description": "Collaborer avec les professionnels de la santé pour soutenir le bien-être des personnes et des familles grâce à des ressources concrètes et des connexions."
+        },
+        "retailers": {
+          "title": "Détaillants et fournisseurs",
+          "description": "S'associer avec des détaillants et des fournisseurs pour aider à fournir des articles et des ressources essentiels aux personnes et familles participant à nos programmes."
+        },
+        "government": {
+          "title": "Partenaires gouvernementaux et de financement",
+          "description": "Travailler avec les partenaires gouvernementaux et bailleurs de fonds pour élargir l'accès aux programmes, services et opportunités dans les communautés au Canada."
+        }
+      }
+    },
+    "ctaBanner": {
+      "title": "Faisons une plus grande différence ensemble",
+      "description": "Nous sommes toujours intéressés à explorer de nouveaux partenariats qui aident à créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
+      "cta": "Nous contacter"
+    }
+  },
   "pages": {
     "home": { "title": "Accueil" },
     "about": { "title": "À propos" },

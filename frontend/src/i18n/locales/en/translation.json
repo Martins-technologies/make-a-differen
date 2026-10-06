@@ -458,6 +458,511 @@
       "note": "Charitable registration details are not available yet."
     }
   },
+  "employment": {
+    "meta": {
+      "title": "Employment Support — Make A Difference",
+      "description": "We help individuals build the skills, confidence, and connections they need to move toward meaningful work and greater independence."
+    },
+    "hero": {
+      "eyebrow": "Employment Support",
+      "titleLine1": "Support",
+      "titleLine2": "Today for a",
+      "titleLine3": "Brighter Tomorrow",
+      "description": "We help individuals build the skills, confidence, and connections they need to move toward meaningful work and greater independence.",
+      "imageAlt": "Two people meeting for employment support at a table with a laptop",
+      "imagePlaceholder": "Photo placeholder. The employment support hero image will be added here."
+    },
+    "services": {
+      "eyebrow": "How we can help",
+      "title": "Find Employment Services",
+      "description": "Our employment support services are designed to meet you where you are and help you take the next step toward your goals.",
+      "items": {
+        "resume": {
+          "title": "Resume and cover-letter assistance",
+          "description": "Get individualized support to create a strong resume and cover letter that highlight your skills.",
+          "imageAlt": "Person receiving resume and cover-letter support",
+          "imagePlaceholder": "Photo placeholder. Resume assistance image will be added here."
+        },
+        "interview": {
+          "title": "Interview preparation",
+          "description": "Build confidence through practice interviews and helpful tips so you can feel ready for the next opportunity.",
+          "imageAlt": "Person preparing for a job interview",
+          "imagePlaceholder": "Photo placeholder. Interview preparation image will be added here."
+        },
+        "workshops": {
+          "title": "Job-search workshops",
+          "description": "Join interactive workshops to learn job-search strategies, explore opportunities and develop new skills.",
+          "imageAlt": "People taking part in a job-search workshop",
+          "imagePlaceholder": "Photo placeholder. Job-search workshop image will be added here."
+        },
+        "communication": {
+          "title": "Workplace communication",
+          "description": "Develop communication skills for the workplace, including professional interactions, teamwork and self-advocacy.",
+          "imageAlt": "People practicing workplace communication",
+          "imagePlaceholder": "Photo placeholder. Workplace communication image will be added here."
+        },
+        "skills": {
+          "title": "Skills and certification resources",
+          "description": "Learn about training options, certifications and other resources to build on your strengths and reach your employment goals.",
+          "imageAlt": "Person learning about skills and certification resources",
+          "imagePlaceholder": "Photo placeholder. Skills and certification image will be added here."
+        },
+        "directory": {
+          "title": "Inclusive-employer directory",
+          "description": "Access a directory of employers committed to inclusive hiring practices.",
+          "imageAlt": "Colleagues from an inclusive workplace",
+          "imagePlaceholder": "Photo placeholder. Inclusive-employer directory image will be added here."
+        }
+      }
+    },
+    "appointment": {
+      "title": "Book a Career-Support Appointment",
+      "description": "Meet with a member of our team for personalized support. We can help you explore your goals, create a plan and connect you with the right resources.",
+      "action": "Book an Appointment",
+      "imageAlt": "Career-support team member ready to meet",
+      "imagePlaceholder": "Photo placeholder. Career-support appointment image will be added here."
+    },
+    "opportunities": {
+      "title": "Job Opportunities",
+      "description": "We share job opportunities from inclusive employers to help you connect with meaningful work.",
+      "action": "View Job Opportunities",
+      "imageAlt": "Person exploring job opportunities on a laptop",
+      "imagePlaceholder": "Photo placeholder. Job opportunities image will be added here."
+    },
+    "jobBoard": {
+      "title": "A Job Board for the Future",
+      "description": "We plan to feature a job board on this page in the future, highlighting opportunities from employers committed to inclusive hiring."
+    }
+  },
+  "programsPage": {
+    "meta": {
+      "title": "Programs & Services — Make A Difference",
+      "description": "An overview of our programs and services that support women, children and youth, LGBTQ2S+ individuals, parents and families, and people facing hardship across Canada."
+    },
+    "hero": {
+      "title": "Programs & Services",
+      "titleLine1": "Programs &",
+      "titleLine2": "Services",
+      "description": "An overview of our programs and services that support women, children and youth, LGBTQ2S+ individuals, parents and families, and people facing hardship across Canada.",
+      "imageAlt": "Four women smiling together at a community program",
+      "imagePlaceholder": "Photo placeholder. The Programs & Services hero image will be added here."
+    },
+    "imagePlaceholder": "Photo placeholder. The {{title}} image will be added here.",
+    "categories": {
+      "women": {
+        "title": "Women's Support",
+        "description": "Helping women build skills, gain confidence and create brighter futures.",
+        "imageAlt": "Women gathered together, smiling during a community program",
+        "items": [
+          "Life-skills education",
+          "Employment preparation",
+          "Wellness resources",
+          "Parenting support",
+          "Referrals to specialized services"
+        ]
+      },
+      "children": {
+        "title": "Children and Youth",
+        "description": "Providing opportunities for children and youth to learn, grow and feel supported.",
+        "imageAlt": "Two children drawing together at a classroom table",
+        "items": [
+          "Educational activities",
+          "Nutrition and cooking programs",
+          "Confidence and social-development workshops",
+          "School-supply assistance",
+          "Safe and inclusive community programs"
+        ]
+      },
+      "lgbtq": {
+        "title": "LGBTQ2S+ Support",
+        "description": "Creating safe, inclusive spaces and connections for LGBTQ2S+ individuals.",
+        "imageAlt": "Three friends smiling together, one holding a pride flag",
+        "items": [
+          "Inclusive educational resources",
+          "Peer and community connections",
+          "Employment assistance",
+          "Mental-health information",
+          "Referrals to affirming Canadian services"
+        ]
+      },
+      "family": {
+        "title": "Family and Parenting Support",
+        "description": "Strengthening families with practical tools and support.",
+        "imageAlt": "A father and two children reading a book together on a couch",
+        "items": [
+          "Parenting courses",
+          "Family nutrition",
+          "Child development",
+          "Communication and conflict resolution",
+          "Household planning and budgeting"
+        ]
+      },
+      "supplies": {
+        "title": "Essential Supplies",
+        "description": "Providing essential items to help individuals and families meet their basic needs.",
+        "imageAlt": "A volunteer handing a supply box to a community member",
+        "items": [
+          "Food",
+          "Clothing",
+          "Hygiene products",
+          "School supplies",
+          "Baby and parenting supplies",
+          "Seasonal assistance"
+        ]
+      }
+    },
+    "related": {
+      "title": "Explore Related Pages",
+      "description": "Learn more about our key programs and services through these direct subpages.",
+      "courses": {
+        "title": "Courses",
+        "description": "Build new skills and gain confidence through practical learning opportunities."
+      },
+      "employment": {
+        "title": "Employment Support",
+        "description": "Get tools and guidance to move toward meaningful work."
+      },
+      "requestHelp": {
+        "title": "Request Help",
+        "description": "Access support and essential items, and get connected to community services."
+      }
+    }
+  },
+  "requestHelpPage": {
+    "meta": {
+      "title": "Request Help — Make A Difference",
+      "description": "We connect people with the right support and resources in our community. If you need help, you can submit a request and our team will follow up."
+    },
+    "hero": {
+      "eyebrow": "PROGRAMS & SERVICES",
+      "title": "Request Help",
+      "description": "We connect people with the right support and resources in our community. If you need help, you can submit a request and our team will follow up.",
+      "privacyNotice": "Your information is private, and you will be treated with respect, dignity and care.",
+      "ctaSubmit": "Submit a Request",
+      "ctaContact": "Call or Contact Us",
+      "imageAlt": "Support team member consulting warmheartedly with a community member at a wooden table"
+    },
+    "howWeHelp": {
+      "title": "How We Can Help",
+      "description": "We can help connect you with a range of supports, including:",
+      "categories": {
+        "food": "Food",
+        "clothing": "Clothing",
+        "hygiene": "Hygiene supplies",
+        "children": "Children's supplies",
+        "employment": "Employment assistance",
+        "courses": "Course registration",
+        "community": "Community-service referral",
+        "other": "Other assistance"
+      }
+    },
+    "form": {
+      "title": "Request Help Form",
+      "description": "Please fill out the form below and a member of our team will follow up with you. All information is kept private and will be treated with respect.",
+      "fields": {
+        "name": {
+          "label": "Name or preferred name",
+          "placeholder": "Your name"
+        },
+        "contactMethod": {
+          "label": "Safe contact method",
+          "placeholder": "Please select",
+          "options": {
+            "phone": "Phone call",
+            "email": "Email",
+            "text": "Text message (SMS)",
+            "phoneOrText": "Phone call or text",
+            "any": "Any method is safe"
+          }
+        },
+        "location": {
+          "label": "General location",
+          "placeholder": "City or community"
+        },
+        "assistanceType": {
+          "label": "Type of assistance requested",
+          "placeholder": "Please select",
+          "options": {
+            "food": "Food",
+            "clothing": "Clothing",
+            "hygiene": "Hygiene supplies",
+            "children": "Children's supplies",
+            "employment": "Employment assistance",
+            "courses": "Course registration",
+            "community": "Community-service referral",
+            "other": "Other assistance"
+          }
+        },
+        "language": {
+          "label": "Preferred language",
+          "placeholder": "Please select",
+          "options": {
+            "english": "English",
+            "french": "French",
+            "spanish": "Spanish",
+            "arabic": "Arabic",
+            "mandarin": "Mandarin",
+            "cantonese": "Cantonese",
+            "punjabi": "Punjabi",
+            "other": "Other"
+          }
+        },
+        "accessibility": {
+          "label": "Accessibility requirements",
+          "placeholder": "Please let us know"
+        },
+        "urgency": {
+          "label": "Urgency",
+          "placeholder": "Please select",
+          "options": {
+            "routine": "Routine (Within a week)",
+            "moderate": "Next 24-48 hours",
+            "urgent": "As soon as possible"
+          }
+        },
+        "consent": {
+          "label": "I consent to be contacted by the Make A Difference team regarding this request."
+        }
+      },
+      "submitButton": "Submit a Request",
+      "submitting": "Submitting...",
+      "successTitle": "Request Submitted Successfully",
+      "successMessage": "Thank you! Your request has been submitted. A member of our team will reach out using your preferred contact method.",
+      "errors": {
+        "nameRequired": "Please enter your name or preferred name.",
+        "contactMethodRequired": "Please select a safe contact method.",
+        "locationRequired": "Please enter your city or community location.",
+        "assistanceTypeRequired": "Please select the type of assistance requested.",
+        "languageRequired": "Please select your preferred language.",
+        "urgencyRequired": "Please select the urgency level.",
+        "consentRequired": "Consent is required to be contacted regarding your request."
+      }
+    },
+    "whatToExpect": {
+      "title": "What to Expect",
+      "description": "After you submit your request, our team will:",
+      "steps": {
+        "step1": {
+          "title": "Review your request",
+          "description": "We will take a look at the information you share with us."
+        },
+        "step2": {
+          "title": "Follow up with you",
+          "description": "A member of our team will reach out using your preferred contact method."
+        },
+        "step3": {
+          "title": "Connect you to resources",
+          "description": "We will work with you to connect you with appropriate supports."
+        }
+      }
+    },
+    "emergencyNotice": {
+      "title": "Not an emergency service",
+      "line1": "Make A Difference is not an emergency service. If you or someone else is in immediate danger, please call 911.",
+      "line2": "If you are in crisis or need immediate support, contact 988 (Suicide Crisis Helpline) or go to your nearest emergency room."
+    }
+  },
+  "getInvolvedPage": {
+    "meta": {
+      "title": "Get Involved — Make A Difference",
+      "description": "There are many ways to make a difference. Whether you want to volunteer, donate, or partner with us, your involvement helps create stronger communities."
+    },
+    "hero": {
+      "eyebrow": "GET INVOLVED",
+      "title": "Get Involved",
+      "description": "There are many ways to make a difference. Whether you want to volunteer your time, donate to support our programs, or partner with us as an organization, your involvement helps create stronger people, healthier families and brighter communities across Canada.",
+      "ctaVolunteer": "Volunteer",
+      "ctaDonate": "Donate",
+      "imageAlt": "Volunteers happily working together packing food supply boxes"
+    },
+    "threeWays": {
+      "title": "Three Ways to Get Involved",
+      "description": "Find the option that's right for you. Each pathway offers meaningful ways to support women, children and youth, LGBTQ2S+ individuals, parents and families across Canada.",
+      "paths": {
+        "volunteer": {
+          "title": "Volunteer",
+          "description": "Share your time and skills to help deliver programs and support our community.",
+          "bullets": [
+            "Teaching or facilitating",
+            "Mentorship",
+            "Supply distribution",
+            "Events",
+            "Administration",
+            "Fundraising",
+            "Professional services"
+          ],
+          "cta": "Learn more about volunteering"
+        },
+        "donate": {
+          "title": "Donate",
+          "description": "Help us provide programs, essential supplies and support to individuals and families across Canada.",
+          "bullets": [
+            "One-time donation",
+            "Monthly donation",
+            "Sponsor a course",
+            "Sponsor a family",
+            "Donate supplies",
+            "Corporate matching"
+          ],
+          "cta": "Learn more about donating"
+        },
+        "partner": {
+          "title": "Partner With Us",
+          "description": "Together, we can expand opportunities and create more inclusive, healthy and resilient communities.",
+          "bullets": [
+            "Community organizations",
+            "Employers",
+            "Schools",
+            "Healthcare providers",
+            "Retailers and suppliers",
+            "Government and funding partners"
+          ],
+          "cta": "Learn more about partnerships"
+        }
+      }
+    },
+    "waysToMakeDifference": {
+      "title": "Ways to Make a Difference",
+      "description": "No matter how you choose to get involved, you'll help create stronger people, healthier families and brighter communities across Canada.",
+      "learnMoreLink": "Learn more about how to get involved",
+      "cards": {
+        "time": {
+          "title": "Give Your Time",
+          "description": "Volunteer your skills and energy to support programs and community initiatives."
+        },
+        "resources": {
+          "title": "Give Resources",
+          "description": "Make a donation to help provide essential items, programs and opportunities."
+        },
+        "communities": {
+          "title": "Build Stronger Communities",
+          "description": "Partner with us to expand our reach and create more inclusive opportunities."
+        }
+      }
+    },
+    "readyToGetInvolved": {
+      "title": "Ready to Get Involved?",
+      "description": "Choose the way that works best for you and help make a difference today.",
+      "ctaVolunteer": "Volunteer",
+      "ctaDonate": "Donate",
+      "ctaPartner": "Partner With Us"
+    }
+  },
+  "volunteerPage": {
+    "meta": {
+      "title": "Volunteer With Us — Make A Difference",
+      "description": "Give your time, share your skills and help create stronger, healthier and more inclusive communities across Canada."
+    },
+    "hero": {
+      "title": "Volunteer With Us",
+      "description": "Give your time, share your skills and help create stronger, healthier and more inclusive communities across Canada. Together, we can make a real difference in the lives of women, children, youth, LGBTQ2S+ individuals, and families.",
+      "imageAlt": "Volunteers happily sorting canned goods together at a food bank"
+    },
+    "waysToVolunteer": {
+      "title": "Ways to Volunteer",
+      "description": "There are many ways to get involved and make a difference. Find an opportunity that matches your interests, skills and availability.",
+      "items": {
+        "teaching": {
+          "title": "Teaching or Facilitating",
+          "description": "Share your knowledge and help deliver educational courses, workshops or skill-building sessions."
+        },
+        "mentorship": {
+          "title": "Mentorship",
+          "description": "Provide guidance and encouragement to help individuals build confidence, develop skills and work toward their goals."
+        },
+        "supplies": {
+          "title": "Supply Distribution",
+          "description": "Help sort, organize and distribute essential items such as food, clothing and other supplies to individuals and families in need."
+        },
+        "events": {
+          "title": "Events",
+          "description": "Support community events and awareness activities by helping with planning, logistics and on-site support."
+        },
+        "admin": {
+          "title": "Administration",
+          "description": "Help with day-to-day tasks such as data entry, file organization, communications and other essential behind-the-scenes support."
+        },
+        "fundraising": {
+          "title": "Fundraising",
+          "description": "Support fundraising activities and campaigns that help sustain and grow our programs and services."
+        },
+        "professional": {
+          "title": "Professional Services",
+          "description": "Contribute your professional skills and expertise, such as legal, financial, human resources, marketing or other specialized services, to support our work."
+        }
+      }
+    },
+    "application": {
+      "title": "Volunteer Application",
+      "description": "Interested in volunteering with Make A Difference? We'd love to hear from you! Complete our volunteer application to tell us about your interests, skills and availability. We'll be in touch to discuss opportunities that match your goals and our community's needs.",
+      "cta": "Apply to Volunteer",
+      "imageAlt": "Woman smiling while filling out volunteer application on laptop"
+    },
+    "otherWays": {
+      "title": "Other Ways to Get Involved",
+      "description": "Volunteering is just one of the many ways to Make A Difference. Explore other opportunities to support our work.",
+      "cards": {
+        "donateFunds": {
+          "title": "Donate Funds",
+          "description": "Help us provide programs, essential supplies and support."
+        },
+        "partner": {
+          "title": "Become a Community Partner",
+          "description": "Work with us to create stronger, more inclusive communities."
+        },
+        "donateSupplies": {
+          "title": "Donate Supplies",
+          "description": "Contribute essential items for individuals and families."
+        }
+      }
+    }
+  },
+  "partnerPage": {
+    "meta": {
+      "title": "Partner With Us — Make A Difference",
+      "description": "Together, we can create stronger people, healthier families and brighter communities across Canada. Learn about our partnership pathways."
+    },
+    "hero": {
+      "title": "Partner With Us",
+      "description": "Together, we can create stronger people, healthier families and brighter communities across Canada. We collaborate with organizations, businesses, schools, healthcare providers and all levels of government to expand opportunities and support for those who need it most.",
+      "imageAlt": "Diverse team of community and business partners collaborating around a table"
+    },
+    "whoWePartnerWith": {
+      "title": "Who We Partner With",
+      "description": "We work with a wide range of partners who share our commitment to building more inclusive, healthy and resilient communities across Canada.",
+      "items": {
+        "community": {
+          "title": "Community Organizations",
+          "description": "Collaborating with local organizations to expand support, share resources and create greater opportunities in our communities."
+        },
+        "employers": {
+          "title": "Employers",
+          "description": "Partnering with businesses to support employee engagement, community impact and inclusive opportunities for individuals and families."
+        },
+        "schools": {
+          "title": "Schools",
+          "description": "Working with schools to support student well-being, build life skills and create pathways to brighter futures."
+        },
+        "healthcare": {
+          "title": "Healthcare Providers",
+          "description": "Collaborating with healthcare providers to support the well-being of individuals and families through practical resources and connections."
+        },
+        "retailers": {
+          "title": "Retailers and Suppliers",
+          "description": "Partnering with retailers and suppliers to help provide essential items and resources for individuals and families in our programs."
+        },
+        "government": {
+          "title": "Government and Funding Partners",
+          "description": "Working with government and funding partners to help expand access to programs, services and opportunities across communities in Canada."
+        }
+      }
+    },
+    "ctaBanner": {
+      "title": "Let's Make a Bigger Difference Together",
+      "description": "We're always interested in exploring new partnerships that help create stronger people, healthier families and brighter communities across Canada.",
+      "cta": "Get in Touch"
+    }
+  },
   "pages": {
     "home": { "title": "Home" },
     "about": { "title": "About Us" },
