@@ -21,7 +21,7 @@ export function ImagePlaceholder({
     >
       <span className="sr-only">{label}</span>
       {variant === 'icon' ? (
-        <ImageIcon className="h-10 w-10 text-primary-200" aria-hidden />
+        <ImageIcon className="h-10 w-10 text-primary-500" aria-hidden />
       ) : (
         <span aria-hidden className="px-4 text-center">
           {label}
