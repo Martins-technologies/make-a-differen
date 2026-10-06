@@ -78,11 +78,11 @@ export function ThreeWaysSection() {
                 className={`flex flex-col rounded-3xl border border-slate-200/80 ${path.cardBg} overflow-hidden shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-1`}
               >
                 {/* Top Card Image */}
-                <div className="h-52 w-full overflow-hidden">
+                <div className="h-52 w-full overflow-hidden bg-slate-50 flex items-center justify-center">
                   <img
                     src={path.image}
                     alt={t(path.titleKey)}
-                    className="h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                    className="h-full w-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
 

@@ -84,11 +84,11 @@ export function WaysToMakeDifference() {
                 </div>
 
                 {/* Bottom Image Container */}
-                <div className="h-48 w-full overflow-hidden rounded-2xl">
+                <div className="h-48 w-full overflow-hidden rounded-2xl bg-slate-50 flex items-center justify-center">
                   <img
                     src={card.image}
                     alt={t(card.titleKey)}
-                    className="h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                    className="h-full w-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
               </div>
