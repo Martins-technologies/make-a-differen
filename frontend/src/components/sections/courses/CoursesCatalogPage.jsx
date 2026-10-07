@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ChevronRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder';
+import { MediaImage } from '@/components/ui/MediaImage';
 import { cn } from '@/utils/cn';
 import { courseCatalog } from '@/data/coursesCatalog';
 import { CourseIcon } from './courseIcons';
@@ -89,10 +90,15 @@ export function CoursesCatalogPage() {
                     )}
                   >
                     <div className="relative">
-                      <ImagePlaceholder
-                        label={t('coursesPage.cardImageAlt')}
-                        aspect="16/10"
-                        className="rounded-xl"
+                      <MediaImage
+                        src={course.image}
+                        alt={t(`coursesPage.items.${course.key}.title`)}
+                        placeholderLabel={t('coursesPage.cardImageAlt')}
+                        placeholderVariant="label"
+                        aspect="4/3"
+                        fit={course.imageFit ?? 'cover'}
+                        roundedClassName="rounded-xl"
+                        className="w-full"
                       />
                       <span
                         className={cn(

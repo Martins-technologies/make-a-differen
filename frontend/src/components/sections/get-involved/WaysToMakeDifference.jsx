@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Users, Heart, ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
+import { updatedImages } from '@/data/updatedImages';
 
 export function WaysToMakeDifference() {
   const { t } = useTranslation();
@@ -32,7 +33,7 @@ export function WaysToMakeDifference() {
       iconColor: 'text-[#EF4444]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.resources.title',
       descKey: 'getInvolvedPage.waysToMakeDifference.cards.resources.description',
-      image: '/getinvolved/giveresources.webp',
+      image: updatedImages.getInvolved.giveResources,
     },
     {
       id: 'communities',
@@ -59,14 +60,14 @@ export function WaysToMakeDifference() {
         </div>
 
         {/* 3 Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-3 lg:gap-8">
           {cards.map((card) => {
             const IconComp = card.icon;
 
             return (
               <div
                 key={card.id}
-                className="flex flex-col space-y-4 rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md"
+                className="flex h-full flex-col space-y-4 rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md"
               >
                 {/* Top Info Header */}
                 <div className="flex items-start gap-3.5 min-h-[90px]">
@@ -83,12 +84,12 @@ export function WaysToMakeDifference() {
                   </div>
                 </div>
 
-                {/* Bottom Image Container */}
-                <div className="h-48 w-full overflow-hidden rounded-2xl bg-slate-50 flex items-center justify-center">
+                {/* Bottom Image Container — fixed height, full image visible */}
+                <div className="mt-auto flex h-52 w-full shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-slate-50 md:h-56">
                   <img
                     src={card.image}
                     alt={t(card.titleKey)}
-                    className="h-full w-full object-contain transition-transform duration-300 hover:scale-105"
+                    className="max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
               </div>

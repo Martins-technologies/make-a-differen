@@ -9,6 +9,7 @@ import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
 import { DONATE_PATH } from '@/components/layout/navConfig';
 import { HomeIcon } from '../home/homeIcons';
+import { updatedImages } from '@/data/updatedImages';
 
 export function VolunteerHero() {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ export function VolunteerHero() {
       {/* Desktop Background Image with Gradient Dissolve matching Homepage Hero */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
         <MergedMedia
-          src="/images/volunteer-hero.jpg"
+          src={updatedImages.getInvolved.volunteerHero}
           alt={t('volunteerPage.hero.imageAlt')}
           placeholderLabel="Photo placeholder — Volunteer hero image"
           priority
@@ -103,7 +104,7 @@ export function VolunteerHero() {
         {/* Mobile Media View matching Homepage Hero */}
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
           <MergedMedia
-            src="/images/volunteer-hero.jpg"
+            src={updatedImages.getInvolved.volunteerHero}
             alt={t('volunteerPage.hero.imageAlt')}
             placeholderLabel="Photo placeholder — Volunteer hero image"
             edge="top"

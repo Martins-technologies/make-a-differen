@@ -1,8 +1,10 @@
 /** About page structure. Photos and partner marks resolve from public/images when added. */
 
+import { updatedImages } from '@/data/updatedImages';
+
 export const aboutImages = {
   hero: '/images/about-hero-community.jpg',
-  story: '/images/about-story-caregiver.jpg',
+  story: updatedImages.ourStory,
 };
 
 export const aboutValues = [
