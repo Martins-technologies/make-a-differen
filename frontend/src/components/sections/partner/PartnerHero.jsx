@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { MergedMedia } from '@/components/ui/MergedMedia';
+import { updatedImages } from '@/data/updatedImages';
 
 export function PartnerHero() {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ export function PartnerHero() {
       {/* Desktop Background Image with Gradient Dissolve matching Homepage Hero */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
         <MergedMedia
-          src="/images/partner-hero.jpg"
+          src={updatedImages.getInvolved.partnerHero}
           alt={t('partnerPage.hero.imageAlt')}
           placeholderLabel="Photo placeholder — Partner With Us hero image"
           priority
@@ -35,7 +36,7 @@ export function PartnerHero() {
         {/* Mobile Media View matching Homepage Hero */}
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
           <MergedMedia
-            src="/images/partner-hero.jpg"
+            src={updatedImages.getInvolved.partnerHero}
             alt={t('partnerPage.hero.imageAlt')}
             placeholderLabel="Photo placeholder — Partner With Us hero image"
             edge="top"

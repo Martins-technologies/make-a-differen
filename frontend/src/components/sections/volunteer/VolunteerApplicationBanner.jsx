@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
+import { updatedImages } from '@/data/updatedImages';
 
 export function VolunteerApplicationBanner() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export function VolunteerApplicationBanner() {
   return (
     <Section className="py-10 md:py-16 bg-bg">
       <Container>
-        <div className="relative overflow-hidden rounded-3xl border border-amber-100/90 bg-[#FAF7F2] p-8 sm:p-12 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
+        <div className="relative min-w-0 overflow-hidden rounded-3xl border border-amber-100/90 bg-[#FAF7F2] p-8 sm:p-12 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
           {/* Decorative Leaf Motif */}
           <div className="pointer-events-none absolute right-1/3 bottom-0 opacity-15 text-emerald-700">
             <svg width="200" height="200" viewBox="0 0 100 100" fill="currentColor">
@@ -42,12 +43,12 @@ export function VolunteerApplicationBanner() {
           </div>
 
           {/* Right Side Image */}
-          <div className="lg:col-span-5 relative z-10">
-            <div className="overflow-hidden rounded-2xl border border-border/50 shadow-sm">
+          <div className="relative z-10 min-w-0 lg:col-span-5">
+            <div className="flex overflow-hidden rounded-2xl border border-border/50 bg-slate-50/80 shadow-sm">
               <img
-                src="/images/volunteer-application.jpg"
+                src={updatedImages.getInvolved.volunteerApplication}
                 alt={t('volunteerPage.application.imageAlt')}
-                className="h-64 sm:h-72 w-full object-cover object-center"
+                className="block h-auto w-full max-w-full object-contain object-center"
               />
             </div>
           </div>

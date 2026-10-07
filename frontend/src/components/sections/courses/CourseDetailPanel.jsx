@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, ChevronUp } from 'lucide-react';
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder';
+import { MediaImage } from '@/components/ui/MediaImage';
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/utils/cn';
 import { CourseIcon } from './courseIcons';
@@ -31,10 +31,15 @@ export function CourseDetailPanel({ course, panelRef, onClose }) {
     >
       <div className="flex items-start gap-4">
         <div className="relative shrink-0">
-          <ImagePlaceholder
-            label={t('coursesPage.detailImageAlt')}
+          <MediaImage
+            src={course.image}
+            alt={t(`${base}.title`)}
+            placeholderLabel={t('coursesPage.detailImageAlt')}
+            placeholderVariant="label"
             aspect="1/1"
-            className="w-16 rounded-xl sm:w-20"
+            fit={course.imageFit ?? 'cover'}
+            roundedClassName="rounded-xl"
+            className="w-16 sm:w-20"
           />
           <span
             className={cn(

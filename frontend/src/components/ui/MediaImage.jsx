@@ -17,6 +17,7 @@ export function MediaImage({
   placeholderLabel,
   placeholderVariant = 'label',
   fill = false,
+  fit = 'cover',
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -33,13 +34,22 @@ export function MediaImage({
 
   return (
     <div
-      className={cn('overflow-hidden', roundedClassName, fill && 'h-full w-full', className)}
+      className={cn(
+        'overflow-hidden',
+        roundedClassName,
+        fill && 'h-full w-full',
+        fit === 'contain' && 'relative bg-surface-alt',
+        className,
+      )}
       style={fill ? undefined : { aspectRatio: aspect }}
     >
       <img
         src={src}
         alt={alt}
-        className={cn('h-full w-full object-cover', imgClassName)}
+        className={cn(
+          fit === 'contain' ? 'absolute inset-0 h-full w-full object-contain' : 'h-full w-full object-cover',
+          imgClassName,
+        )}
         onError={() => setFailed(true)}
       />
     </div>
