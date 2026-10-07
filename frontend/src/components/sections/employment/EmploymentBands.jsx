@@ -79,11 +79,6 @@ export function EmploymentBands() {
               <p className="mt-4 max-w-md text-[0.98rem] leading-relaxed text-muted sm:text-base">
                 {t('employment.opportunities.description')}
               </p>
-              <div className="mt-6">
-                <EmploymentCta to="#job-board" icon={ChevronRight} iconPosition="end">
-                  {t('employment.opportunities.action')}
-                </EmploymentCta>
-              </div>
             </div>
           </div>
         </section>
