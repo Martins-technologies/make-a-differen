@@ -23,7 +23,11 @@ export function EmploymentServices() {
   const { t } = useTranslation();
 
   return (
-    <section className="pb-8 pt-6 sm:pb-10 sm:pt-8 lg:pb-12" aria-labelledby="employment-services-title">
+    <section
+      id="employment-services"
+      className="scroll-mt-28 pb-8 pt-6 sm:pb-10 sm:pt-8 lg:pb-12"
+      aria-labelledby="employment-services-title"
+    >
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-secondary">

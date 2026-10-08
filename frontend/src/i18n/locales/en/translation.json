@@ -223,7 +223,7 @@
     "eyebrow": "Our Programs",
     "title": "Courses",
     "intro": "Build new skills, gain confidence and create better opportunities. Our courses are designed to support individuals and families with practical, real-world knowledge for everyday life.",
-    "heroImageAlt": "Image placeholder",
+    "heroImageAlt": "Four adults learning together in a cooking and nutrition class",
     "exploreTitle": "Explore Our Courses",
     "exploreIntro": "Click on a course to learn more. Each course includes a description, who it is for, learning outcomes and other important details.",
     "viewDetails": "View Details",
@@ -411,7 +411,7 @@
     "story": {
       "title": "Our Story",
       "description": "Make A Difference brings education, practical assistance, employment support, community participation, and donations together in one accessible platform. We support women, children, LGBTQ2S+ individuals, and families by connecting them to the resources, opportunities, and community they need to build stronger, healthier, and more inclusive lives across Canada.",
-      "imageAlt": "Make A Difference community group standing together indoors",
+      "imageAlt": "A mother and her young daughter smiling together outdoors",
       "imagePlaceholder": "Photo placeholder. The Our Story image will be added here."
     },
     "mission": {
@@ -438,12 +438,23 @@
     "leadership": {
       "title": "Leadership and Board",
       "description": "Make A Difference is guided by a dedicated team and board who are committed to advancing our mission and creating meaningful, lasting change. Our leaders bring diverse experience and a shared passion for building stronger, more inclusive communities.",
-      "profilePlaceholder": "Leadership profile coming soon"
+      "profilePlaceholder": "Leadership profile coming soon",
+      "portraits": {
+        "one": "Illustrated portrait of a community leader",
+        "two": "Illustrated portrait of a community leader",
+        "three": "Illustrated portrait of a community leader"
+      }
     },
     "partners": {
       "title": "Community Partners",
       "description": "We are proud to work alongside community partners who share our commitment to stronger, healthier, and more inclusive communities. Together, we expand access to resources, create new opportunities, and make a greater impact.",
-      "logoPlaceholder": "Community partner logo placeholder"
+      "logoPlaceholder": "Community partner logo placeholder",
+      "images": {
+        "family": "Community members meeting for family support",
+        "collaboration": "Partners collaborating around a table",
+        "families": "A parent and child sharing a learning activity",
+        "employment": "People taking part in a job-search workshop"
+      }
     },
     "reports": {
       "title": "Annual Reports & Financial Transparency",
@@ -564,7 +575,7 @@
       "children": {
         "title": "Children and Youth",
         "description": "Providing opportunities for children and youth to learn, grow and feel supported.",
-        "imageAlt": "Two children drawing together at a classroom table",
+        "imageAlt": "Three children drawing together at a classroom table",
         "items": [
           "Educational activities",
           "Nutrition and cooking programs",
@@ -588,7 +599,7 @@
       "family": {
         "title": "Family and Parenting Support",
         "description": "Strengthening families with practical tools and support.",
-        "imageAlt": "A father and two children reading a book together on a couch",
+        "imageAlt": "Parents reading a book with their child at a table",
         "items": [
           "Parenting courses",
           "Family nutrition",
@@ -961,6 +972,112 @@
       "title": "Let's Make a Bigger Difference Together",
       "description": "We're always interested in exploring new partnerships that help create stronger people, healthier families and brighter communities across Canada.",
       "cta": "Get in Touch"
+    }
+  },
+  "donatePage": {
+    "meta": {
+      "title": "Donate — Make A Difference",
+      "description": "Help us provide programs, essential supplies and support for individuals and families across Canada."
+    },
+    "hero": {
+      "title": "Donate",
+      "description": "Help us provide programs, essential supplies and support for women, children and youth, LGBTQ2S+ individuals, parents and families, and people facing hardship across Canada.",
+      "ctaDonate": "Make a Donation",
+      "ctaSupplies": "Donate Supplies",
+      "imageAlt": "Volunteers sorting donated food, clothing and household supplies into boxes"
+    },
+    "ways": {
+      "title": "Ways to Give",
+      "description": "There are many ways to support Make A Difference. Choose the option that's right for you.",
+      "options": {
+        "oneTime": {
+          "title": "One-time donation",
+          "description": "Make a single donation to support our programs, essential supplies and services across Canada."
+        },
+        "monthly": {
+          "title": "Monthly donation",
+          "description": "Become a monthly donor and provide ongoing support for individuals and families in our communities."
+        },
+        "course": {
+          "title": "Sponsor a course",
+          "description": "Help fund educational courses that build confidence, life skills and new opportunities for the future."
+        },
+        "family": {
+          "title": "Sponsor a family",
+          "description": "Support a family with essential supplies, resources and opportunities during difficult times."
+        },
+        "supplies": {
+          "title": "Donate supplies",
+          "description": "Contribute essential items such as food, clothing, hygiene products, school supplies and baby items."
+        },
+        "corporate": {
+          "title": "Corporate matching",
+          "description": "Many workplaces match donations, doubling the impact and helping even more people."
+        }
+      }
+    },
+    "supplies": {
+      "title": "Donate Supplies",
+      "description": "Essential items make a real difference. You can help by donating new, unused items that support individuals and families in our programs.",
+      "imageAlt": "A team preparing hygiene kits at a community supply distribution",
+      "categories": {
+        "food": {
+          "title": "Food",
+          "description": "Non-perishable food items and household essentials."
+        },
+        "clothing": {
+          "title": "Clothing",
+          "description": "New clothing for all ages and seasons (especially for children and youth)."
+        },
+        "hygiene": {
+          "title": "Hygiene products",
+          "description": "Toiletries and personal care items."
+        },
+        "school": {
+          "title": "School supplies",
+          "description": "Supplies to help children and youth learn and succeed."
+        },
+        "baby": {
+          "title": "Baby and parenting supplies",
+          "description": "Diapers, formula and other essential items for parents and little ones."
+        }
+      }
+    },
+    "support": {
+      "title": "Your Support Makes a Difference",
+      "description": "Your donations help provide practical support, learning opportunities and connections that empower individuals and families to build brighter futures.",
+      "cards": {
+        "courses": {
+          "title": "Educational courses",
+          "description": "Help people gain new skills and confidence for what's next.",
+          "imageAlt": "A person studying at a laptop with a notebook at home"
+        },
+        "essentials": {
+          "title": "Essential supplies",
+          "description": "Provide food, clothing and other practical items for those in need.",
+          "imageAlt": "A parent and child sorting donated clothing and household supplies"
+        },
+        "employment": {
+          "title": "Employment support",
+          "description": "Help individuals build skills and access tools for greater independence.",
+          "imageAlt": "Two people reviewing a laptop together during an employment support conversation"
+        },
+        "family": {
+          "title": "Family and community support",
+          "description": "Strengthen families and create more inclusive, connected communities.",
+          "imageAlt": "Three women talking together in a community space"
+        }
+      }
+    },
+    "corporate": {
+      "title": "Corporate Matching",
+      "description": "Many employers offer matching gift programs, which means your donation can go even further. Check with your workplace to see if they match donations to registered Canadian charities like Make A Difference.",
+      "note": "A matched donation can help provide more programs, supplies and support for individuals and families across Canada.",
+      "imageAlt": "Colleagues meeting around a laptop in an office"
+    },
+    "cta": {
+      "title": "Help Us Make a Difference",
+      "description": "Your generosity helps create stronger people, healthier families and brighter communities across Canada."
     }
   },
   "pages": {

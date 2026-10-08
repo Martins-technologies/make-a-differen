@@ -13,6 +13,8 @@ export function MergedMedia({
   className,
   edge = 'left',
   priority = false,
+  fade = true,
+  imgClassName,
 }) {
   const [failed, setFailed] = useState(false);
   const missing = !src || failed;
@@ -53,13 +55,13 @@ export function MergedMedia({
         <img
           src={src}
           alt={alt}
-          className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+          className={cn('absolute inset-0 h-full w-full object-cover object-[center_35%]', imgClassName)}
           loading={priority ? 'eager' : 'lazy'}
           fetchPriority={priority ? 'high' : 'auto'}
           onError={() => setFailed(true)}
         />
       )}
-      {missing ? null : <div className={cn('absolute inset-0', fadeClass)} aria-hidden="true" />}
+      {missing || !fade ? null : <div className={cn('absolute inset-0', fadeClass)} aria-hidden="true" />}
     </div>
   );
 }

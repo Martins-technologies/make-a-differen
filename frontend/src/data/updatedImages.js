@@ -12,6 +12,7 @@ export const updatedImages = {
     digital: '/updated/08_Digital_Literacy.webp',
     english: '/updated/09_English_Language_Support.webp',
     safety: '/updated/10_Personal_Safety.webp',
+    relationships: '/healthyrelation.jfif',
   },
   employment: {
     hero: '/updated/12_Employment_Support_Hero.webp',

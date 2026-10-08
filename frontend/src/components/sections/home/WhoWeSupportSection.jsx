@@ -34,16 +34,17 @@ export function WhoWeSupportSection() {
               <Card
                 tint={item.tint}
                 padding="md"
-                className="flex h-full gap-4 border-border shadow-sm"
+                className="flex h-full items-center gap-4 border-border shadow-sm"
               >
                 <div className="shrink-0">
                   <MediaImage
                     src={item.illustration}
                     alt={t(item.illustrationAltKey)}
                     aspect="1"
-                    roundedClassName="rounded-pill"
-                    className="h-16 w-16"
-                    imgClassName="object-contain p-1"
+                    fit="contain"
+                    roundedClassName={item.imageRounded ? 'rounded-full' : 'rounded-none'}
+                    className={`${item.imageClassName} bg-transparent`}
+                    imgClassName="object-contain"
                   />
                 </div>
                 <div className="min-w-0 space-y-1">

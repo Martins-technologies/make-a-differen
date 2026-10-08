@@ -73,5 +73,6 @@ export const courseCatalog = [
     key: 'relationships',
     icon: 'users',
     chipClass: 'bg-tint-sky text-primary',
+    image: updatedImages.courses.relationships,
   },
 ];

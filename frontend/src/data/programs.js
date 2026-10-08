@@ -1,12 +1,12 @@
-/** Programs & Services overview. Drop photos into public/images using these names. */
+/** Photography supplied in public/programsandservices for the Programs & Services page. */
 
 export const programImages = {
-  hero: '/images/programs-hero.jpg',
-  women: '/images/programs-womens-support.jpg',
-  children: '/images/programs-children-youth.jpg',
-  lgbtq: '/images/programs-lgbtq2s-support.jpg',
-  family: '/images/programs-family-parenting.jpg',
-  supplies: '/images/programs-essential-supplies.jpg',
+  hero: '/programsandservices/heroprogramsandservices.jfif',
+  women: '/programsandservices/womenssupport.jfif',
+  children: '/programsandservices/childrenandyouth.jfif',
+  lgbtq: '/programsandservices/lgbtq.jfif',
+  family: '/programsandservices/familyandparenting.jfif',
+  supplies: '/programsandservices/essentialsupplies.jfif',
 };
 
 export const programCategories = [

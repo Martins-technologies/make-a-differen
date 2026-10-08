@@ -1,4 +1,3 @@
-import { User } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { leadershipPlaceholders } from '@/data/about';
@@ -16,10 +15,12 @@ export function LeadershipSection() {
 
         <ul className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:col-span-7">
           {leadershipPlaceholders.map((leader) => (
-            <li key={leader.id} className={`flex flex-col items-center rounded-2xl px-4 py-8 ${leader.tile}`}>
-              <span className={`mb-6 flex h-24 w-24 items-center justify-center rounded-full ${leader.bubble}`}>
-                <User className="h-12 w-12" aria-hidden />
-              </span>
+            <li key={leader.id} className="flex flex-col items-center rounded-2xl border border-border bg-surface px-4 py-8">
+              <img
+                src={leader.src}
+                alt={t(leader.altKey)}
+                className="mb-6 h-24 w-24 rounded-full object-cover"
+              />
               <span className="h-2.5 w-4/5 rounded-full bg-primary-100" aria-hidden="true" />
               <span className="mt-3 h-2.5 w-3/5 rounded-full bg-primary-100/70" aria-hidden="true" />
               <p className="sr-only">{t('about.leadership.profilePlaceholder')}</p>

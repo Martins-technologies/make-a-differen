@@ -20,11 +20,11 @@ function PartnerSlot({ src, label }) {
   }
 
   return (
-    <div className="flex aspect-[5/4] items-center justify-center overflow-hidden rounded-2xl bg-surface-alt p-4">
+    <div className="aspect-[5/4] overflow-hidden rounded-2xl bg-surface-alt">
       <img
         src={src}
         alt={label}
-        className="max-h-16 w-auto max-w-full object-contain"
+        className="h-full w-full object-cover"
         onError={() => setFailed(true)}
       />
     </div>
@@ -33,7 +33,6 @@ function PartnerSlot({ src, label }) {
 
 export function CommunityPartnersSection() {
   const { t } = useTranslation();
-  const label = t('about.partners.logoPlaceholder');
 
   return (
     <section id="partners" className="scroll-mt-32 bg-bg py-14 md:py-16 lg:py-20" aria-labelledby="about-partners-title">
@@ -46,7 +45,7 @@ export function CommunityPartnersSection() {
         <ul className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:col-span-7">
           {partnerPlaceholders.map((partner) => (
             <li key={partner.id}>
-              <PartnerSlot src={partner.src} label={label} />
+              <PartnerSlot src={partner.src} label={t(partner.altKey)} />
             </li>
           ))}
         </ul>
