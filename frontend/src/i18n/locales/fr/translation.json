@@ -223,7 +223,7 @@
     "eyebrow": "Nos programmes",
     "title": "Cours",
     "intro": "Développez de nouvelles compétences, gagnez en confiance et créez de meilleures possibilités. Nos cours soutiennent les personnes et les familles avec des connaissances pratiques pour la vie de tous les jours.",
-    "heroImageAlt": "Espace réservé à l'image",
+    "heroImageAlt": "Quatre adultes apprennent ensemble dans un cours de cuisine et de nutrition",
     "exploreTitle": "Découvrir nos cours",
     "exploreIntro": "Cliquez sur un cours pour en savoir plus. Chaque cours comprend une description, à qui il s'adresse, les résultats d'apprentissage et d'autres détails importants.",
     "viewDetails": "Voir les détails",
@@ -411,7 +411,7 @@
     "story": {
       "title": "Notre histoire",
       "description": "Make A Difference réunit l'éducation, l'aide concrète, le soutien à l'emploi, la participation communautaire et les dons sur une seule plateforme accessible. Nous accompagnons les femmes, les enfants, les personnes LGBTQ2S+ et les familles en les reliant aux ressources, aux possibilités et à la communauté dont ils ont besoin pour bâtir une vie plus forte, plus saine et plus inclusive partout au Canada.",
-      "imageAlt": "Groupe communautaire Make A Difference réuni à l'intérieur",
+      "imageAlt": "Une mère et sa jeune fille souriant ensemble à l'extérieur",
       "imagePlaceholder": "Espace réservé pour la photo. L'image de Notre histoire sera ajoutée ici."
     },
     "mission": {
@@ -438,12 +438,23 @@
     "leadership": {
       "title": "Direction et conseil",
       "description": "Make A Difference est guidé par une équipe et un conseil engagés à faire avancer notre mission et à créer un changement utile et durable. Nos dirigeantes et dirigeants apportent une expérience diversifiée et une même volonté de bâtir des communautés plus fortes et plus inclusives.",
-      "profilePlaceholder": "Profil de direction à venir"
+      "profilePlaceholder": "Profil de direction à venir",
+      "portraits": {
+        "one": "Portrait illustré d'une dirigeante communautaire",
+        "two": "Portrait illustré d'un dirigeant communautaire",
+        "three": "Portrait illustré d'une dirigeante communautaire"
+      }
     },
     "partners": {
       "title": "Partenaires communautaires",
       "description": "Nous sommes fiers de travailler avec des partenaires communautaires qui partagent notre engagement envers des communautés plus fortes, plus saines et plus inclusives. Ensemble, nous élargissons l'accès aux ressources, créons de nouvelles possibilités et avons un plus grand impact.",
-      "logoPlaceholder": "Espace réservé pour le logo d'un partenaire communautaire"
+      "logoPlaceholder": "Espace réservé pour le logo d'un partenaire communautaire",
+      "images": {
+        "family": "Membres de la communauté réunis pour un soutien aux familles",
+        "collaboration": "Partenaires en collaboration autour d'une table",
+        "families": "Un parent et un enfant partageant une activité d'apprentissage",
+        "employment": "Personnes participant à un atelier de recherche d'emploi"
+      }
     },
     "reports": {
       "title": "Rapports annuels et transparence financière",
@@ -564,7 +575,7 @@
       "children": {
         "title": "Enfants et jeunes",
         "description": "Offrir aux enfants et aux jeunes des occasions d'apprendre, de grandir et de se sentir soutenus.",
-        "imageAlt": "Deux enfants dessinant ensemble à une table de classe",
+        "imageAlt": "Trois enfants dessinant ensemble à une table de classe",
         "items": [
           "Activités éducatives",
           "Programmes de nutrition et de cuisine",
@@ -588,7 +599,7 @@
       "family": {
         "title": "Soutien familial et parental",
         "description": "Renforcer les familles avec des outils pratiques et du soutien.",
-        "imageAlt": "Un père et deux enfants lisant un livre ensemble sur un canapé",
+        "imageAlt": "Des parents lisant un livre avec leur enfant à une table",
         "items": [
           "Cours pour parents",
           "Nutrition familiale",
@@ -961,6 +972,112 @@
       "title": "Faisons une plus grande différence ensemble",
       "description": "Nous sommes toujours intéressés à explorer de nouveaux partenariats qui aident à créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
       "cta": "Nous contacter"
+    }
+  },
+  "donatePage": {
+    "meta": {
+      "title": "Faire un don — Make A Difference",
+      "description": "Aidez-nous à offrir des programmes, des fournitures essentielles et du soutien aux personnes et aux familles partout au Canada."
+    },
+    "hero": {
+      "title": "Faire un don",
+      "description": "Aidez-nous à offrir des programmes, des fournitures essentielles et du soutien aux femmes, aux enfants et aux jeunes, aux personnes LGBTQ2S+, aux parents et aux familles, ainsi qu’aux personnes qui vivent des difficultés partout au Canada.",
+      "ctaDonate": "Faire un don",
+      "ctaSupplies": "Donner des fournitures",
+      "imageAlt": "Des bénévoles trient des aliments, des vêtements et des articles ménagers donnés"
+    },
+    "ways": {
+      "title": "Façons de donner",
+      "description": "Il existe plusieurs façons de soutenir Make A Difference. Choisissez l’option qui vous convient.",
+      "options": {
+        "oneTime": {
+          "title": "Don unique",
+          "description": "Faites un don unique pour soutenir nos programmes, nos fournitures essentielles et nos services partout au Canada."
+        },
+        "monthly": {
+          "title": "Don mensuel",
+          "description": "Devenez donateur mensuel et offrez un soutien continu aux personnes et aux familles de nos communautés."
+        },
+        "course": {
+          "title": "Parrainer un cours",
+          "description": "Aidez à financer des cours qui renforcent la confiance, les compétences de vie et de nouvelles possibilités pour l’avenir."
+        },
+        "family": {
+          "title": "Parrainer une famille",
+          "description": "Soutenez une famille avec des fournitures essentielles, des ressources et des possibilités dans les moments difficiles."
+        },
+        "supplies": {
+          "title": "Donner des fournitures",
+          "description": "Contribuez des articles essentiels comme de la nourriture, des vêtements, des produits d’hygiène, des fournitures scolaires et des articles pour bébés."
+        },
+        "corporate": {
+          "title": "Jumelage d’entreprise",
+          "description": "De nombreux milieux de travail jumellent les dons, ce qui double l’impact et aide encore plus de personnes."
+        }
+      }
+    },
+    "supplies": {
+      "title": "Donner des fournitures",
+      "description": "Les articles essentiels font une vraie différence. Vous pouvez aider en donnant des articles neufs et non utilisés qui soutiennent les personnes et les familles dans nos programmes.",
+      "imageAlt": "Une équipe prépare des trousses d’hygiène lors d’une distribution de fournitures",
+      "categories": {
+        "food": {
+          "title": "Alimentation",
+          "description": "Aliments non périssables et essentiels ménagers."
+        },
+        "clothing": {
+          "title": "Vêtements",
+          "description": "Vêtements neufs pour tous les âges et toutes les saisons (surtout pour les enfants et les jeunes)."
+        },
+        "hygiene": {
+          "title": "Produits d’hygiène",
+          "description": "Articles de toilette et de soins personnels."
+        },
+        "school": {
+          "title": "Fournitures scolaires",
+          "description": "Fournitures pour aider les enfants et les jeunes à apprendre et à réussir."
+        },
+        "baby": {
+          "title": "Articles pour bébés et parents",
+          "description": "Couches, préparation pour nourrissons et autres articles essentiels pour les parents et les tout-petits."
+        }
+      }
+    },
+    "support": {
+      "title": "Votre soutien fait une différence",
+      "description": "Vos dons aident à offrir un soutien concret, des occasions d’apprentissage et des liens qui permettent aux personnes et aux familles de bâtir un avenir plus prometteur.",
+      "cards": {
+        "courses": {
+          "title": "Cours éducatifs",
+          "description": "Aidez les gens à acquérir de nouvelles compétences et de la confiance pour la suite.",
+          "imageAlt": "Une personne étudie devant un ordinateur portable et un cahier à la maison"
+        },
+        "essentials": {
+          "title": "Fournitures essentielles",
+          "description": "Fournissez de la nourriture, des vêtements et d’autres articles pratiques aux personnes dans le besoin.",
+          "imageAlt": "Un parent et un enfant trient des vêtements et des articles ménagers donnés"
+        },
+        "employment": {
+          "title": "Soutien à l’emploi",
+          "description": "Aidez les personnes à développer des compétences et à accéder à des outils pour une plus grande autonomie.",
+          "imageAlt": "Deux personnes examinent ensemble un ordinateur portable lors d’une rencontre de soutien à l’emploi"
+        },
+        "family": {
+          "title": "Soutien aux familles et à la communauté",
+          "description": "Renforcez les familles et créez des communautés plus inclusives et plus liées.",
+          "imageAlt": "Trois femmes en conversation dans un espace communautaire"
+        }
+      }
+    },
+    "corporate": {
+      "title": "Jumelage d’entreprise",
+      "description": "De nombreux employeurs offrent des programmes de jumelage de dons, ce qui permet à votre don d’aller encore plus loin. Vérifiez auprès de votre milieu de travail s’il jumelle les dons aux organismes de bienfaisance canadiens enregistrés comme Make A Difference.",
+      "note": "Un don jumelé peut aider à offrir plus de programmes, de fournitures et de soutien aux personnes et aux familles partout au Canada.",
+      "imageAlt": "Des collègues se rencontrent autour d’un ordinateur portable dans un bureau"
+    },
+    "cta": {
+      "title": "Aidez-nous à faire une différence",
+      "description": "Votre générosité aide à créer des personnes plus fortes, des familles en meilleure santé et des communautés plus rayonnantes partout au Canada."
     }
   },
   "pages": {

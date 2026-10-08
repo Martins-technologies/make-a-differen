@@ -1,60 +1,116 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Heart } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
-import { MediaImage } from '@/components/ui/MediaImage';
+import { Section } from '@/components/ui/Section';
+import { buttonVariants } from '@/components/ui/Button';
+import { MergedMedia } from '@/components/ui/MergedMedia';
+import { cn } from '@/utils/cn';
+import { DONATE_PATH } from '@/components/layout/navConfig';
+import { HomeIcon } from '@/components/sections/home/homeIcons';
 import { employmentImages } from '@/data/employment';
 
 export function EmploymentHero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative overflow-hidden pb-6 pt-8 sm:pt-10 lg:pb-4 lg:pt-12" aria-labelledby="employment-hero-title">
-      <div
-        className="pointer-events-none absolute -right-8 top-6 hidden h-[28rem] w-[34rem] rounded-full bg-secondary-100/80 blur-3xl lg:block"
-        aria-hidden="true"
-      />
-
-      <Container className="relative z-10 grid items-center gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-6">
-        <div className="max-w-xl space-y-5 lg:pb-6">
-          <p className="text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-secondary">
-            {t('employment.hero.eyebrow')}
-          </p>
-          <h1
-            id="employment-hero-title"
-            className="font-heading text-[2.15rem] font-bold leading-[1.08] tracking-[-0.02em] text-primary sm:text-5xl lg:text-[3.35rem]"
-          >
-            <span className="block">{t('employment.hero.titleLine1')}</span>
-            <span className="block">{t('employment.hero.titleLine2')}</span>
-            <span className="block">{t('employment.hero.titleLine3')}</span>
-          </h1>
-          <p className="max-w-lg text-[1.05rem] leading-relaxed text-muted">{t('employment.hero.description')}</p>
-        </div>
-
-        <div className="relative hidden lg:block">
-          <MediaImage
-            src={employmentImages.hero}
-            alt={t('employment.hero.imageAlt')}
-            placeholderLabel={t('employment.hero.imagePlaceholder')}
-            placeholderVariant="icon"
-            aspect="5/4"
-            roundedClassName="rounded-[2rem]"
-            className="min-h-[22rem] bg-primary-100 xl:min-h-[26rem]"
-          />
-          <div
-            className="pointer-events-none absolute inset-y-0 left-0 w-[36%] rounded-l-[2rem] bg-gradient-to-r from-bg to-transparent"
-            aria-hidden="true"
-          />
-        </div>
-
-        <MediaImage
+    <Section className="relative overflow-hidden py-8 md:py-12 lg:min-h-[32rem] lg:py-16">
+      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
+        <MergedMedia
           src={employmentImages.hero}
           alt={t('employment.hero.imageAlt')}
           placeholderLabel={t('employment.hero.imagePlaceholder')}
-          placeholderVariant="icon"
-          aspect="16/10"
-          className="bg-primary-100 lg:hidden"
-          roundedClassName="rounded-2xl"
+          priority
         />
+      </div>
+
+      <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-12 lg:gap-8">
+        <div className="space-y-6 sm:space-y-7 lg:col-span-7 lg:max-w-2xl">
+          <div className="space-y-4">
+            <h1
+              id="employment-hero-title"
+              className="font-heading text-3xl font-bold leading-[1.12] tracking-tight text-primary sm:text-4xl md:text-5xl lg:text-[2.65rem] xl:text-[3.15rem]"
+            >
+              <span className="block">{t('employment.hero.titleLine1')}</span>
+              <span className="block sm:whitespace-nowrap">
+                {t('employment.hero.titleLine2')} {t('employment.hero.titleLine3')}
+              </span>
+            </h1>
+            <p className="text-body-lg max-w-xl leading-relaxed text-primary/80">{t('employment.hero.description')}</p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
+            <a
+              href="#employment-services"
+              className={cn(
+                buttonVariants({ variant: 'primary', size: 'lg' }),
+                'shrink-0 gap-2 rounded-lg bg-primary font-medium text-primary-contrast shadow-sm hover:bg-primary-700',
+              )}
+            >
+              <span>{t('employment.services.title')}</span>
+              <HomeIcon name="arrowRight" className="h-4 w-4 stroke-[2.5]" />
+            </a>
+            <Link
+              to="/request-help"
+              className={cn(
+                buttonVariants({ variant: 'outline', size: 'lg' }),
+                'shrink-0 rounded-lg border-2 border-primary bg-transparent font-medium text-primary hover:bg-primary/5',
+              )}
+            >
+              {t('home.hero.cta.requestSupport')}
+            </Link>
+            <Link
+              to={DONATE_PATH}
+              className={cn(
+                buttonVariants({ variant: 'cta', size: 'lg' }),
+                'shrink-0 gap-2 rounded-lg font-medium shadow-sm',
+              )}
+            >
+              <Heart className="h-4 w-4 fill-current" aria-hidden />
+              <span>{t('nav.donate')}</span>
+            </Link>
+          </div>
+
+          <div
+            className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border/80 pt-6 sm:flex-nowrap sm:gap-x-5"
+            aria-label={t('home.hero.trust.label')}
+          >
+            <div className="flex shrink-0 items-center gap-2.5">
+              <HomeIcon name="mapleLeaf" className="h-5 w-5 shrink-0 text-accent" />
+              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
+                {t('home.hero.trust.strongerPeople')}
+              </span>
+            </div>
+
+            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
+
+            <div className="flex shrink-0 items-center gap-2.5">
+              <HomeIcon name="users" className="h-5 w-5 shrink-0 text-secondary" />
+              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
+                {t('home.hero.trust.healthierFamilies')}
+              </span>
+            </div>
+
+            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
+
+            <div className="flex shrink-0 items-center gap-2.5">
+              <HomeIcon name="leaf" className="h-5 w-5 shrink-0 text-secondary-400" />
+              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
+                {t('home.hero.trust.brighterCommunities')}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
+          <MergedMedia
+            src={employmentImages.hero}
+            alt={t('employment.hero.imageAlt')}
+            placeholderLabel={t('employment.hero.imagePlaceholder')}
+            edge="top"
+          />
+        </div>
       </Container>
-    </section>
+    </Section>
   );
 }

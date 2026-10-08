@@ -34,7 +34,7 @@ export function OtherWaysToGetInvolved() {
       iconColor: 'text-[#0D9488]',
       titleKey: 'volunteerPage.otherWays.cards.donateSupplies.title',
       descKey: 'volunteerPage.otherWays.cards.donateSupplies.description',
-      link: '/get-involved/donate-supplies',
+      link: '/get-involved/donate#donate-supplies',
     },
   ];
 

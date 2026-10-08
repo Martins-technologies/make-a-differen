@@ -3,29 +3,24 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { ChevronRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder';
 import { MediaImage } from '@/components/ui/MediaImage';
 import { cn } from '@/utils/cn';
 import { courseCatalog } from '@/data/coursesCatalog';
 import { CourseIcon } from './courseIcons';
 import { CourseDetailPanel } from './CourseDetailPanel';
+import { CoursesHero } from './CoursesHero';
 
 export function CoursesCatalogPage() {
   const { t } = useTranslation();
   const panelRef = useRef(null);
-  const skipInitialScroll = useRef(true);
+  const scrollRequest = useRef(0);
   const baseId = useId();
   const [openSlug, setOpenSlug] = useState(courseCatalog[0].slug);
 
   const openCourse = courseCatalog.find((course) => course.slug === openSlug) ?? null;
 
   useEffect(() => {
-    if (skipInitialScroll.current) {
-      skipInitialScroll.current = false;
-      return;
-    }
-
-    if (!openSlug || !panelRef.current) return;
+    if (scrollRequest.current === 0 || !openSlug || !panelRef.current) return;
 
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     panelRef.current.scrollIntoView({
@@ -36,6 +31,7 @@ export function CoursesCatalogPage() {
   }, [openSlug]);
 
   function toggleCourse(slug) {
+    scrollRequest.current += 1;
     setOpenSlug((current) => (current === slug ? null : slug));
   }
 
@@ -46,24 +42,7 @@ export function CoursesCatalogPage() {
         <meta name="description" content={t('coursesPage.metaDescription')} />
       </Helmet>
 
-      <section className="bg-bg py-10 md:py-14">
-        <Container className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-          <div>
-            <p className="text-small font-semibold uppercase tracking-[0.14em] text-secondary">
-              {t('coursesPage.eyebrow')}
-            </p>
-            <h1 className="mt-3 font-heading text-5xl font-bold text-primary sm:text-6xl">
-              {t('coursesPage.title')}
-            </h1>
-            <p className="mt-4 max-w-xl text-body text-muted sm:text-body-lg">{t('coursesPage.intro')}</p>
-          </div>
-          <ImagePlaceholder
-            label={t('coursesPage.heroImageAlt')}
-            aspect="16/10"
-            className="rounded-2xl shadow-md"
-          />
-        </Container>
-      </section>
+      <CoursesHero />
 
       <section id="explore-courses" className="scroll-mt-28 bg-bg pb-16 md:pb-24" aria-labelledby="explore-courses-title">
         <Container>

@@ -1,5 +1,6 @@
-import PlaceholderPage from '@/components/pages/PlaceholderPage';
+import { Navigate } from 'react-router-dom';
+import { DONATE_SUPPLIES_PATH } from '@/components/layout/navConfig';
 
 export default function DonateSuppliesPage() {
-  return <PlaceholderPage titleKey="pages.donateSupplies.title" />;
+  return <Navigate to={DONATE_SUPPLIES_PATH} replace />;
 }

@@ -13,7 +13,7 @@ const ICONS = {
 
 function ProgramPhoto({ src, alt, label }) {
   return (
-    <div className="relative h-full min-h-[16.5rem] sm:min-h-[18rem]">
+    <div className="relative h-full min-h-[16.5rem] w-full min-w-0 overflow-hidden sm:min-h-[18rem]">
       <MediaImage
         src={src}
         alt={alt}
@@ -43,9 +43,9 @@ export function ProgramCategories() {
             <article
               key={category.key}
               id={category.key}
-              className="grid items-stretch gap-4 sm:gap-5 lg:grid-cols-2 lg:gap-6"
+              className="grid min-w-0 grid-cols-1 items-stretch gap-4 sm:gap-5 lg:grid-cols-2 lg:gap-6"
             >
-              <div className={cn('h-full', imageRight && 'lg:order-2')}>
+              <div className={cn('h-full min-w-0', imageRight && 'lg:order-2')}>
                 <ProgramPhoto
                   src={category.image}
                   alt={t(`programsPage.categories.${category.key}.imageAlt`)}
@@ -55,7 +55,7 @@ export function ProgramCategories() {
 
               <div
                 className={cn(
-                  'flex h-full flex-col justify-center rounded-[1.35rem] px-6 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-9',
+                  'flex h-full min-w-0 flex-col justify-center rounded-[1.35rem] px-6 py-7 sm:px-8 sm:py-8 lg:px-10 lg:py-9',
                   category.panel,
                   imageRight && 'lg:order-1',
                 )}

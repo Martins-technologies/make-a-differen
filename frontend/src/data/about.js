@@ -1,10 +1,8 @@
-/** About page structure. Photos and partner marks resolve from public/images when added. */
-
-import { updatedImages } from '@/data/updatedImages';
+/** About page structure. Photos and partner marks resolve from public when added. */
 
 export const aboutImages = {
-  hero: '/images/about-hero-community.jpg',
-  story: updatedImages.ourStory,
+  hero: '/aboutushero.jfif',
+  story: '/ourhero.jfif',
 };
 
 export const aboutValues = [
@@ -17,17 +15,33 @@ export const aboutValues = [
   { key: 'community', icon: 'users', tile: 'bg-tint-turquoise', bubble: 'bg-secondary-50 text-secondary' },
 ];
 
-/** Silhouette cards only — names are added when approved bios are provided. */
+/** Illustrated portraits only — names are added when approved bios are provided. */
 export const leadershipPlaceholders = [
-  { id: 'leader-1', bubble: 'bg-primary-100 text-primary-400', tile: 'bg-tint-lilac' },
-  { id: 'leader-2', bubble: 'bg-secondary-100 text-secondary', tile: 'bg-tint-mint' },
-  { id: 'leader-3', bubble: 'bg-accent-100 text-accent-700', tile: 'bg-tint-peach' },
+  { id: 'leader-1', src: '/about/leader-1.jpg', altKey: 'about.leadership.portraits.one' },
+  { id: 'leader-2', src: '/about/leader-2.jpg', altKey: 'about.leadership.portraits.two' },
+  { id: 'leader-3', src: '/about/leader-3.jpg', altKey: 'about.leadership.portraits.three' },
 ];
 
-/** Logo files can be dropped in later; until then each slot stays a placeholder. */
+/** Photos of the work partners support. Official logos replace these when approved. */
 export const partnerPlaceholders = [
-  { id: 'partner-1', src: '/images/about-partner-1.png' },
-  { id: 'partner-2', src: '/images/about-partner-2.png' },
-  { id: 'partner-3', src: '/images/about-partner-3.png' },
-  { id: 'partner-4', src: '/images/about-partner-4.png' },
+  {
+    id: 'partner-1',
+    src: '/about/partner-1.jpg',
+    altKey: 'about.partners.images.family',
+  },
+  {
+    id: 'partner-2',
+    src: '/about/partner-2.jpg',
+    altKey: 'about.partners.images.collaboration',
+  },
+  {
+    id: 'partner-3',
+    src: '/about/partner-3.jpg',
+    altKey: 'about.partners.images.families',
+  },
+  {
+    id: 'partner-4',
+    src: '/about/partner-4.jpg',
+    altKey: 'about.partners.images.employment',
+  },
 ];

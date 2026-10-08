@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
-import { MergedMedia } from '@/components/ui/MergedMedia';
+import { partnerImages } from '@/data/partnerImages';
 
 export function WhoWePartnerWith() {
   const { t } = useTranslation();
@@ -25,8 +25,7 @@ export function WhoWePartnerWith() {
       iconColor: 'text-[#0F766E]',
       titleKey: 'partnerPage.whoWePartnerWith.items.community.title',
       descKey: 'partnerPage.whoWePartnerWith.items.community.description',
-      image: '/images/partner-community-organizations.jpg',
-      placeholder: 'Photo placeholder — Community Organizations image will be added here',
+      image: partnerImages.community,
     },
     {
       id: 'employers',
@@ -35,8 +34,7 @@ export function WhoWePartnerWith() {
       iconColor: 'text-[#3730A3]',
       titleKey: 'partnerPage.whoWePartnerWith.items.employers.title',
       descKey: 'partnerPage.whoWePartnerWith.items.employers.description',
-      image: '/images/partner-employers.jpg',
-      placeholder: 'Photo placeholder — Employers image will be added here',
+      image: partnerImages.employers,
     },
     {
       id: 'schools',
@@ -45,8 +43,7 @@ export function WhoWePartnerWith() {
       iconColor: 'text-[#EF4444]',
       titleKey: 'partnerPage.whoWePartnerWith.items.schools.title',
       descKey: 'partnerPage.whoWePartnerWith.items.schools.description',
-      image: '/images/partner-schools.jpg',
-      placeholder: 'Photo placeholder — Schools image will be added here',
+      image: partnerImages.schools,
     },
     {
       id: 'healthcare',
@@ -55,8 +52,7 @@ export function WhoWePartnerWith() {
       iconColor: 'text-[#0F766E]',
       titleKey: 'partnerPage.whoWePartnerWith.items.healthcare.title',
       descKey: 'partnerPage.whoWePartnerWith.items.healthcare.description',
-      image: '/images/partner-healthcare-providers.jpg',
-      placeholder: 'Photo placeholder — Healthcare Providers image will be added here',
+      image: partnerImages.healthcare,
     },
     {
       id: 'retailers',
@@ -65,8 +61,7 @@ export function WhoWePartnerWith() {
       iconColor: 'text-[#4F46E5]',
       titleKey: 'partnerPage.whoWePartnerWith.items.retailers.title',
       descKey: 'partnerPage.whoWePartnerWith.items.retailers.description',
-      image: '/images/partner-retailers-suppliers.jpg',
-      placeholder: 'Photo placeholder — Retailers and Suppliers image will be added here',
+      image: partnerImages.retailers,
     },
     {
       id: 'government',
@@ -75,8 +70,7 @@ export function WhoWePartnerWith() {
       iconColor: 'text-[#EF4444]',
       titleKey: 'partnerPage.whoWePartnerWith.items.government.title',
       descKey: 'partnerPage.whoWePartnerWith.items.government.description',
-      image: '/images/partner-government-funding.jpg',
-      placeholder: 'Photo placeholder — Government and Funding Partners image will be added here',
+      image: partnerImages.government,
     },
   ];
 
@@ -103,13 +97,11 @@ export function WhoWePartnerWith() {
                 key={item.id}
                 className="flex flex-col rounded-3xl border border-slate-200/80 bg-white overflow-hidden shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-1"
               >
-                {/* Top Image Container with Fallback Placeholder */}
-                <div className="relative h-60 w-full overflow-hidden bg-slate-100">
-                  <MergedMedia
+                <div className="relative w-full overflow-hidden bg-slate-100">
+                  <img
                     src={item.image}
                     alt={t(item.titleKey)}
-                    placeholderLabel={item.placeholder}
-                    className="h-full w-full object-cover object-center"
+                    className="block h-auto w-full object-contain object-center"
                   />
                 </div>
 
