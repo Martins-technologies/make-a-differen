@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { contactImages } from '@/data/contactImages';
 import { LeafCluster } from '@/components/sections/about/LeafCluster';
@@ -8,7 +9,7 @@ export function ContactHero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative overflow-hidden bg-bg lg:min-h-[32rem]" aria-labelledby="contact-hero-title">
+    <Section className="relative overflow-hidden py-8 md:py-12 lg:min-h-[32rem] lg:py-16" aria-labelledby="contact-hero-title">
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
         <MergedMedia
           src={contactImages.hero}
@@ -20,9 +21,8 @@ export function ContactHero() {
 
       <LeafCluster className="pointer-events-none absolute -bottom-8 left-0 hidden h-40 w-44 text-[#B7D9A8] lg:block" />
 
-      <Container className="relative z-10 flex min-h-[inherit] items-center py-12 md:py-16 lg:py-20">
-        <div className="grid w-full items-center gap-8 lg:grid-cols-2">
-          <div className="max-w-xl space-y-5">
+      <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-12 lg:gap-8">
+        <div className="space-y-5 lg:col-span-7 lg:max-w-2xl">
             <span className="block h-1.5 w-14 rounded-pill bg-accent" aria-hidden="true" />
             <h1
               id="contact-hero-title"
@@ -35,16 +35,15 @@ export function ContactHero() {
             </p>
           </div>
 
-          <div className="relative min-h-72 overflow-hidden rounded-2xl lg:hidden">
-            <MergedMedia
-              src={contactImages.hero}
-              alt={t('contactPage.hero.imageAlt')}
-              placeholderLabel={t('contactPage.hero.imagePlaceholder')}
-              edge="top"
-            />
-          </div>
+        <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
+          <MergedMedia
+            src={contactImages.hero}
+            alt={t('contactPage.hero.imageAlt')}
+            placeholderLabel={t('contactPage.hero.imagePlaceholder')}
+            edge="top"
+          />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
