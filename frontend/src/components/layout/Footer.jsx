@@ -6,6 +6,7 @@ import { FOOTER_LEGAL_LINKS } from '@/utils/constants';
 import { Container } from '@/components/ui/Container';
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/utils/cn';
+import { LOGO_SRC } from './Logo';
 import { DONATE_PATH, FOOTER_NAV_COLUMNS } from './navConfig';
 
 const SOCIAL_LINKS = [
@@ -34,9 +35,9 @@ export function Footer() {
               </span>
             ) : (
               <img
-                src="/images/logo.svg"
+                src={LOGO_SRC}
                 alt={t('site.name')}
-                className="h-8 w-auto object-contain sm:h-9"
+                className="h-12 w-auto max-w-[13rem] object-contain sm:h-14 sm:max-w-[15rem]"
                 onError={() => setLogoFailed(true)}
               />
             )}

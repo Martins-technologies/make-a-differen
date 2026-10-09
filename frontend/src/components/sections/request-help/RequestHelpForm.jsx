@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronRight, CheckCircle2, AlertCircle } from 'lucide-react';
+import { ChevronRight, CheckCircle2 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { Input } from '@/components/ui/Input';
 import { Select } from '@/components/ui/Select';
 import { Checkbox } from '@/components/ui/Checkbox';
 import { FormField } from '@/components/ui/FormField';
+import { MAIL_SUBJECTS } from '@/config/mail';
+import { sendToInbox } from '@/services/formMail.service';
 
 export function RequestHelpForm({ selectedCategory }) {
   const { t } = useTranslation();
@@ -25,6 +27,7 @@ export function RequestHelpForm({ selectedCategory }) {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   // Sync selectedCategory if user clicked a card in "How We Can Help"
   useEffect(() => {
@@ -98,16 +101,36 @@ export function RequestHelpForm({ selectedCategory }) {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const labelFor = (options, value) =>
+    options.find((option) => option.value === value)?.label || value;
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
 
+    const assistanceLabel = labelFor(assistanceOptions, formData.assistanceType);
+
     setIsSubmitting(true);
-    // Simulate submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setSubmitError('');
+    try {
+      await sendToInbox({
+        subject: `${MAIL_SUBJECTS.requestHelp}: ${assistanceLabel}`,
+        fields: {
+          'Name or preferred name': formData.name.trim(),
+          'Safe contact method': labelFor(safeContactOptions, formData.contactMethod),
+          'General location': formData.location.trim(),
+          'Type of assistance requested': assistanceLabel,
+          'Preferred language': labelFor(languageOptions, formData.language),
+          'Accessibility requirements': formData.accessibility.trim(),
+          Urgency: labelFor(urgencyOptions, formData.urgency),
+          'Consent to be contacted': formData.consent,
+        },
+      });
       setIsSubmitted(true);
-    }, 600);
+    } catch {
+      setSubmitError(t('requestHelpPage.form.errors.sendFailed'));
+    }
+    setIsSubmitting(false);
   };
 
   return (
@@ -150,6 +173,7 @@ export function RequestHelpForm({ selectedCategory }) {
                     urgency: '',
                     consent: false,
                   });
+                  setSubmitError('');
                 }}
                 className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 font-semibold text-primary-contrast hover:bg-primary-700 transition-colors"
               >
@@ -294,6 +318,12 @@ export function RequestHelpForm({ selectedCategory }) {
                   ) : null}
                 </div>
               </div>
+
+              {submitError ? (
+                <p className="text-small text-danger" role="alert">
+                  {submitError}
+                </p>
+              ) : null}
 
               {/* Submit Button */}
               <div className="pt-4">

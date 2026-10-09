@@ -1,0 +1,378 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/sections/request-help/RequestHelpIcons.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=0ad49213"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=0ad49213"; const React = __vite__cjsImport3_react.__esModule ? __vite__cjsImport3_react.default : __vite__cjsImport3_react;
+export function SupportCategoryIcon({ name, className = "w-6 h-6" }) {
+  switch (name) {
+    case "food":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("path", { d: "M7 2v8a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V2" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 37,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M9 12v10" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 38,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M17 2v20" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 39,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M17 2a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 40,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 28,
+          columnNumber: 9
+        },
+        this
+      );
+    case "clothing":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: /* @__PURE__ */ jsxDEV("path", { d: "M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" }, void 0, false, {
+            fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+            lineNumber: 56,
+            columnNumber: 11
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 47,
+          columnNumber: 9
+        },
+        this
+      );
+    case "hygiene":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("path", { d: "M10 2h4" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 72,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M12 2v4" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 73,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M8 6h8" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 74,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M9 6v2" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 75,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M15 6v2" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 76,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("rect", { x: "6", y: "8", width: "12", height: "13", rx: "3" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 77,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M12 12v4" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 78,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M10 14h4" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 79,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 63,
+          columnNumber: 9
+        },
+        this
+      );
+    case "children":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("path", { d: "M6 8a3.5 3.5 0 1 1 3.5-3.5" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 95,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M18 8a3.5 3.5 0 1 0-3.5-3.5" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 96,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("circle", { cx: "12", cy: "13", r: "7" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 97,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("circle", { cx: "9.5", cy: "11.5", r: "1", fill: "currentColor" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 98,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("circle", { cx: "14.5", cy: "11.5", r: "1", fill: "currentColor" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 99,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("ellipse", { cx: "12", cy: "14.5", rx: "2", ry: "1.5" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 100,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 86,
+          columnNumber: 9
+        },
+        this
+      );
+    case "employment":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("rect", { x: "2", y: "7", width: "20", height: "14", rx: "2", ry: "2" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 116,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 117,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("line", { x1: "12", y1: "12", x2: "12", y2: "12.01", strokeWidth: "3" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 118,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 107,
+          columnNumber: 9
+        },
+        this
+      );
+    case "courses":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("path", { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 134,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 135,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 125,
+          columnNumber: 9
+        },
+        this
+      );
+    case "community":
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("path", { d: "M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 151,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("circle", { cx: "10", cy: "7", r: "4" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 152,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M22 21v-2a4 4 0 0 0-3-3.87" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 153,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("path", { d: "M16 3.13a4 4 0 0 1 0 7.75" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 154,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 142,
+          columnNumber: 9
+        },
+        this
+      );
+    case "other":
+    default:
+      return /* @__PURE__ */ jsxDEV(
+        "svg",
+        {
+          className,
+          viewBox: "0 0 24 24",
+          fill: "none",
+          stroke: "currentColor",
+          strokeWidth: "2",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          children: [
+            /* @__PURE__ */ jsxDEV("circle", { cx: "6", cy: "12", r: "1.75", fill: "currentColor" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 171,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("circle", { cx: "12", cy: "12", r: "1.75", fill: "currentColor" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 172,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ jsxDEV("circle", { cx: "18", cy: "12", r: "1.75", fill: "currentColor" }, void 0, false, {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+              lineNumber: 173,
+              columnNumber: 11
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx",
+          lineNumber: 162,
+          columnNumber: 9
+        },
+        this
+      );
+  }
+}
+_c = SupportCategoryIcon;
+var _c;
+$RefreshReg$(_c, "SupportCategoryIcon");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/make-a-difference/make-a-differen/frontend/src/components/sections/request-help/RequestHelpIcons.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QVE7QUFBQSxVQUNSLE1BQUs7QUFBQSxVQUNMLFFBQU87QUFBQSxVQUNQLGFBQVk7QUFBQSxVQUNaLGVBQWM7QUFBQSxVQUNkLGdCQUFlO0FBQUEsVUFFZjtBQUFBLG1DQUFDLFlBQU8sSUFBRyxLQUFJLElBQUcsTUFBSyxHQUFFLFFBQU8sTUFBSyxrQkFBckM7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkFBbUQ7QUFBQSxZQUNuRCx1QkFBQyxZQUFPLElBQUcsTUFBSyxJQUFHLE1BQUssR0FBRSxRQUFPLE1BQUssa0JBQXRDO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQW9EO0FBQUEsWUFDcEQsdUJBQUMsWUFBTyxJQUFHLE1BQUssSUFBRyxNQUFLLEdBQUUsUUFBTyxNQUFLLGtCQUF0QztBQUFBO0FBQUE7QUFBQTtBQUFBLG1CQUFvRDtBQUFBO0FBQUE7QUFBQSxRQVh0RDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsTUFZQTtBQUFBLEVBRU47QUFDRjtBQUFDRSxLQTFKZUg7QUFBbUIsSUFBQUc7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsiUmVhY3QiLCJTdXBwb3J0Q2F0ZWdvcnlJY29uIiwibmFtZSIsImNsYXNzTmFtZSIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlJlcXVlc3RIZWxwSWNvbnMuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbi8qKiBDdXN0b20gaWNvbnMgbWF0Y2hpbmcgYXBwcm92ZWQgbW9ja3VwIGZvciBSZXF1ZXN0IEhlbHAgY2F0ZWdvcmllcyAqL1xuZXhwb3J0IGZ1bmN0aW9uIFN1cHBvcnRDYXRlZ29yeUljb24oeyBuYW1lLCBjbGFzc05hbWUgPSAndy02IGgtNicgfSkge1xuICBzd2l0Y2ggKG5hbWUpIHtcbiAgICBjYXNlICdmb29kJzpcbiAgICAgIC8vIEZvcmsgYW5kIEtuaWZlXG4gICAgICByZXR1cm4gKFxuICAgICAgICA8c3ZnXG4gICAgICAgICAgY2xhc3NOYW1lPXtjbGFzc05hbWV9XG4gICAgICAgICAgdmlld0JveD1cIjAgMCAyNCAyNFwiXG4gICAgICAgICAgZmlsbD1cIm5vbmVcIlxuICAgICAgICAgIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiXG4gICAgICAgICAgc3Ryb2tlV2lkdGg9XCIyXCJcbiAgICAgICAgICBzdHJva2VMaW5lY2FwPVwicm91bmRcIlxuICAgICAgICAgIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIlxuICAgICAgICA+XG4gICAgICAgICAgPHBhdGggZD1cIk03IDJ2OGEyIDIgMCAwIDAgMiAyaDBhMiAyIDAgMCAwIDItMlYyXCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTkgMTJ2MTBcIiAvPlxuICAgICAgICAgIDxwYXRoIGQ9XCJNMTcgMnYyMFwiIC8+XG4gICAgICAgICAgPHBhdGggZD1cIk0xNyAyYTMgMyAwIDAgMC0zIDN2NGEzIDMgMCAwIDAgMyAzXCIgLz5cbiAgICAgICAgPC9zdmc+XG4gICAgICApO1xuXG4gICAgY2FzZSAnY2xvdGhpbmcnOlxuICAgICAgLy8gVC1TaGlydFxuICAgICAgcmV0dXJuIChcbiAgICAgICAgPHN2Z1xuICAgICAgICAgIGNsYXNzTmFtZT17Y2xhc3NOYW1lfVxuICAgICAgICAgIHZpZXdCb3g9XCIwIDAgMjQgMjRcIlxuICAgICAgICAgIGZpbGw9XCJub25lXCJcbiAgICAgICAgICBzdHJva2U9XCJjdXJyZW50Q29sb3JcIlxuICAgICAgICAgIHN0cm9rZVdpZHRoPVwiMlwiXG4gICAgICAgICAgc3Ryb2tlTGluZWNhcD1cInJvdW5kXCJcbiAgICAgICAgICBzdHJva2VMaW5lam9pbj1cInJvdW5kXCJcbiAgICAgICAgPlxuICAgICAgICAgIDxwYXRoIGQ9XCJNMjAuMzggMy40NiAxNiAyYTQgNCAwIDAgMS04IDBMMy42MiAzLjQ2YTIgMiAwIDAgMC0xLjM0IDIuMjNsLjU4IDMuNDdhMSAxIDAgMCAwIC45OS44NEg2djEwYTIgMiAwIDAgMCAyIDJoOGEyIDIgMCAwIDAgMi0yVjEwaDIuMTVhMSAxIDAgMCAwIC45OS0uODRsLjU4LTMuNDdhMiAyIDAgMCAwLTEuMzQtMi4yM3pcIiAvPlxuICAgICAgICA8L3N2Zz5cbiAgICAgICk7XG5cbiAgICBjYXNlICdoeWdpZW5lJzpcbiAgICAgIC8vIFNvYXAgLyBMb3Rpb24gUHVtcCBEaXNwZW5zZXIgQm90dGxlXG4gICAgICByZXR1cm4gKFxuICAgICAgICA8c3ZnXG4gICAgICAgICAgY2xhc3NOYW1lPXtjbGFzc05hbWV9XG4gICAgICAgICAgdmlld0JveD1cIjAgMCAyNCAyNFwiXG4gICAgICAgICAgZmlsbD1cIm5vbmVcIlxuICAgICAgICAgIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiXG4gICAgICAgICAgc3Ryb2tlV2lkdGg9XCIyXCJcbiAgICAgICAgICBzdHJva2VMaW5lY2FwPVwicm91bmRcIlxuICAgICAgICAgIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIlxuICAgICAgICA+XG4gICAgICAgICAgPHBhdGggZD1cIk0xMCAyaDRcIiAvPlxuICAgICAgICAgIDxwYXRoIGQ9XCJNMTIgMnY0XCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTggNmg4XCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTkgNnYyXCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTE1IDZ2MlwiIC8+XG4gICAgICAgICAgPHJlY3QgeD1cIjZcIiB5PVwiOFwiIHdpZHRoPVwiMTJcIiBoZWlnaHQ9XCIxM1wiIHJ4PVwiM1wiIC8+XG4gICAgICAgICAgPHBhdGggZD1cIk0xMiAxMnY0XCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTEwIDE0aDRcIiAvPlxuICAgICAgICA8L3N2Zz5cbiAgICAgICk7XG5cbiAgICBjYXNlICdjaGlsZHJlbic6XG4gICAgICAvLyBUZWRkeSBCZWFyIEhlYWQgLyBCYWJ5IEljb25cbiAgICAgIHJldHVybiAoXG4gICAgICAgIDxzdmdcbiAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzTmFtZX1cbiAgICAgICAgICB2aWV3Qm94PVwiMCAwIDI0IDI0XCJcbiAgICAgICAgICBmaWxsPVwibm9uZVwiXG4gICAgICAgICAgc3Ryb2tlPVwiY3VycmVudENvbG9yXCJcbiAgICAgICAgICBzdHJva2VXaWR0aD1cIjJcIlxuICAgICAgICAgIHN0cm9rZUxpbmVjYXA9XCJyb3VuZFwiXG4gICAgICAgICAgc3Ryb2tlTGluZWpvaW49XCJyb3VuZFwiXG4gICAgICAgID5cbiAgICAgICAgICA8cGF0aCBkPVwiTTYgOGEzLjUgMy41IDAgMSAxIDMuNS0zLjVcIiAvPlxuICAgICAgICAgIDxwYXRoIGQ9XCJNMTggOGEzLjUgMy41IDAgMSAwLTMuNS0zLjVcIiAvPlxuICAgICAgICAgIDxjaXJjbGUgY3g9XCIxMlwiIGN5PVwiMTNcIiByPVwiN1wiIC8+XG4gICAgICAgICAgPGNpcmNsZSBjeD1cIjkuNVwiIGN5PVwiMTEuNVwiIHI9XCIxXCIgZmlsbD1cImN1cnJlbnRDb2xvclwiIC8+XG4gICAgICAgICAgPGNpcmNsZSBjeD1cIjE0LjVcIiBjeT1cIjExLjVcIiByPVwiMVwiIGZpbGw9XCJjdXJyZW50Q29sb3JcIiAvPlxuICAgICAgICAgIDxlbGxpcHNlIGN4PVwiMTJcIiBjeT1cIjE0LjVcIiByeD1cIjJcIiByeT1cIjEuNVwiIC8+XG4gICAgICAgIDwvc3ZnPlxuICAgICAgKTtcblxuICAgIGNhc2UgJ2VtcGxveW1lbnQnOlxuICAgICAgLy8gQnJpZWZjYXNlXG4gICAgICByZXR1cm4gKFxuICAgICAgICA8c3ZnXG4gICAgICAgICAgY2xhc3NOYW1lPXtjbGFzc05hbWV9XG4gICAgICAgICAgdmlld0JveD1cIjAgMCAyNCAyNFwiXG4gICAgICAgICAgZmlsbD1cIm5vbmVcIlxuICAgICAgICAgIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiXG4gICAgICAgICAgc3Ryb2tlV2lkdGg9XCIyXCJcbiAgICAgICAgICBzdHJva2VMaW5lY2FwPVwicm91bmRcIlxuICAgICAgICAgIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIlxuICAgICAgICA+XG4gICAgICAgICAgPHJlY3QgeD1cIjJcIiB5PVwiN1wiIHdpZHRoPVwiMjBcIiBoZWlnaHQ9XCIxNFwiIHJ4PVwiMlwiIHJ5PVwiMlwiIC8+XG4gICAgICAgICAgPHBhdGggZD1cIk0xNiA3VjVhMiAyIDAgMCAwLTItMmgtNGEyIDIgMCAwIDAtMiAydjJcIiAvPlxuICAgICAgICAgIDxsaW5lIHgxPVwiMTJcIiB5MT1cIjEyXCIgeDI9XCIxMlwiIHkyPVwiMTIuMDFcIiBzdHJva2VXaWR0aD1cIjNcIiAvPlxuICAgICAgICA8L3N2Zz5cbiAgICAgICk7XG5cbiAgICBjYXNlICdjb3Vyc2VzJzpcbiAgICAgIC8vIE9wZW4gQm9va1xuICAgICAgcmV0dXJuIChcbiAgICAgICAgPHN2Z1xuICAgICAgICAgIGNsYXNzTmFtZT17Y2xhc3NOYW1lfVxuICAgICAgICAgIHZpZXdCb3g9XCIwIDAgMjQgMjRcIlxuICAgICAgICAgIGZpbGw9XCJub25lXCJcbiAgICAgICAgICBzdHJva2U9XCJjdXJyZW50Q29sb3JcIlxuICAgICAgICAgIHN0cm9rZVdpZHRoPVwiMlwiXG4gICAgICAgICAgc3Ryb2tlTGluZWNhcD1cInJvdW5kXCJcbiAgICAgICAgICBzdHJva2VMaW5lam9pbj1cInJvdW5kXCJcbiAgICAgICAgPlxuICAgICAgICAgIDxwYXRoIGQ9XCJNMiAzaDZhNCA0IDAgMCAxIDQgNHYxNGEzIDMgMCAwIDAtMy0zSDJ6XCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTIyIDNoLTZhNCA0IDAgMCAwLTQgNHYxNGEzIDMgMCAwIDEgMy0zaDd6XCIgLz5cbiAgICAgICAgPC9zdmc+XG4gICAgICApO1xuXG4gICAgY2FzZSAnY29tbXVuaXR5JzpcbiAgICAgIC8vIDMgUGVvcGxlIC8gR3JvdXBcbiAgICAgIHJldHVybiAoXG4gICAgICAgIDxzdmdcbiAgICAgICAgICBjbGFzc05hbWU9e2NsYXNzTmFtZX1cbiAgICAgICAgICB2aWV3Qm94PVwiMCAwIDI0IDI0XCJcbiAgICAgICAgICBmaWxsPVwibm9uZVwiXG4gICAgICAgICAgc3Ryb2tlPVwiY3VycmVudENvbG9yXCJcbiAgICAgICAgICBzdHJva2VXaWR0aD1cIjJcIlxuICAgICAgICAgIHN0cm9rZUxpbmVjYXA9XCJyb3VuZFwiXG4gICAgICAgICAgc3Ryb2tlTGluZWpvaW49XCJyb3VuZFwiXG4gICAgICAgID5cbiAgICAgICAgICA8cGF0aCBkPVwiTTE2IDIxdi0yYTQgNCAwIDAgMC00LTRIOGE0IDQgMCAwIDAtNCA0djJcIiAvPlxuICAgICAgICAgIDxjaXJjbGUgY3g9XCIxMFwiIGN5PVwiN1wiIHI9XCI0XCIgLz5cbiAgICAgICAgICA8cGF0aCBkPVwiTTIyIDIxdi0yYTQgNCAwIDAgMC0zLTMuODdcIiAvPlxuICAgICAgICAgIDxwYXRoIGQ9XCJNMTYgMy4xM2E0IDQgMCAwIDEgMCA3Ljc1XCIgLz5cbiAgICAgICAgPC9zdmc+XG4gICAgICApO1xuXG4gICAgY2FzZSAnb3RoZXInOlxuICAgIGRlZmF1bHQ6XG4gICAgICAvLyBUaHJlZSBEb3RzICguLi4pXG4gICAgICByZXR1cm4gKFxuICAgICAgICA8c3ZnXG4gICAgICAgICAgY2xhc3NOYW1lPXtjbGFzc05hbWV9XG4gICAgICAgICAgdmlld0JveD1cIjAgMCAyNCAyNFwiXG4gICAgICAgICAgZmlsbD1cIm5vbmVcIlxuICAgICAgICAgIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiXG4gICAgICAgICAgc3Ryb2tlV2lkdGg9XCIyXCJcbiAgICAgICAgICBzdHJva2VMaW5lY2FwPVwicm91bmRcIlxuICAgICAgICAgIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIlxuICAgICAgICA+XG4gICAgICAgICAgPGNpcmNsZSBjeD1cIjZcIiBjeT1cIjEyXCIgcj1cIjEuNzVcIiBmaWxsPVwiY3VycmVudENvbG9yXCIgLz5cbiAgICAgICAgICA8Y2lyY2xlIGN4PVwiMTJcIiBjeT1cIjEyXCIgcj1cIjEuNzVcIiBmaWxsPVwiY3VycmVudENvbG9yXCIgLz5cbiAgICAgICAgICA8Y2lyY2xlIGN4PVwiMThcIiBjeT1cIjEyXCIgcj1cIjEuNzVcIiBmaWxsPVwiY3VycmVudENvbG9yXCIgLz5cbiAgICAgICAgPC9zdmc+XG4gICAgICApO1xuICB9XG59XG4iXSwiZmlsZSI6IkQ6L21ha2UtYS1kaWZmZXJlbmNlL21ha2UtYS1kaWZmZXJlbi9mcm9udGVuZC9zcmMvY29tcG9uZW50cy9zZWN0aW9ucy9yZXF1ZXN0LWhlbHAvUmVxdWVzdEhlbHBJY29ucy5qc3gifQ==

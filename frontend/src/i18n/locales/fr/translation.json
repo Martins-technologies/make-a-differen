@@ -31,7 +31,7 @@
     "copyright": "© {{year}} Make A Difference. Tous droits réservés.",
     "aboutMission": "Notre mission",
     "aboutApproach": "Notre approche",
-    "aboutTeam": "Notre équipe",
+    "aboutTeam": "Notre communauté",
     "programCourses": "Cours éducatifs",
     "programSupplies": "Fournitures essentielles",
     "programEmployment": "Soutien à l'emploi",
@@ -411,7 +411,7 @@
     "story": {
       "title": "Notre histoire",
       "description": "Make A Difference réunit l'éducation, l'aide concrète, le soutien à l'emploi, la participation communautaire et les dons sur une seule plateforme accessible. Nous accompagnons les femmes, les enfants, les personnes LGBTQ2S+ et les familles en les reliant aux ressources, aux possibilités et à la communauté dont ils ont besoin pour bâtir une vie plus forte, plus saine et plus inclusive partout au Canada.",
-      "imageAlt": "Une mère et sa jeune fille souriant ensemble à l'extérieur",
+      "imageAlt": "Des membres de la communauté réunis ensemble",
       "imagePlaceholder": "Espace réservé pour la photo. L'image de Notre histoire sera ajoutée ici."
     },
     "mission": {
@@ -435,26 +435,11 @@
         "community": "Communauté"
       }
     },
-    "leadership": {
-      "title": "Direction et conseil",
-      "description": "Make A Difference est guidé par une équipe et un conseil engagés à faire avancer notre mission et à créer un changement utile et durable. Nos dirigeantes et dirigeants apportent une expérience diversifiée et une même volonté de bâtir des communautés plus fortes et plus inclusives.",
-      "profilePlaceholder": "Profil de direction à venir",
-      "portraits": {
-        "one": "Portrait illustré d'une dirigeante communautaire",
-        "two": "Portrait illustré d'un dirigeant communautaire",
-        "three": "Portrait illustré d'une dirigeante communautaire"
-      }
-    },
-    "partners": {
-      "title": "Partenaires communautaires",
-      "description": "Nous sommes fiers de travailler avec des partenaires communautaires qui partagent notre engagement envers des communautés plus fortes, plus saines et plus inclusives. Ensemble, nous élargissons l'accès aux ressources, créons de nouvelles possibilités et avons un plus grand impact.",
-      "logoPlaceholder": "Espace réservé pour le logo d'un partenaire communautaire",
-      "images": {
-        "family": "Membres de la communauté réunis pour un soutien aux familles",
-        "collaboration": "Partenaires en collaboration autour d'une table",
-        "families": "Un parent et un enfant partageant une activité d'apprentissage",
-        "employment": "Personnes participant à un atelier de recherche d'emploi"
-      }
+    "community": {
+      "title": "Notre communauté",
+      "description": "Nous accompagnons les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles, ainsi que les personnes touchées par le chômage, les difficultés financières ou l'isolement social. Grâce à l'éducation, à une aide concrète et à une communauté accueillante, il devient plus facile d'apprendre, de grandir et d'appartenir.",
+      "imageAlt": "Un groupe communautaire de plusieurs générations réuni ensemble",
+      "imagePlaceholder": "Espace réservé pour la photo. L'image de la communauté sera ajoutée ici."
     },
     "reports": {
       "title": "Rapports annuels et transparence financière",
@@ -746,7 +731,8 @@
         "assistanceTypeRequired": "Veuillez sélectionner le type d'assistance demandée.",
         "languageRequired": "Veuillez sélectionner votre langue préférée.",
         "urgencyRequired": "Veuillez sélectionner le niveau d'urgence.",
-        "consentRequired": "Le consentement est requis pour vous contacter au sujet de votre demande."
+        "consentRequired": "Le consentement est requis pour vous contacter au sujet de votre demande.",
+        "sendFailed": "Nous n'avons pas pu envoyer votre demande. Veuillez réessayer dans un instant."
       }
     },
     "whatToExpect": {
@@ -1078,6 +1064,187 @@
     "cta": {
       "title": "Aidez-nous à faire une différence",
       "description": "Votre générosité aide à créer des personnes plus fortes, des familles en meilleure santé et des communautés plus rayonnantes partout au Canada."
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contactez-nous — Make A Difference",
+      "description": "Communiquez avec Make A Difference. Écrivez-nous, appelez-nous ou envoyez un message — nous serons heureux de vous entendre."
+    },
+    "hero": {
+      "title": "Contactez-nous",
+      "description": "Nous sommes là pour vous aider. Que vous ayez une question, souhaitiez en savoir plus sur nos programmes, envisagiez un partenariat ou vouliez simplement nous joindre, nous serons heureux de vous entendre.",
+      "imageAlt": "Deux personnes souriantes en rencontre avec un membre de l'équipe autour d'une table",
+      "imagePlaceholder": "Espace réservé photo — image d'introduction Contactez-nous"
+    },
+    "getInTouch": {
+      "title": "Nous joindre",
+      "description": "Voici les différentes façons de nous joindre. Nous avons hâte d'entrer en contact avec vous.",
+      "cards": {
+        "email": {
+          "title": "Courriel",
+          "description": "Pour les questions générales, veuillez communiquer avec notre équipe.",
+          "email": "info@makeadifference.ca"
+        },
+        "phone": {
+          "title": "Téléphone",
+          "description": "Appelez-nous pendant nos heures d'ouverture.",
+          "phone": "(416) 123-4567",
+          "note": "(numéro d'exemple)"
+        },
+        "office": {
+          "title": "Bureau",
+          "description": "L'emplacement de notre bureau est communiqué sur demande ou, le cas échéant.",
+          "extra": "Veuillez nous contacter pour plus d'information."
+        },
+        "hours": {
+          "title": "Heures d'ouverture",
+          "description": "Notre équipe est généralement disponible du lundi au vendredi.",
+          "hours": "9 h à 17 h HE",
+          "note": "Les heures peuvent varier. Veuillez nous contacter pour connaître la disponibilité actuelle."
+        },
+        "accessibility": {
+          "title": "Accessibilité",
+          "description": "Nous nous engageons à rendre nos programmes, services et communications accessibles.",
+          "extra": "Dites-nous si vous avez besoin de mesures d'adaptation; nous ferons de notre mieux pour répondre à vos besoins."
+        },
+        "media": {
+          "title": "Médias et partenariats",
+          "description": "Pour les demandes médiatiques, les entrevues ou les partenariats potentiels, veuillez nous écrire à :",
+          "email": "media@makeadifference.ca"
+        }
+      }
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Utilisez le formulaire ci-dessous pour une demande générale. Nous vous répondrons dès que possible.",
+      "imageAlt": "Membre de l'équipe en conversation avec une visiteuse devant un ordinateur portable",
+      "imagePlaceholder": "Espace réservé photo — image du formulaire de message",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi...",
+      "successTitle": "Message envoyé",
+      "successMessage": "Merci de nous avoir écrits. Nous vous répondrons dès que possible.",
+      "sendAnother": "Envoyer un autre message",
+      "subjects": {
+        "general": "Demande générale",
+        "programs": "Programmes et services",
+        "volunteer": "Bénévolat",
+        "partnership": "Partenariat",
+        "media": "Demande médiatique",
+        "donation": "Don",
+        "other": "Autre"
+      },
+      "fields": {
+        "fullName": {
+          "label": "Nom complet",
+          "placeholder": "Votre nom"
+        },
+        "email": {
+          "label": "Adresse courriel",
+          "placeholder": "vous@exemple.com"
+        },
+        "phone": {
+          "label": "Numéro de téléphone (facultatif)",
+          "placeholder": "(XXX) XXX-XXXX"
+        },
+        "subject": {
+          "label": "Sujet / Thème",
+          "placeholder": "Veuillez choisir"
+        },
+        "message": {
+          "label": "Votre message",
+          "placeholder": "Dites-nous comment nous pouvons vous aider..."
+        }
+      },
+      "errors": {
+        "fullNameRequired": "Veuillez entrer votre nom complet.",
+        "emailRequired": "Veuillez entrer votre adresse courriel.",
+        "emailInvalid": "Veuillez entrer une adresse courriel valide.",
+        "subjectRequired": "Veuillez choisir un sujet.",
+        "messageRequired": "Veuillez entrer votre message.",
+        "sendFailed": "Nous n'avons pas pu envoyer votre message. Veuillez réessayer dans un instant."
+      }
+    },
+    "connect": {
+      "title": "Restez en contact",
+      "description": "Restez à jour et découvrez comment nous faisons une différence dans les communautés partout au Canada."
+    }
+  },
+  "resourcesPage": {
+    "meta": {
+      "title": "Ressources — Make A Difference",
+      "description": "Trouvez des articles, des guides et de l’information communautaire pour vous soutenir, vous et votre famille."
+    },
+    "hero": {
+      "title": "Ressources",
+      "description": "Trouvez des articles, des guides et de l’information communautaire pour vous soutenir, vous et votre famille. Nos ressources visent à partager des connaissances, à développer des compétences et à vous relier à des services utiles dans votre communauté.",
+      "imageAlt": "Des membres de la communauté discutent autour d’une table",
+      "imagePlaceholder": "Espace réservé pour la photo. L’image d’en-tête des ressources sera ajoutée ici."
+    },
+    "library": {
+      "title": "Bibliothèque de ressources",
+      "description": "Explorez nos sujets ci-dessous. Nous ajouterons bientôt des articles éducatifs, des guides et des liens utiles.",
+      "comingSoon": "Bientôt disponible",
+      "note": "Nos ressources comprendront des contenus créés par Make A Difference ainsi que de l’information et des liens fiables provenant de partenaires communautaires. Le contenu sera ajouté bientôt."
+    },
+    "topics": {
+      "mentalHealth": {
+        "title": "Santé mentale",
+        "description": "Information et outils pour soutenir votre bien-être mental."
+      },
+      "parenting": {
+        "title": "Parentalité",
+        "description": "Conseils et ressources pour les parents et les aidants à chaque étape."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "description": "Information sur une vie saine et des conseils pratiques pour les familles."
+      },
+      "employment": {
+        "title": "Emploi",
+        "description": "Ressources pour la préparation à l’emploi, le développement des compétences et les débouchés."
+      },
+      "lgbtq": {
+        "title": "Inclusion LGBTQ2S+",
+        "description": "Information et ressources de soutien pour les personnes 2ELGBTQIA+, les familles et les alliés."
+      },
+      "women": {
+        "title": "Soutien aux femmes",
+        "description": "Ressources et information pour soutenir les femmes et les personnes de diverses identités de genre."
+      },
+      "children": {
+        "title": "Enfants et jeunes",
+        "description": "Information utile pour les enfants, les jeunes et leurs familles."
+      },
+      "financial": {
+        "title": "Littératie financière",
+        "description": "Ressources pour la gestion de l’argent et le bien-être financier."
+      },
+      "housing": {
+        "title": "Logement et services communautaires",
+        "description": "Information sur le soutien au logement et les services communautaires."
+      }
+    },
+    "support": {
+      "title": "Besoin de soutien maintenant?",
+      "description": "Si vous cherchez un soutien immédiat, nous sommes là pour vous aider. Vous pouvez explorer nos programmes et services, demander de l’aide ou communiquer avec notre équipe.",
+      "cards": {
+        "requestHelp": {
+          "title": "Demander de l’aide",
+          "description": "Dites-nous comment nous pouvons vous soutenir.",
+          "cta": "Obtenir du soutien"
+        },
+        "programs": {
+          "title": "Programmes et services",
+          "description": "Explorez nos programmes conçus pour les personnes et les familles.",
+          "cta": "En savoir plus"
+        },
+        "contact": {
+          "title": "Nous joindre",
+          "description": "Nous sommes là pour répondre à vos questions.",
+          "cta": "Entrer en contact"
+        }
+      }
     }
   },
   "pages": {
