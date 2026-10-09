@@ -1,7 +1,7 @@
 /** Approved WEBP assets served from public/updated. */
 
 export const updatedImages = {
-  ourStory: '/updated/01_Our_Story.webp',
+  ourStory: '/01_Our_Story.webp',
   courses: {
     cooking: '/updated/02_Cooking_and_Nutrition.webp',
     mentalHealth: '/updated/03_Mental_Health_and_Self_Care.webp',
@@ -18,7 +18,7 @@ export const updatedImages = {
     hero: '/updated/12_Employment_Support_Hero.webp',
     appointment: '/updated/13_Book_Career_Support_Appointment.webp',
     opportunities: '/updated/14_Job_Opportunities.webp',
-    workshops: '/updated/15_Job_Search_Workshops.webp',
+    workshops: '/15_Job_Search_Workshops.webp',
   },
   getInvolved: {
     giveResources: '/updated/16_Get_Involved_Give_Resources.webp',

@@ -1,9 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { AboutHero } from '@/components/sections/about/AboutHero';
-import { CommunityPartnersSection } from '@/components/sections/about/CommunityPartnersSection';
-import { LeadershipSection } from '@/components/sections/about/LeadershipSection';
 import { MissionVisionSection } from '@/components/sections/about/MissionVisionSection';
+import { OurCommunitySection } from '@/components/sections/about/OurCommunitySection';
 import { OurStorySection } from '@/components/sections/about/OurStorySection';
 import { TransparencySection } from '@/components/sections/about/TransparencySection';
 import { ValuesSection } from '@/components/sections/about/ValuesSection';
@@ -21,8 +20,7 @@ export default function AboutPage() {
       <OurStorySection />
       <MissionVisionSection />
       <ValuesSection />
-      <LeadershipSection />
-      <CommunityPartnersSection />
+      <OurCommunitySection />
       <TransparencySection />
     </>
   );

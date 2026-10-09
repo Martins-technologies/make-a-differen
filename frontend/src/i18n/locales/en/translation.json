@@ -31,7 +31,7 @@
     "copyright": "© {{year}} Make A Difference. All rights reserved.",
     "aboutMission": "Our Mission",
     "aboutApproach": "Our Approach",
-    "aboutTeam": "Our Team",
+    "aboutTeam": "Our Community",
     "programCourses": "Educational Courses",
     "programSupplies": "Essential Supplies",
     "programEmployment": "Employment Support",
@@ -411,7 +411,7 @@
     "story": {
       "title": "Our Story",
       "description": "Make A Difference brings education, practical assistance, employment support, community participation, and donations together in one accessible platform. We support women, children, LGBTQ2S+ individuals, and families by connecting them to the resources, opportunities, and community they need to build stronger, healthier, and more inclusive lives across Canada.",
-      "imageAlt": "A mother and her young daughter smiling together outdoors",
+      "imageAlt": "Community members gathered together",
       "imagePlaceholder": "Photo placeholder. The Our Story image will be added here."
     },
     "mission": {
@@ -435,26 +435,11 @@
         "community": "Community"
       }
     },
-    "leadership": {
-      "title": "Leadership and Board",
-      "description": "Make A Difference is guided by a dedicated team and board who are committed to advancing our mission and creating meaningful, lasting change. Our leaders bring diverse experience and a shared passion for building stronger, more inclusive communities.",
-      "profilePlaceholder": "Leadership profile coming soon",
-      "portraits": {
-        "one": "Illustrated portrait of a community leader",
-        "two": "Illustrated portrait of a community leader",
-        "three": "Illustrated portrait of a community leader"
-      }
-    },
-    "partners": {
-      "title": "Community Partners",
-      "description": "We are proud to work alongside community partners who share our commitment to stronger, healthier, and more inclusive communities. Together, we expand access to resources, create new opportunities, and make a greater impact.",
-      "logoPlaceholder": "Community partner logo placeholder",
-      "images": {
-        "family": "Community members meeting for family support",
-        "collaboration": "Partners collaborating around a table",
-        "families": "A parent and child sharing a learning activity",
-        "employment": "People taking part in a job-search workshop"
-      }
+    "community": {
+      "title": "Our Community",
+      "description": "We support women, children and youth, LGBTQ2S+ individuals, parents and families, and people facing unemployment, financial hardship, or social isolation. Through education, practical help, and a welcoming community, we make it easier to learn, grow, and belong.",
+      "imageAlt": "A multigenerational community group gathered together",
+      "imagePlaceholder": "Photo placeholder. The community image will be added here."
     },
     "reports": {
       "title": "Annual Reports & Financial Transparency",
@@ -746,7 +731,8 @@
         "assistanceTypeRequired": "Please select the type of assistance requested.",
         "languageRequired": "Please select your preferred language.",
         "urgencyRequired": "Please select the urgency level.",
-        "consentRequired": "Consent is required to be contacted regarding your request."
+        "consentRequired": "Consent is required to be contacted regarding your request.",
+        "sendFailed": "We couldn't send your request. Please try again in a moment."
       }
     },
     "whatToExpect": {
@@ -1027,7 +1013,7 @@
         },
         "clothing": {
           "title": "Clothing",
-          "description": "New clothing for all ages and seasons (especially for children and youth)."
+          "description": "New clothing for all ages and seasons (specially for children and youth)."
         },
         "hygiene": {
           "title": "Hygiene products",
@@ -1078,6 +1064,187 @@
     "cta": {
       "title": "Help Us Make a Difference",
       "description": "Your generosity helps create stronger people, healthier families and brighter communities across Canada."
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact Us — Make A Difference",
+      "description": "Get in touch with Make A Difference. Email, call, or send a message — we'd love to hear from you."
+    },
+    "hero": {
+      "title": "Contact Us",
+      "description": "We're here to help. Whether you have a question, want to learn more about our programs, are interested in partnering, or simply want to get in touch, we'd love to hear from you.",
+      "imageAlt": "Two people smiling while meeting with a staff member at a community office table",
+      "imagePlaceholder": "Photo placeholder — Contact Us hero image"
+    },
+    "getInTouch": {
+      "title": "Get in Touch",
+      "description": "Here are the different ways you can reach us. We look forward to connecting with you.",
+      "cards": {
+        "email": {
+          "title": "Email",
+          "description": "For general questions, please reach out to our team.",
+          "email": "info@makeadifference.ca"
+        },
+        "phone": {
+          "title": "Telephone",
+          "description": "Give us a call during our hours of operation.",
+          "phone": "(416) 123-4567",
+          "note": "(example number)"
+        },
+        "office": {
+          "title": "Office Location",
+          "description": "Our office location is shared on request or if applicable.",
+          "extra": "Please contact us for more information."
+        },
+        "hours": {
+          "title": "Hours of Operation",
+          "description": "Our team is typically available Monday to Friday.",
+          "hours": "9:00 AM – 5:00 PM ET",
+          "note": "Hours may vary. Please contact us for current availability."
+        },
+        "accessibility": {
+          "title": "Accessibility Information",
+          "description": "We are committed to making our programs, services and communications accessible.",
+          "extra": "Please let us know if you require any accommodations, and we will do our best to support your needs."
+        },
+        "media": {
+          "title": "Media & Partnership Inquiries",
+          "description": "For media requests, interview opportunities or potential partnerships, please contact us at:",
+          "email": "media@makeadifference.ca"
+        }
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "description": "Use the form below to send us a general inquiry. We'll get back to you as soon as possible.",
+      "imageAlt": "Community staff member talking with a visitor at a laptop",
+      "imagePlaceholder": "Photo placeholder — Send Us a Message image",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "successTitle": "Message sent",
+      "successMessage": "Thank you for reaching out. We'll get back to you as soon as possible.",
+      "sendAnother": "Send another message",
+      "subjects": {
+        "general": "General inquiry",
+        "programs": "Programs & services",
+        "volunteer": "Volunteering",
+        "partnership": "Partnership",
+        "media": "Media request",
+        "donation": "Donation",
+        "other": "Other"
+      },
+      "fields": {
+        "fullName": {
+          "label": "Full Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "you@example.com"
+        },
+        "phone": {
+          "label": "Phone Number (Optional)",
+          "placeholder": "(XXX) XXX-XXXX"
+        },
+        "subject": {
+          "label": "Subject / Topic",
+          "placeholder": "Please select"
+        },
+        "message": {
+          "label": "Your Message",
+          "placeholder": "Tell us how we can help..."
+        }
+      },
+      "errors": {
+        "fullNameRequired": "Please enter your full name.",
+        "emailRequired": "Please enter your email address.",
+        "emailInvalid": "Please enter a valid email address.",
+        "subjectRequired": "Please select a subject.",
+        "messageRequired": "Please enter your message.",
+        "sendFailed": "We couldn't send your message. Please try again in a moment."
+      }
+    },
+    "connect": {
+      "title": "Connect With Us",
+      "description": "Stay up to date and see how we're making a difference in communities across Canada."
+    }
+  },
+  "resourcesPage": {
+    "meta": {
+      "title": "Resources — Make A Difference",
+      "description": "Find helpful articles, guides and community information to support you and your family."
+    },
+    "hero": {
+      "title": "Resources",
+      "description": "Find helpful articles, guides and community information to support you and your family. Our resources are designed to share knowledge, build skills and connect you with helpful services in your community.",
+      "imageAlt": "Community members talking together around a table",
+      "imagePlaceholder": "Photo placeholder. The Resources hero image will be added here."
+    },
+    "library": {
+      "title": "Resource Library",
+      "description": "Explore our resource topics below. We'll be adding educational articles, guides and helpful links soon.",
+      "comingSoon": "Coming Soon",
+      "note": "Our resources will include materials created by Make A Difference as well as trusted information and links from external community providers. Content will be added soon."
+    },
+    "topics": {
+      "mentalHealth": {
+        "title": "Mental Health",
+        "description": "Information and tools to support your mental well-being."
+      },
+      "parenting": {
+        "title": "Parenting",
+        "description": "Tips and resources for parents and caregivers at every stage."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "description": "Healthy living information and practical guidance for families."
+      },
+      "employment": {
+        "title": "Employment",
+        "description": "Resources to help with job readiness, skills development and career opportunities."
+      },
+      "lgbtq": {
+        "title": "LGBTQ2S+ Inclusion",
+        "description": "Supportive information and resources for 2SLGBTQIA+ individuals, families and allies."
+      },
+      "women": {
+        "title": "Women's Support",
+        "description": "Resources and information to support women and gender-diverse individuals."
+      },
+      "children": {
+        "title": "Children and Youth",
+        "description": "Helpful information for children, youth and their families."
+      },
+      "financial": {
+        "title": "Financial Literacy",
+        "description": "Resources to support money management and financial well-being."
+      },
+      "housing": {
+        "title": "Housing and Community Services",
+        "description": "Information about housing support and community services."
+      }
+    },
+    "support": {
+      "title": "Looking for support now?",
+      "description": "If you're looking for immediate support, we're here to help. You can explore our programs and services, request help, or get in touch with our team.",
+      "cards": {
+        "requestHelp": {
+          "title": "Request Help",
+          "description": "Let us know how we can support you.",
+          "cta": "Get Support"
+        },
+        "programs": {
+          "title": "Programs & Services",
+          "description": "Explore our programs designed for individuals and families.",
+          "cta": "Learn More"
+        },
+        "contact": {
+          "title": "Contact Us",
+          "description": "We're here to answer your questions.",
+          "cta": "Get in Touch"
+        }
+      }
     }
   },
   "pages": {

@@ -3,8 +3,8 @@ import { Image as ImageIcon } from 'lucide-react';
 import { cn } from '@/utils/cn';
 
 /**
- * Photo on one side that dissolves into the page background through the center.
- * Falls back to an icon placeholder until the asset is added.
+ * Full photo, original color. A short cream dissolve sits only on the edge
+ * facing the text. Falls back to an icon placeholder until the asset is added.
  */
 export function MergedMedia({
   src,
@@ -18,10 +18,6 @@ export function MergedMedia({
 }) {
   const [failed, setFailed] = useState(false);
   const missing = !src || failed;
-  const fadeClass =
-    edge === 'top'
-      ? 'bg-gradient-to-b from-bg via-bg/40 via-[12%] to-transparent to-[36%]'
-      : 'bg-gradient-to-r from-bg from-0% via-bg/80 via-[18%] to-transparent to-[46%]';
 
   return (
     <div className={cn('absolute inset-0', className)}>
@@ -30,24 +26,10 @@ export function MergedMedia({
           <div
             className={cn(
               'absolute bg-primary-100',
-              edge === 'top' ? 'inset-0 rounded-2xl' : 'inset-y-6 right-0 left-0 rounded-l-3xl',
+              edge === 'top' ? 'inset-0 rounded-2xl' : 'inset-y-0 right-0 left-0',
             )}
           />
-          <div
-            className={cn(
-              'absolute from-bg to-transparent',
-              edge === 'top'
-                ? 'inset-x-0 top-0 h-16 bg-gradient-to-b'
-                : 'inset-y-6 left-0 w-[38%] bg-gradient-to-r',
-            )}
-            aria-hidden="true"
-          />
-          <div
-            className={cn(
-              'absolute flex items-center justify-center',
-              edge === 'top' ? 'inset-0' : 'inset-y-6 right-0 left-[22%]',
-            )}
-          >
+          <div className="absolute inset-0 flex items-center justify-center">
             <ImageIcon className="h-16 w-16 text-primary-400" aria-hidden />
           </div>
         </div>
@@ -55,13 +37,27 @@ export function MergedMedia({
         <img
           src={src}
           alt={alt}
-          className={cn('absolute inset-0 h-full w-full object-cover object-[center_35%]', imgClassName)}
+          className={cn(
+            'absolute inset-0 h-full w-full object-contain',
+            edge === 'top' ? 'object-center' : 'object-right',
+            imgClassName,
+          )}
           loading={priority ? 'eager' : 'lazy'}
           fetchPriority={priority ? 'high' : 'auto'}
           onError={() => setFailed(true)}
         />
       )}
-      {missing || !fade ? null : <div className={cn('absolute inset-0', fadeClass)} aria-hidden="true" />}
+      {missing || !fade ? null : (
+        <div
+          className={cn(
+            'pointer-events-none absolute from-bg to-transparent',
+            edge === 'top'
+              ? 'inset-x-0 top-0 h-8 bg-gradient-to-b'
+              : 'inset-y-0 left-0 w-[10%] bg-gradient-to-r',
+          )}
+          aria-hidden="true"
+        />
+      )}
     </div>
   );
 }

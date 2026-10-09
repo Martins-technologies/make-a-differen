@@ -18,14 +18,8 @@ export function DonateHero() {
           alt={t('donatePage.hero.imageAlt')}
           placeholderLabel={t('donatePage.hero.imageAlt')}
           priority
-          fade={false}
-          imgClassName="object-[78%_center]"
         />
       </div>
-      <div
-        className="pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[58%] bg-gradient-to-r from-bg from-0% via-bg via-[70%] to-transparent to-[100%] lg:block"
-        aria-hidden="true"
-      />
 
       <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-12 lg:gap-8">
         <div className="space-y-6 sm:space-y-7 lg:col-span-7 lg:max-w-2xl">
@@ -95,7 +89,6 @@ export function DonateHero() {
             alt={t('donatePage.hero.imageAlt')}
             placeholderLabel={t('donatePage.hero.imageAlt')}
             edge="top"
-            fade={false}
           />
         </div>
       </Container>

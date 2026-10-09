@@ -17,7 +17,7 @@ export function RequestHelpHero() {
       {/* Desktop Background Image with Gradient Dissolve matching Homepage Hero */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
         <MergedMedia
-          src="/images/request-help-hero.jpg"
+          src="/requesthelphero.png"
           alt={t('requestHelpPage.hero.imageAlt')}
           placeholderLabel="Photo placeholder — Request Help hero image"
           priority
@@ -106,7 +106,7 @@ export function RequestHelpHero() {
         {/* Mobile Media View matching Homepage Hero */}
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
           <MergedMedia
-            src="/images/request-help-hero.jpg"
+            src="/requesthelphero.png"
             alt={t('requestHelpPage.hero.imageAlt')}
             placeholderLabel="Photo placeholder — Request Help hero image"
             edge="top"

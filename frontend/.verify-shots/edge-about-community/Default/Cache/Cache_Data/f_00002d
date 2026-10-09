@@ -1,0 +1,275 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/sections/donate/DonateHero.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=0ad49213"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import { useTranslation } from "/node_modules/.vite/deps/react-i18next.js?v=0ad49213";
+import { Container } from "/src/components/ui/Container.jsx";
+import { Section } from "/src/components/ui/Section.jsx";
+import { buttonVariants } from "/src/components/ui/Button.jsx";
+import { MergedMedia } from "/src/components/ui/MergedMedia.jsx";
+import { cn } from "/src/utils/cn.js";
+import { HomeIcon } from "/src/components/sections/home/homeIcons.jsx";
+import { donateImages } from "/src/data/donateImages.js";
+export function DonateHero() {
+  _s();
+  const { t } = useTranslation();
+  return /* @__PURE__ */ jsxDEV(Section, { className: "relative overflow-hidden py-8 md:py-12 lg:min-h-[32rem] lg:py-16", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block", children: /* @__PURE__ */ jsxDEV(
+      MergedMedia,
+      {
+        src: donateImages.hero,
+        alt: t("donatePage.hero.imageAlt"),
+        placeholderLabel: t("donatePage.hero.imageAlt"),
+        priority: true,
+        fade: false,
+        imgClassName: "object-[78%_center]"
+      },
+      void 0,
+      false,
+      {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+        lineNumber: 35,
+        columnNumber: 9
+      },
+      this
+    ) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+      lineNumber: 34,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "div",
+      {
+        className: "pointer-events-none absolute inset-y-0 left-0 z-[1] hidden w-[58%] bg-gradient-to-r from-bg from-0% via-bg via-[70%] to-transparent to-[100%] lg:block",
+        "aria-hidden": "true"
+      },
+      void 0,
+      false,
+      {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+        lineNumber: 44,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV(Container, { className: "relative z-10 grid items-center gap-10 lg:grid-cols-12 lg:gap-8", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "space-y-6 sm:space-y-7 lg:col-span-7 lg:max-w-2xl", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "space-y-4", children: [
+          /* @__PURE__ */ jsxDEV("h1", { className: "font-heading text-3xl font-bold leading-[1.12] tracking-tight text-primary sm:text-4xl md:text-5xl lg:text-[2.65rem] xl:text-[3.15rem]", children: t("donatePage.hero.title") }, void 0, false, {
+            fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+            lineNumber: 52,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { className: "text-body-lg max-w-xl leading-relaxed text-primary/80", children: t("donatePage.hero.description") }, void 0, false, {
+            fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+            lineNumber: 55,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, true, {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+          lineNumber: 51,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap", children: [
+          /* @__PURE__ */ jsxDEV(
+            "a",
+            {
+              href: "#ways-to-give",
+              className: cn(
+                buttonVariants({ variant: "primary", size: "lg" }),
+                "shrink-0 gap-2 rounded-lg bg-primary font-medium text-primary-contrast shadow-sm hover:bg-primary-700"
+              ),
+              children: [
+                /* @__PURE__ */ jsxDEV("span", { children: t("donatePage.hero.ctaDonate") }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 66,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV(HomeIcon, { name: "arrowRight", className: "h-4 w-4 stroke-[2.5]" }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 67,
+                  columnNumber: 15
+                }, this)
+              ]
+            },
+            void 0,
+            true,
+            {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+              lineNumber: 59,
+              columnNumber: 13
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV(
+            "a",
+            {
+              href: "#donate-supplies",
+              className: cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "shrink-0 rounded-lg border-2 border-primary bg-transparent font-medium text-primary hover:bg-primary/5"
+              ),
+              children: t("donatePage.hero.ctaSupplies")
+            },
+            void 0,
+            false,
+            {
+              fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+              lineNumber: 69,
+              columnNumber: 13
+            },
+            this
+          )
+        ] }, void 0, true, {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+          lineNumber: 58,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            className: "flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border/80 pt-6 sm:flex-nowrap sm:gap-x-5",
+            "aria-label": t("home.hero.trust.label"),
+            children: [
+              /* @__PURE__ */ jsxDEV("div", { className: "flex shrink-0 items-center gap-2.5", children: [
+                /* @__PURE__ */ jsxDEV(HomeIcon, { name: "mapleLeaf", className: "h-5 w-5 shrink-0 text-accent" }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 85,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]", children: t("home.hero.trust.strongerPeople") }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 86,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                lineNumber: 84,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "hidden h-4 w-px shrink-0 bg-border/90 sm:block", "aria-hidden": "true" }, void 0, false, {
+                fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                lineNumber: 91,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "flex shrink-0 items-center gap-2.5", children: [
+                /* @__PURE__ */ jsxDEV(HomeIcon, { name: "users", className: "h-5 w-5 shrink-0 text-secondary" }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 94,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]", children: t("home.hero.trust.healthierFamilies") }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 95,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                lineNumber: 93,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "hidden h-4 w-px shrink-0 bg-border/90 sm:block", "aria-hidden": "true" }, void 0, false, {
+                fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                lineNumber: 100,
+                columnNumber: 13
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { className: "flex shrink-0 items-center gap-2.5", children: [
+                /* @__PURE__ */ jsxDEV(HomeIcon, { name: "leaf", className: "h-5 w-5 shrink-0 text-secondary-400" }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 103,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ jsxDEV("span", { className: "whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]", children: t("home.hero.trust.brighterCommunities") }, void 0, false, {
+                  fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                  lineNumber: 104,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, true, {
+                fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+                lineNumber: 102,
+                columnNumber: 13
+              }, this)
+            ]
+          },
+          void 0,
+          true,
+          {
+            fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+            lineNumber: 80,
+            columnNumber: 11
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+        lineNumber: 50,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden", children: /* @__PURE__ */ jsxDEV(
+        MergedMedia,
+        {
+          src: donateImages.hero,
+          alt: t("donatePage.hero.imageAlt"),
+          placeholderLabel: t("donatePage.hero.imageAlt"),
+          edge: "top",
+          fade: false
+        },
+        void 0,
+        false,
+        {
+          fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+          lineNumber: 112,
+          columnNumber: 11
+        },
+        this
+      ) }, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+        lineNumber: 111,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+      lineNumber: 49,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx",
+    lineNumber: 33,
+    columnNumber: 5
+  }, this);
+}
+_s(DonateHero, "zlIdU9EjM2llFt74AbE2KsUJXyM=", false, function() {
+  return [useTranslation];
+});
+_c = DonateHero;
+var _c;
+$RefreshReg$(_c, "DonateHero");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/make-a-difference/make-a-differen/frontend/src/components/sections/donate/DonateHero.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE1BS2MsS0FOaEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQVFBO0FBQUEsU0F0RUY7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQXVFQTtBQUFBLE9BdkZGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0F3RkE7QUFFSjtBQUFDRCxHQTlGZUQsWUFBVTtBQUFBLFVBQ1ZSLGNBQWM7QUFBQTtBQUFBLEtBRGRRO0FBQVUsSUFBQU07QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsidXNlVHJhbnNsYXRpb24iLCJDb250YWluZXIiLCJTZWN0aW9uIiwiYnV0dG9uVmFyaWFudHMiLCJNZXJnZWRNZWRpYSIsImNuIiwiSG9tZUljb24iLCJkb25hdGVJbWFnZXMiLCJEb25hdGVIZXJvIiwiX3MiLCJ0IiwiaGVybyIsInZhcmlhbnQiLCJzaXplIiwiX2MiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiRG9uYXRlSGVyby5qc3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlVHJhbnNsYXRpb24gfSBmcm9tICdyZWFjdC1pMThuZXh0JztcclxuaW1wb3J0IHsgQ29udGFpbmVyIH0gZnJvbSAnQC9jb21wb25lbnRzL3VpL0NvbnRhaW5lcic7XHJcbmltcG9ydCB7IFNlY3Rpb24gfSBmcm9tICdAL2NvbXBvbmVudHMvdWkvU2VjdGlvbic7XHJcbmltcG9ydCB7IGJ1dHRvblZhcmlhbnRzIH0gZnJvbSAnQC9jb21wb25lbnRzL3VpL0J1dHRvbic7XHJcbmltcG9ydCB7IE1lcmdlZE1lZGlhIH0gZnJvbSAnQC9jb21wb25lbnRzL3VpL01lcmdlZE1lZGlhJztcclxuaW1wb3J0IHsgY24gfSBmcm9tICdAL3V0aWxzL2NuJztcclxuaW1wb3J0IHsgSG9tZUljb24gfSBmcm9tICdAL2NvbXBvbmVudHMvc2VjdGlvbnMvaG9tZS9ob21lSWNvbnMnO1xyXG5pbXBvcnQgeyBkb25hdGVJbWFnZXMgfSBmcm9tICdAL2RhdGEvZG9uYXRlSW1hZ2VzJztcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBEb25hdGVIZXJvKCkge1xyXG4gIGNvbnN0IHsgdCB9ID0gdXNlVHJhbnNsYXRpb24oKTtcclxuXHJcbiAgcmV0dXJuIChcclxuICAgIDxTZWN0aW9uIGNsYXNzTmFtZT1cInJlbGF0aXZlIG92ZXJmbG93LWhpZGRlbiBweS04IG1kOnB5LTEyIGxnOm1pbi1oLVszMnJlbV0gbGc6cHktMTZcIj5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb2ludGVyLWV2ZW50cy1ub25lIGFic29sdXRlIGluc2V0LXktMCByaWdodC0wIGhpZGRlbiB3LVs1OCVdIGxnOmJsb2NrXCI+XHJcbiAgICAgICAgPE1lcmdlZE1lZGlhXHJcbiAgICAgICAgICBzcmM9e2RvbmF0ZUltYWdlcy5oZXJvfVxyXG4gICAgICAgICAgYWx0PXt0KCdkb25hdGVQYWdlLmhlcm8uaW1hZ2VBbHQnKX1cclxuICAgICAgICAgIHBsYWNlaG9sZGVyTGFiZWw9e3QoJ2RvbmF0ZVBhZ2UuaGVyby5pbWFnZUFsdCcpfVxyXG4gICAgICAgICAgcHJpb3JpdHlcclxuICAgICAgICAgIGZhZGU9e2ZhbHNlfVxyXG4gICAgICAgICAgaW1nQ2xhc3NOYW1lPVwib2JqZWN0LVs3OCVfY2VudGVyXVwiXHJcbiAgICAgICAgLz5cclxuICAgICAgPC9kaXY+XHJcbiAgICAgIDxkaXZcclxuICAgICAgICBjbGFzc05hbWU9XCJwb2ludGVyLWV2ZW50cy1ub25lIGFic29sdXRlIGluc2V0LXktMCBsZWZ0LTAgei1bMV0gaGlkZGVuIHctWzU4JV0gYmctZ3JhZGllbnQtdG8tciBmcm9tLWJnIGZyb20tMCUgdmlhLWJnIHZpYS1bNzAlXSB0by10cmFuc3BhcmVudCB0by1bMTAwJV0gbGc6YmxvY2tcIlxyXG4gICAgICAgIGFyaWEtaGlkZGVuPVwidHJ1ZVwiXHJcbiAgICAgIC8+XHJcblxyXG4gICAgICA8Q29udGFpbmVyIGNsYXNzTmFtZT1cInJlbGF0aXZlIHotMTAgZ3JpZCBpdGVtcy1jZW50ZXIgZ2FwLTEwIGxnOmdyaWQtY29scy0xMiBsZzpnYXAtOFwiPlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3BhY2UteS02IHNtOnNwYWNlLXktNyBsZzpjb2wtc3Bhbi03IGxnOm1heC13LTJ4bFwiPlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTRcIj5cclxuICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT1cImZvbnQtaGVhZGluZyB0ZXh0LTN4bCBmb250LWJvbGQgbGVhZGluZy1bMS4xMl0gdHJhY2tpbmctdGlnaHQgdGV4dC1wcmltYXJ5IHNtOnRleHQtNHhsIG1kOnRleHQtNXhsIGxnOnRleHQtWzIuNjVyZW1dIHhsOnRleHQtWzMuMTVyZW1dXCI+XHJcbiAgICAgICAgICAgICAge3QoJ2RvbmF0ZVBhZ2UuaGVyby50aXRsZScpfVxyXG4gICAgICAgICAgICA8L2gxPlxyXG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWJvZHktbGcgbWF4LXcteGwgbGVhZGluZy1yZWxheGVkIHRleHQtcHJpbWFyeS84MFwiPnt0KCdkb25hdGVQYWdlLmhlcm8uZGVzY3JpcHRpb24nKX08L3A+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuXHJcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBnYXAtMyBwdC0xIHNtOmZsZXgtbm93cmFwXCI+XHJcbiAgICAgICAgICAgIDxhXHJcbiAgICAgICAgICAgICAgaHJlZj1cIiN3YXlzLXRvLWdpdmVcIlxyXG4gICAgICAgICAgICAgIGNsYXNzTmFtZT17Y24oXHJcbiAgICAgICAgICAgICAgICBidXR0b25WYXJpYW50cyh7IHZhcmlhbnQ6ICdwcmltYXJ5Jywgc2l6ZTogJ2xnJyB9KSxcclxuICAgICAgICAgICAgICAgICdzaHJpbmstMCBnYXAtMiByb3VuZGVkLWxnIGJnLXByaW1hcnkgZm9udC1tZWRpdW0gdGV4dC1wcmltYXJ5LWNvbnRyYXN0IHNoYWRvdy1zbSBob3ZlcjpiZy1wcmltYXJ5LTcwMCcsXHJcbiAgICAgICAgICAgICAgKX1cclxuICAgICAgICAgICAgPlxyXG4gICAgICAgICAgICAgIDxzcGFuPnt0KCdkb25hdGVQYWdlLmhlcm8uY3RhRG9uYXRlJyl9PC9zcGFuPlxyXG4gICAgICAgICAgICAgIDxIb21lSWNvbiBuYW1lPVwiYXJyb3dSaWdodFwiIGNsYXNzTmFtZT1cImgtNCB3LTQgc3Ryb2tlLVsyLjVdXCIgLz5cclxuICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICA8YVxyXG4gICAgICAgICAgICAgIGhyZWY9XCIjZG9uYXRlLXN1cHBsaWVzXCJcclxuICAgICAgICAgICAgICBjbGFzc05hbWU9e2NuKFxyXG4gICAgICAgICAgICAgICAgYnV0dG9uVmFyaWFudHMoeyB2YXJpYW50OiAnb3V0bGluZScsIHNpemU6ICdsZycgfSksXHJcbiAgICAgICAgICAgICAgICAnc2hyaW5rLTAgcm91bmRlZC1sZyBib3JkZXItMiBib3JkZXItcHJpbWFyeSBiZy10cmFuc3BhcmVudCBmb250LW1lZGl1bSB0ZXh0LXByaW1hcnkgaG92ZXI6YmctcHJpbWFyeS81JyxcclxuICAgICAgICAgICAgICApfVxyXG4gICAgICAgICAgICA+XHJcbiAgICAgICAgICAgICAge3QoJ2RvbmF0ZVBhZ2UuaGVyby5jdGFTdXBwbGllcycpfVxyXG4gICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuXHJcbiAgICAgICAgICA8ZGl2XHJcbiAgICAgICAgICAgIGNsYXNzTmFtZT1cImZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBnYXAteC00IGdhcC15LTMgYm9yZGVyLXQgYm9yZGVyLWJvcmRlci84MCBwdC02IHNtOmZsZXgtbm93cmFwIHNtOmdhcC14LTVcIlxyXG4gICAgICAgICAgICBhcmlhLWxhYmVsPXt0KCdob21lLmhlcm8udHJ1c3QubGFiZWwnKX1cclxuICAgICAgICAgID5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IHNocmluay0wIGl0ZW1zLWNlbnRlciBnYXAtMi41XCI+XHJcbiAgICAgICAgICAgICAgPEhvbWVJY29uIG5hbWU9XCJtYXBsZUxlYWZcIiBjbGFzc05hbWU9XCJoLTUgdy01IHNocmluay0wIHRleHQtYWNjZW50XCIgLz5cclxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ3aGl0ZXNwYWNlLW5vd3JhcCB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1wcmltYXJ5IHNtOnRleHQtWzAuOTM3NXJlbV1cIj5cclxuICAgICAgICAgICAgICAgIHt0KCdob21lLmhlcm8udHJ1c3Quc3Ryb25nZXJQZW9wbGUnKX1cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoaWRkZW4gaC00IHctcHggc2hyaW5rLTAgYmctYm9yZGVyLzkwIHNtOmJsb2NrXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cclxuXHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBzaHJpbmstMCBpdGVtcy1jZW50ZXIgZ2FwLTIuNVwiPlxyXG4gICAgICAgICAgICAgIDxIb21lSWNvbiBuYW1lPVwidXNlcnNcIiBjbGFzc05hbWU9XCJoLTUgdy01IHNocmluay0wIHRleHQtc2Vjb25kYXJ5XCIgLz5cclxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ3aGl0ZXNwYWNlLW5vd3JhcCB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1wcmltYXJ5IHNtOnRleHQtWzAuOTM3NXJlbV1cIj5cclxuICAgICAgICAgICAgICAgIHt0KCdob21lLmhlcm8udHJ1c3QuaGVhbHRoaWVyRmFtaWxpZXMnKX1cclxuICAgICAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoaWRkZW4gaC00IHctcHggc2hyaW5rLTAgYmctYm9yZGVyLzkwIHNtOmJsb2NrXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cclxuXHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBzaHJpbmstMCBpdGVtcy1jZW50ZXIgZ2FwLTIuNVwiPlxyXG4gICAgICAgICAgICAgIDxIb21lSWNvbiBuYW1lPVwibGVhZlwiIGNsYXNzTmFtZT1cImgtNSB3LTUgc2hyaW5rLTAgdGV4dC1zZWNvbmRhcnktNDAwXCIgLz5cclxuICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ3aGl0ZXNwYWNlLW5vd3JhcCB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQgdGV4dC1wcmltYXJ5IHNtOnRleHQtWzAuOTM3NXJlbV1cIj5cclxuICAgICAgICAgICAgICAgIHt0KCdob21lLmhlcm8udHJ1c3QuYnJpZ2h0ZXJDb21tdW5pdGllcycpfVxyXG4gICAgICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuXHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtaW4taC03MiBvdmVyZmxvdy1oaWRkZW4gcm91bmRlZC0yeGwgbGc6Y29sLXNwYW4tNSBsZzpoaWRkZW5cIj5cclxuICAgICAgICAgIDxNZXJnZWRNZWRpYVxyXG4gICAgICAgICAgICBzcmM9e2RvbmF0ZUltYWdlcy5oZXJvfVxyXG4gICAgICAgICAgICBhbHQ9e3QoJ2RvbmF0ZVBhZ2UuaGVyby5pbWFnZUFsdCcpfVxyXG4gICAgICAgICAgICBwbGFjZWhvbGRlckxhYmVsPXt0KCdkb25hdGVQYWdlLmhlcm8uaW1hZ2VBbHQnKX1cclxuICAgICAgICAgICAgZWRnZT1cInRvcFwiXHJcbiAgICAgICAgICAgIGZhZGU9e2ZhbHNlfVxyXG4gICAgICAgICAgLz5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9Db250YWluZXI+XHJcbiAgICA8L1NlY3Rpb24+XHJcbiAgKTtcclxufVxyXG4iXSwiZmlsZSI6IkQ6L21ha2UtYS1kaWZmZXJlbmNlL21ha2UtYS1kaWZmZXJlbi9mcm9udGVuZC9zcmMvY29tcG9uZW50cy9zZWN0aW9ucy9kb25hdGUvRG9uYXRlSGVyby5qc3gifQ==

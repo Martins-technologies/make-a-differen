@@ -32,7 +32,7 @@ export const FOOTER_NAV_COLUMNS = [
     links: [
       { to: '/about#mission', labelKey: 'footer.aboutMission' },
       { to: '/about#values', labelKey: 'footer.aboutApproach' },
-      { to: '/about#leadership', labelKey: 'footer.aboutTeam' },
+      { to: '/about#community', labelKey: 'footer.aboutTeam' },
     ],
   },
   {
@@ -58,7 +58,7 @@ export const FOOTER_NAV_COLUMNS = [
     titleKey: 'nav.resources',
     links: [
       { to: '/resources', labelKey: 'footer.resourcesHelpfulLinks' },
-      { to: '/about#partners', labelKey: 'footer.resourcesPartners' },
+      { to: '/get-involved/partner', labelKey: 'footer.resourcesPartners' },
       { to: '/events', labelKey: 'footer.resourcesNews' },
     ],
   },
