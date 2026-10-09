@@ -1,8 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
-import { MergedMedia } from '@/components/ui/MergedMedia';
-import { donateImages } from '@/data/donateImages';
 
 const CATEGORIES = [
   { id: 'food', icon: FoodIcon, color: 'text-accent' },
@@ -16,23 +14,8 @@ export function DonateSuppliesSection() {
   const { t } = useTranslation();
 
   return (
-    <Section id="donate-supplies" className="relative scroll-mt-24 overflow-hidden py-10 md:py-16">
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[34%] lg:block">
-        <MergedMedia
-          src={donateImages.supplies}
-          alt={t('donatePage.supplies.imageAlt')}
-          placeholderLabel={t('donatePage.supplies.imageAlt')}
-          fade={false}
-          priority
-          imgClassName="object-right"
-        />
-      </div>
-      <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-[1] hidden w-[34%] bg-gradient-to-r from-bg from-0% via-bg via-[18%] to-transparent to-[58%] lg:block"
-        aria-hidden="true"
-      />
-
-      <Container className="relative z-10 space-y-8">
+    <Section id="donate-supplies" className="scroll-mt-24 py-10 md:py-16">
+      <Container className="space-y-8">
         <div className="max-w-3xl space-y-3">
           <h2 className="font-heading text-4xl font-bold tracking-tight text-primary sm:text-5xl">
             {t('donatePage.supplies.title')}
@@ -42,7 +25,7 @@ export function DonateSuppliesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:pr-16">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {CATEGORIES.map((category) => {
             const Icon = category.icon;
             return (
@@ -60,17 +43,6 @@ export function DonateSuppliesSection() {
               </article>
             );
           })}
-        </div>
-
-        <div className="relative min-h-64 overflow-hidden rounded-2xl lg:hidden">
-          <MergedMedia
-            src={donateImages.supplies}
-            alt={t('donatePage.supplies.imageAlt')}
-            placeholderLabel={t('donatePage.supplies.imageAlt')}
-            edge="top"
-            fade={false}
-            imgClassName="object-[88%_center]"
-          />
         </div>
       </Container>
     </Section>
