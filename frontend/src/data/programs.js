@@ -56,9 +56,3 @@ export const programCategories = [
     bullet: 'bg-[#E3923A]',
   },
 ];
-
-export const relatedSubpages = [
-  { key: 'courses', to: '/courses', icon: 'cap' },
-  { key: 'employment', to: '/employment', icon: 'briefcase' },
-  { key: 'requestHelp', to: '/request-help', icon: 'heart' },
-];

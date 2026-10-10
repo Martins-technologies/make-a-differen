@@ -18,7 +18,6 @@ export const PRIMARY_NAV = [
     children: [
       { to: '/get-involved/volunteer', labelKey: 'footer.getInvolvedVolunteer' },
       { to: '/get-involved/donate', labelKey: 'footer.getInvolvedDonateFunds' },
-      { to: '/get-involved/donate#donate-supplies', labelKey: 'footer.getInvolvedDonateSupplies' },
       { to: '/get-involved/partner', labelKey: 'footer.getInvolvedPartner' },
     ],
   },
@@ -50,7 +49,6 @@ export const FOOTER_NAV_COLUMNS = [
     links: [
       { to: '/get-involved/volunteer', labelKey: 'footer.getInvolvedVolunteer' },
       { to: '/get-involved/donate', labelKey: 'footer.getInvolvedDonateFunds' },
-      { to: '/get-involved/donate#donate-supplies', labelKey: 'footer.getInvolvedDonateSupplies' },
       { to: '/get-involved/partner', labelKey: 'footer.getInvolvedPartner' },
     ],
   },

@@ -67,7 +67,7 @@
       "titleLine1": "Support, Skills and",
       "titleLine2": "Opportunity for Everyone",
       "description": "Make A Difference is a Canadian nonprofit supporting women, children and youth, LGBTQ2S+ individuals, parents and families, and people facing unemployment, financial hardship, or social isolation.",
-      "imageAlt": "Diverse professionals collaborating in a bright community workspace",
+      "imageAlt": "Three young adults walking together outdoors on a campus",
       "imagePlaceholder": "Photo placeholder. The homepage hero image will be added here.",
       "cta": {
         "programs": "Explore Our Programs",
@@ -186,11 +186,10 @@
     },
     "impact": {
       "title": "Our Impact",
-      "description": "Creating stronger people, healthier families and brighter communities across Canada.",
-      "peopleSupported": "People supported",
-      "coursesCompleted": "Courses completed",
-      "suppliesDistributed": "Supplies distributed",
-      "employmentOutcomes": "Employment outcomes"
+      "lead": "Creating stronger people, healthier families and brighter communities across Canada.",
+      "body": "At Make A Difference, we believe meaningful change begins with access to the right support and opportunities. Through education, employment assistance, practical resources, and community initiatives, we help individuals and families build confidence, overcome challenges, and move toward a more secure future.",
+      "closing": "Every connection matters. Every opportunity creates change.",
+      "imageAlt": "Make A Difference community members celebrating together at an outdoor event"
     },
     "getInvolved": {
       "title": "Get Involved",
@@ -401,7 +400,7 @@
     "hero": {
       "title": "About Us",
       "description": "Make A Difference empowers women, children, LGBTQ2S+ individuals, and families through inclusive education, practical resources, employment support, and compassionate community programs.",
-      "imageAlt": "Community members standing together, seen from behind, looking toward a city skyline",
+      "imageAlt": "Make A Difference team gathered together in branded shirts",
       "imagePlaceholder": "Photo placeholder. The About Us hero image will be added here.",
       "learn": "Learn.",
       "grow": "Grow.",
@@ -411,7 +410,7 @@
     "story": {
       "title": "Our Story",
       "description": "Make A Difference brings education, practical assistance, employment support, community participation, and donations together in one accessible platform. We support women, children, LGBTQ2S+ individuals, and families by connecting them to the resources, opportunities, and community they need to build stronger, healthier, and more inclusive lives across Canada.",
-      "imageAlt": "Community members gathered together",
+      "imageAlt": "People gathered for a community lecture",
       "imagePlaceholder": "Photo placeholder. The Our Story image will be added here."
     },
     "mission": {
@@ -605,22 +604,6 @@
           "Baby and parenting supplies",
           "Seasonal assistance"
         ]
-      }
-    },
-    "related": {
-      "title": "Explore Related Pages",
-      "description": "Learn more about our key programs and services through these direct subpages.",
-      "courses": {
-        "title": "Courses",
-        "description": "Build new skills and gain confidence through practical learning opportunities."
-      },
-      "employment": {
-        "title": "Employment Support",
-        "description": "Get tools and guidance to move toward meaningful work."
-      },
-      "requestHelp": {
-        "title": "Request Help",
-        "description": "Access support and essential items, and get connected to community services."
       }
     }
   },

@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Heart } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
-import { DONATE_PATH } from '@/components/layout/navConfig';
 import { HomeIcon } from '@/components/sections/home/homeIcons';
 import { employmentImages } from '@/data/employment';
 
@@ -39,35 +37,15 @@ export function EmploymentHero() {
             <p className="text-body-lg max-w-xl leading-relaxed text-primary/80">{t('employment.hero.description')}</p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
-            <a
-              href="#employment-services"
-              className={cn(
-                buttonVariants({ variant: 'primary', size: 'lg' }),
-                'shrink-0 gap-2 rounded-lg bg-primary font-medium text-primary-contrast shadow-sm hover:bg-primary-700',
-              )}
-            >
-              <span>{t('employment.services.title')}</span>
-              <HomeIcon name="arrowRight" className="h-4 w-4 stroke-[2.5]" />
-            </a>
+          <div className="pt-1">
             <Link
               to="/request-help"
               className={cn(
                 buttonVariants({ variant: 'outline', size: 'lg' }),
-                'shrink-0 rounded-lg border-2 border-primary bg-transparent font-medium text-primary hover:bg-primary/5',
+                'rounded-lg border-2 border-primary bg-transparent font-medium text-primary hover:bg-primary/5',
               )}
             >
               {t('home.hero.cta.requestSupport')}
-            </Link>
-            <Link
-              to={DONATE_PATH}
-              className={cn(
-                buttonVariants({ variant: 'cta', size: 'lg' }),
-                'shrink-0 gap-2 rounded-lg font-medium shadow-sm',
-              )}
-            >
-              <Heart className="h-4 w-4 fill-current" aria-hidden />
-              <span>{t('nav.donate')}</span>
             </Link>
           </div>
 

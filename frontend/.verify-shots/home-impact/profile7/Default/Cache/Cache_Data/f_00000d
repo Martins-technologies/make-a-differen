@@ -1,0 +1,375 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/routes/AppRoutes.jsx");import.meta.env = {"BASE_URL": "/", "DEV": true, "MODE": "development", "PROD": false, "SSR": false, "VITE_API_URL": "http://localhost:5000/api/v1", "VITE_USE_MOCK": "true"};import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=0ad49213"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import { BrowserRouter, Navigate, Route, Routes } from "/node_modules/.vite/deps/react-router-dom.js?v=0ad49213";
+import { Layout } from "/src/components/layout/Layout.jsx?t=1791589695889";
+import { ProtectedRoute } from "/src/routes/ProtectedRoute.jsx";
+import HomePage from "/src/pages/home/index.jsx?t=1791589797125";
+import AboutPage from "/src/pages/about/index.jsx?t=1791589199378";
+import ProgramsPage from "/src/pages/programs/index.jsx?t=1791588554424";
+import CoursesPage from "/src/pages/courses/index.jsx?t=1791589199386";
+import EmploymentPage from "/src/pages/employment/index.jsx?t=1791589356557";
+import RequestHelpPage from "/src/pages/request-help/index.jsx";
+import GetInvolvedPage from "/src/pages/get-involved/index.jsx?t=1791589699443";
+import VolunteerPage from "/src/pages/get-involved/volunteer/index.jsx?t=1791589701512";
+import DonatePage from "/src/pages/get-involved/donate/index.jsx?t=1791589707658";
+import DonateThankYouPage from "/src/pages/get-involved/donate/thank-you/index.jsx";
+import DonateSuppliesPage from "/src/pages/get-involved/donate-supplies/index.jsx";
+import PartnerPage from "/src/pages/get-involved/partner/index.jsx?t=1791589199386";
+import ResourcesPage from "/src/pages/resources/index.jsx?t=1791589738488";
+import ResourceDetailPage from "/src/pages/resources/detail/index.jsx";
+import EventsPage from "/src/pages/events/index.jsx";
+import EventDetailPage from "/src/pages/events/detail/index.jsx";
+import ContactPage from "/src/pages/contact/index.jsx?t=1791589738488";
+import PrivacyPage from "/src/pages/privacy/index.jsx";
+import TermsPage from "/src/pages/terms/index.jsx";
+import AccessibilityPage from "/src/pages/accessibility/index.jsx";
+import SafeguardingPage from "/src/pages/safeguarding/index.jsx";
+import InclusionPolicyPage from "/src/pages/inclusion-policy/index.jsx";
+import DonationPolicyPage from "/src/pages/donation-policy/index.jsx";
+import ComplaintsPage from "/src/pages/complaints/index.jsx";
+import AdminLoginPage from "/src/pages/admin/login/index.jsx";
+import AdminDashboardPage from "/src/pages/admin/dashboard/index.jsx";
+import DesignPreviewPage from "/src/pages/design-preview/index.jsx";
+import NotFoundPage from "/src/pages/not-found/index.jsx";
+export function AppRoutes() {
+  return /* @__PURE__ */ jsxDEV(BrowserRouter, { children: /* @__PURE__ */ jsxDEV(Routes, { children: /* @__PURE__ */ jsxDEV(Route, { element: /* @__PURE__ */ jsxDEV(Layout, {}, void 0, false, {
+    fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+    lineNumber: 57,
+    columnNumber: 25
+  }, this), children: [
+    /* @__PURE__ */ jsxDEV(Route, { index: true, element: /* @__PURE__ */ jsxDEV(HomePage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 58,
+      columnNumber: 33
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 58,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "about", element: /* @__PURE__ */ jsxDEV(AboutPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 59,
+      columnNumber: 40
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 59,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "programs", element: /* @__PURE__ */ jsxDEV(ProgramsPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 60,
+      columnNumber: 43
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 60,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "courses", element: /* @__PURE__ */ jsxDEV(CoursesPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 61,
+      columnNumber: 42
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 61,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "courses/:slug", element: /* @__PURE__ */ jsxDEV(Navigate, { to: "/courses", replace: true }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 62,
+      columnNumber: 48
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 62,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "employment", element: /* @__PURE__ */ jsxDEV(EmploymentPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 63,
+      columnNumber: 45
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 63,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "request-help", element: /* @__PURE__ */ jsxDEV(RequestHelpPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 64,
+      columnNumber: 47
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 64,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "get-involved", element: /* @__PURE__ */ jsxDEV(GetInvolvedPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 65,
+      columnNumber: 47
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 65,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "get-involved/volunteer", element: /* @__PURE__ */ jsxDEV(VolunteerPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 66,
+      columnNumber: 57
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 66,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "get-involved/donate", element: /* @__PURE__ */ jsxDEV(DonatePage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 67,
+      columnNumber: 54
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 67,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "get-involved/donate/thank-you", element: /* @__PURE__ */ jsxDEV(DonateThankYouPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 68,
+      columnNumber: 64
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 68,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "get-involved/donate-supplies", element: /* @__PURE__ */ jsxDEV(DonateSuppliesPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 69,
+      columnNumber: 63
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 69,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "get-involved/partner", element: /* @__PURE__ */ jsxDEV(PartnerPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 70,
+      columnNumber: 55
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 70,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "resources", element: /* @__PURE__ */ jsxDEV(ResourcesPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 71,
+      columnNumber: 44
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 71,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "resources/:slug", element: /* @__PURE__ */ jsxDEV(ResourceDetailPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 72,
+      columnNumber: 50
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 72,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "events", element: /* @__PURE__ */ jsxDEV(EventsPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 73,
+      columnNumber: 41
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 73,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "events/:slug", element: /* @__PURE__ */ jsxDEV(EventDetailPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 74,
+      columnNumber: 47
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 74,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "contact", element: /* @__PURE__ */ jsxDEV(ContactPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 75,
+      columnNumber: 42
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 75,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "privacy", element: /* @__PURE__ */ jsxDEV(PrivacyPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 76,
+      columnNumber: 42
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 76,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "terms", element: /* @__PURE__ */ jsxDEV(TermsPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 77,
+      columnNumber: 40
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 77,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "accessibility", element: /* @__PURE__ */ jsxDEV(AccessibilityPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 78,
+      columnNumber: 48
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 78,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "safeguarding", element: /* @__PURE__ */ jsxDEV(SafeguardingPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 79,
+      columnNumber: 47
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 79,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "inclusion-policy", element: /* @__PURE__ */ jsxDEV(InclusionPolicyPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 80,
+      columnNumber: 51
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 80,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "donation-policy", element: /* @__PURE__ */ jsxDEV(DonationPolicyPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 81,
+      columnNumber: 50
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 81,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "complaints", element: /* @__PURE__ */ jsxDEV(ComplaintsPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 82,
+      columnNumber: 45
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 82,
+      columnNumber: 11
+    }, this),
+    import.meta.env.DEV ? /* @__PURE__ */ jsxDEV(Route, { path: "design-preview", element: /* @__PURE__ */ jsxDEV(DesignPreviewPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 84,
+      columnNumber: 49
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 84,
+      columnNumber: 11
+    }, this) : null,
+    /* @__PURE__ */ jsxDEV(Route, { path: "admin/login", element: /* @__PURE__ */ jsxDEV(AdminLoginPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 86,
+      columnNumber: 46
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 86,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "admin", element: /* @__PURE__ */ jsxDEV(ProtectedRoute, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 87,
+      columnNumber: 40
+    }, this), children: [
+      /* @__PURE__ */ jsxDEV(Route, { index: true, element: /* @__PURE__ */ jsxDEV(Navigate, { to: "dashboard", replace: true }, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+        lineNumber: 88,
+        columnNumber: 35
+      }, this) }, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+        lineNumber: 88,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "dashboard", element: /* @__PURE__ */ jsxDEV(AdminDashboardPage, {}, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+        lineNumber: 89,
+        columnNumber: 46
+      }, this) }, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+        lineNumber: 89,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(Route, { path: "*", element: /* @__PURE__ */ jsxDEV(AdminDashboardPage, {}, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+        lineNumber: 90,
+        columnNumber: 38
+      }, this) }, void 0, false, {
+        fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+        lineNumber: 90,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 87,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Route, { path: "*", element: /* @__PURE__ */ jsxDEV(NotFoundPage, {}, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 92,
+      columnNumber: 36
+    }, this) }, void 0, false, {
+      fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+      lineNumber: 92,
+      columnNumber: 11
+    }, this)
+  ] }, void 0, true, {
+    fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+    lineNumber: 57,
+    columnNumber: 9
+  }, this) }, void 0, false, {
+    fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+    lineNumber: 56,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx",
+    lineNumber: 55,
+    columnNumber: 5
+  }, this);
+}
+_c = AppRoutes;
+var _c;
+$RefreshReg$(_c, "AppRoutes");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/make-a-difference/make-a-differen/frontend/src/routes/AppRoutes.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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U0FBTSxNQUFLLGVBQWMsU0FBUyx1QkFBQyxvQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBQWUsS0FBbEQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFzRDtBQUFBLElBQ3RELHVCQUFDLFNBQU0sTUFBSyxTQUFRLFNBQVMsdUJBQUMsb0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFlLEdBQzFDO0FBQUEsNkJBQUMsU0FBTSxPQUFLLE1BQUMsU0FBUyx1QkFBQyxZQUFTLElBQUcsYUFBWSxTQUFPLFFBQWhDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBZ0MsS0FBdEQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUEwRDtBQUFBLE1BQzFELHVCQUFDLFNBQU0sTUFBSyxhQUFZLFNBQVMsdUJBQUMsd0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFtQixLQUFwRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQXdEO0FBQUEsTUFDeEQsdUJBQUMsU0FBTSxNQUFLLEtBQUksU0FBUyx1QkFBQyx3QkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQW1CLEtBQTVDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBZ0Q7QUFBQSxTQUhsRDtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBSUE7QUFBQSxJQUNBLHVCQUFDLFNBQU0sTUFBSyxLQUFJLFNBQVMsdUJBQUMsa0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFhLEtBQXRDO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FBMEM7QUFBQSxPQW5DNUM7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQW9DQSxLQXJDRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBc0NBLEtBdkNGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0F3Q0E7QUFFSjtBQUFDQyxLQTVDZUo7QUFBUyxJQUFBSTtBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJCcm93c2VyUm91dGVyIiwiTmF2aWdhdGUiLCJSb3V0ZSIsIlJvdXRlcyIsIkxheW91dCIsIlByb3RlY3RlZFJvdXRlIiwiSG9tZVBhZ2UiLCJBYm91dFBhZ2UiLCJQcm9ncmFtc1BhZ2UiLCJDb3Vyc2VzUGFnZSIsIkVtcGxveW1lbnRQYWdlIiwiUmVxdWVzdEhlbHBQYWdlIiwiR2V0SW52b2x2ZWRQYWdlIiwiVm9sdW50ZWVyUGFnZSIsIkRvbmF0ZVBhZ2UiLCJEb25hdGVUaGFua1lvdVBhZ2UiLCJEb25hdGVTdXBwbGllc1BhZ2UiLCJQYXJ0bmVyUGFnZSIsIlJlc291cmNlc1BhZ2UiLCJSZXNvdXJjZURldGFpbFBhZ2UiLCJFdmVudHNQYWdlIiwiRXZlbnREZXRhaWxQYWdlIiwiQ29udGFjdFBhZ2UiLCJQcml2YWN5UGFnZSIsIlRlcm1zUGFnZSIsIkFjY2Vzc2liaWxpdHlQYWdlIiwiU2FmZWd1YXJkaW5nUGFnZSIsIkluY2x1c2lvblBvbGljeVBhZ2UiLCJEb25hdGlvblBvbGljeVBhZ2UiLCJDb21wbGFpbnRzUGFnZSIsIkFkbWluTG9naW5QYWdlIiwiQWRtaW5EYXNoYm9hcmRQYWdlIiwiRGVzaWduUHJldmlld1BhZ2UiLCJOb3RGb3VuZFBhZ2UiLCJBcHBSb3V0ZXMiLCJpbXBvcnQiLCJlbnYiLCJERVYiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBcHBSb3V0ZXMuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEJyb3dzZXJSb3V0ZXIsIE5hdmlnYXRlLCBSb3V0ZSwgUm91dGVzIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7XG5pbXBvcnQgeyBMYXlvdXQgfSBmcm9tICdAL2NvbXBvbmVudHMvbGF5b3V0L0xheW91dCc7XG5pbXBvcnQgeyBQcm90ZWN0ZWRSb3V0ZSB9IGZyb20gJy4vUHJvdGVjdGVkUm91dGUnO1xuXG5pbXBvcnQgSG9tZVBhZ2UgZnJvbSAnQC9wYWdlcy9ob21lJztcbmltcG9ydCBBYm91dFBhZ2UgZnJvbSAnQC9wYWdlcy9hYm91dCc7XG5pbXBvcnQgUHJvZ3JhbXNQYWdlIGZyb20gJ0AvcGFnZXMvcHJvZ3JhbXMnO1xuaW1wb3J0IENvdXJzZXNQYWdlIGZyb20gJ0AvcGFnZXMvY291cnNlcyc7XG5pbXBvcnQgRW1wbG95bWVudFBhZ2UgZnJvbSAnQC9wYWdlcy9lbXBsb3ltZW50JztcbmltcG9ydCBSZXF1ZXN0SGVscFBhZ2UgZnJvbSAnQC9wYWdlcy9yZXF1ZXN0LWhlbHAnO1xuaW1wb3J0IEdldEludm9sdmVkUGFnZSBmcm9tICdAL3BhZ2VzL2dldC1pbnZvbHZlZCc7XG5pbXBvcnQgVm9sdW50ZWVyUGFnZSBmcm9tICdAL3BhZ2VzL2dldC1pbnZvbHZlZC92b2x1bnRlZXInO1xuaW1wb3J0IERvbmF0ZVBhZ2UgZnJvbSAnQC9wYWdlcy9nZXQtaW52b2x2ZWQvZG9uYXRlJztcbmltcG9ydCBEb25hdGVUaGFua1lvdVBhZ2UgZnJvbSAnQC9wYWdlcy9nZXQtaW52b2x2ZWQvZG9uYXRlL3RoYW5rLXlvdSc7XG5pbXBvcnQgRG9uYXRlU3VwcGxpZXNQYWdlIGZyb20gJ0AvcGFnZXMvZ2V0LWludm9sdmVkL2RvbmF0ZS1zdXBwbGllcyc7XG5pbXBvcnQgUGFydG5lclBhZ2UgZnJvbSAnQC9wYWdlcy9nZXQtaW52b2x2ZWQvcGFydG5lcic7XG5pbXBvcnQgUmVzb3VyY2VzUGFnZSBmcm9tICdAL3BhZ2VzL3Jlc291cmNlcyc7XG5pbXBvcnQgUmVzb3VyY2VEZXRhaWxQYWdlIGZyb20gJ0AvcGFnZXMvcmVzb3VyY2VzL2RldGFpbCc7XG5pbXBvcnQgRXZlbnRzUGFnZSBmcm9tICdAL3BhZ2VzL2V2ZW50cyc7XG5pbXBvcnQgRXZlbnREZXRhaWxQYWdlIGZyb20gJ0AvcGFnZXMvZXZlbnRzL2RldGFpbCc7XG5pbXBvcnQgQ29udGFjdFBhZ2UgZnJvbSAnQC9wYWdlcy9jb250YWN0JztcbmltcG9ydCBQcml2YWN5UGFnZSBmcm9tICdAL3BhZ2VzL3ByaXZhY3knO1xuaW1wb3J0IFRlcm1zUGFnZSBmcm9tICdAL3BhZ2VzL3Rlcm1zJztcbmltcG9ydCBBY2Nlc3NpYmlsaXR5UGFnZSBmcm9tICdAL3BhZ2VzL2FjY2Vzc2liaWxpdHknO1xuaW1wb3J0IFNhZmVndWFyZGluZ1BhZ2UgZnJvbSAnQC9wYWdlcy9zYWZlZ3VhcmRpbmcnO1xuaW1wb3J0IEluY2x1c2lvblBvbGljeVBhZ2UgZnJvbSAnQC9wYWdlcy9pbmNsdXNpb24tcG9saWN5JztcbmltcG9ydCBEb25hdGlvblBvbGljeVBhZ2UgZnJvbSAnQC9wYWdlcy9kb25hdGlvbi1wb2xpY3knO1xuaW1wb3J0IENvbXBsYWludHNQYWdlIGZyb20gJ0AvcGFnZXMvY29tcGxhaW50cyc7XG5pbXBvcnQgQWRtaW5Mb2dpblBhZ2UgZnJvbSAnQC9wYWdlcy9hZG1pbi9sb2dpbic7XG5pbXBvcnQgQWRtaW5EYXNoYm9hcmRQYWdlIGZyb20gJ0AvcGFnZXMvYWRtaW4vZGFzaGJvYXJkJztcbmltcG9ydCBEZXNpZ25QcmV2aWV3UGFnZSBmcm9tICdAL3BhZ2VzL2Rlc2lnbi1wcmV2aWV3JztcbmltcG9ydCBOb3RGb3VuZFBhZ2UgZnJvbSAnQC9wYWdlcy9ub3QtZm91bmQnO1xuXG5leHBvcnQgZnVuY3Rpb24gQXBwUm91dGVzKCkge1xuICByZXR1cm4gKFxuICAgIDxCcm93c2VyUm91dGVyPlxuICAgICAgPFJvdXRlcz5cbiAgICAgICAgPFJvdXRlIGVsZW1lbnQ9ezxMYXlvdXQgLz59PlxuICAgICAgICAgIDxSb3V0ZSBpbmRleCBlbGVtZW50PXs8SG9tZVBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJhYm91dFwiIGVsZW1lbnQ9ezxBYm91dFBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJwcm9ncmFtc1wiIGVsZW1lbnQ9ezxQcm9ncmFtc1BhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJjb3Vyc2VzXCIgZWxlbWVudD17PENvdXJzZXNQYWdlIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiY291cnNlcy86c2x1Z1wiIGVsZW1lbnQ9ezxOYXZpZ2F0ZSB0bz1cIi9jb3Vyc2VzXCIgcmVwbGFjZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImVtcGxveW1lbnRcIiBlbGVtZW50PXs8RW1wbG95bWVudFBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJyZXF1ZXN0LWhlbHBcIiBlbGVtZW50PXs8UmVxdWVzdEhlbHBQYWdlIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiZ2V0LWludm9sdmVkXCIgZWxlbWVudD17PEdldEludm9sdmVkUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImdldC1pbnZvbHZlZC92b2x1bnRlZXJcIiBlbGVtZW50PXs8Vm9sdW50ZWVyUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImdldC1pbnZvbHZlZC9kb25hdGVcIiBlbGVtZW50PXs8RG9uYXRlUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImdldC1pbnZvbHZlZC9kb25hdGUvdGhhbmsteW91XCIgZWxlbWVudD17PERvbmF0ZVRoYW5rWW91UGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImdldC1pbnZvbHZlZC9kb25hdGUtc3VwcGxpZXNcIiBlbGVtZW50PXs8RG9uYXRlU3VwcGxpZXNQYWdlIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiZ2V0LWludm9sdmVkL3BhcnRuZXJcIiBlbGVtZW50PXs8UGFydG5lclBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJyZXNvdXJjZXNcIiBlbGVtZW50PXs8UmVzb3VyY2VzUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cInJlc291cmNlcy86c2x1Z1wiIGVsZW1lbnQ9ezxSZXNvdXJjZURldGFpbFBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJldmVudHNcIiBlbGVtZW50PXs8RXZlbnRzUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImV2ZW50cy86c2x1Z1wiIGVsZW1lbnQ9ezxFdmVudERldGFpbFBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJjb250YWN0XCIgZWxlbWVudD17PENvbnRhY3RQYWdlIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwicHJpdmFjeVwiIGVsZW1lbnQ9ezxQcml2YWN5UGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cInRlcm1zXCIgZWxlbWVudD17PFRlcm1zUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImFjY2Vzc2liaWxpdHlcIiBlbGVtZW50PXs8QWNjZXNzaWJpbGl0eVBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJzYWZlZ3VhcmRpbmdcIiBlbGVtZW50PXs8U2FmZWd1YXJkaW5nUGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImluY2x1c2lvbi1wb2xpY3lcIiBlbGVtZW50PXs8SW5jbHVzaW9uUG9saWN5UGFnZSAvPn0gLz5cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImRvbmF0aW9uLXBvbGljeVwiIGVsZW1lbnQ9ezxEb25hdGlvblBvbGljeVBhZ2UgLz59IC8+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCJjb21wbGFpbnRzXCIgZWxlbWVudD17PENvbXBsYWludHNQYWdlIC8+fSAvPlxuICAgICAgICAgIHtpbXBvcnQubWV0YS5lbnYuREVWID8gKFxuICAgICAgICAgICAgPFJvdXRlIHBhdGg9XCJkZXNpZ24tcHJldmlld1wiIGVsZW1lbnQ9ezxEZXNpZ25QcmV2aWV3UGFnZSAvPn0gLz5cbiAgICAgICAgICApIDogbnVsbH1cbiAgICAgICAgICA8Um91dGUgcGF0aD1cImFkbWluL2xvZ2luXCIgZWxlbWVudD17PEFkbWluTG9naW5QYWdlIC8+fSAvPlxuICAgICAgICAgIDxSb3V0ZSBwYXRoPVwiYWRtaW5cIiBlbGVtZW50PXs8UHJvdGVjdGVkUm91dGUgLz59PlxuICAgICAgICAgICAgPFJvdXRlIGluZGV4IGVsZW1lbnQ9ezxOYXZpZ2F0ZSB0bz1cImRhc2hib2FyZFwiIHJlcGxhY2UgLz59IC8+XG4gICAgICAgICAgICA8Um91dGUgcGF0aD1cImRhc2hib2FyZFwiIGVsZW1lbnQ9ezxBZG1pbkRhc2hib2FyZFBhZ2UgLz59IC8+XG4gICAgICAgICAgICA8Um91dGUgcGF0aD1cIipcIiBlbGVtZW50PXs8QWRtaW5EYXNoYm9hcmRQYWdlIC8+fSAvPlxuICAgICAgICAgIDwvUm91dGU+XG4gICAgICAgICAgPFJvdXRlIHBhdGg9XCIqXCIgZWxlbWVudD17PE5vdEZvdW5kUGFnZSAvPn0gLz5cbiAgICAgICAgPC9Sb3V0ZT5cbiAgICAgIDwvUm91dGVzPlxuICAgIDwvQnJvd3NlclJvdXRlcj5cbiAgKTtcbn1cbiJdLCJmaWxlIjoiRDovbWFrZS1hLWRpZmZlcmVuY2UvbWFrZS1hLWRpZmZlcmVuL2Zyb250ZW5kL3NyYy9yb3V0ZXMvQXBwUm91dGVzLmpzeCJ9

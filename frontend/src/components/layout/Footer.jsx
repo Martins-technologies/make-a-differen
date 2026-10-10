@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Facebook, Heart, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { FOOTER_LEGAL_LINKS } from '@/utils/constants';
 import { Container } from '@/components/ui/Container';
-import { buttonVariants } from '@/components/ui/Button';
-import { cn } from '@/utils/cn';
 import { LOGO_SRC } from './Logo';
-import { DONATE_PATH, FOOTER_NAV_COLUMNS } from './navConfig';
+import { FOOTER_NAV_COLUMNS } from './navConfig';
 
 const SOCIAL_LINKS = [
   { label: 'Facebook', icon: Facebook, href: '#' },
@@ -62,10 +60,10 @@ export function Footer() {
         </div>
 
         {/* Center navigation columns (all headings 1-line and aligned horizontally) */}
-        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:col-span-2 md:grid-cols-5 lg:col-span-7 lg:gap-x-6">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:col-span-2 md:grid-cols-5 lg:col-span-9 lg:gap-x-6">
           {FOOTER_NAV_COLUMNS.map((column) => (
             <div key={column.titleKey} className="space-y-2.5">
-              <h2 className="text-[0.875rem] font-bold text-primary whitespace-nowrap">
+              <h2 className="text-[0.875rem] font-bold text-primary">
                 {t(column.titleKey)}
               </h2>
               <ul className="space-y-2">
@@ -84,17 +82,8 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Right action & legal block */}
-        <div className="flex flex-col items-start justify-between gap-8 md:col-span-2 lg:col-span-2 lg:h-full lg:items-end">
-          <Link
-            to={DONATE_PATH}
-            className={cn(buttonVariants({ variant: 'cta', size: 'md' }), 'shrink-0 rounded-xl px-6')}
-          >
-            <Heart className="h-4 w-4 fill-current" aria-hidden />
-            <span>{t('nav.donate')}</span>
-          </Link>
-
-          <div className="space-y-1 text-left lg:text-right pt-2">
+        <div className="flex flex-col items-start md:col-span-2 lg:col-span-9 lg:col-start-4 lg:items-end">
+          <div className="space-y-1 text-left lg:text-right">
             <ul className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-text/70 lg:justify-end" aria-label={t('footer.policies')}>
               {FOOTER_LEGAL_LINKS.map((item, idx) => (
                 <li key={item.to} className="flex items-center gap-2">

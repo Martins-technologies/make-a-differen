@@ -1,0 +1,363 @@
+{
+  "click": {
+    "ok": false
+  },
+  "mobile": {
+    "path": "/",
+    "buttons": [
+      {
+        "text": "Donate",
+        "href": "/get-involved/donate",
+        "inHeader": true,
+        "inFooter": false,
+        "inMenu": false,
+        "h": 0,
+        "w": 0
+      },
+      {
+        "text": "Donate funds Help us provide programs, essential supplies and support.",
+        "href": "/get-involved/donate",
+        "inHeader": false,
+        "inFooter": false,
+        "inMenu": false,
+        "h": 307,
+        "w": 360
+      },
+      {
+        "text": "Donate supplies Contribute essential items for individuals and families.",
+        "href": "/get-involved/donate#donate-supplies",
+        "inHeader": false,
+        "inFooter": false,
+        "inMenu": false,
+        "h": 307,
+        "w": 360
+      },
+      {
+        "text": "Donate Funds",
+        "href": "/get-involved/donate",
+        "inHeader": false,
+        "inFooter": true,
+        "inMenu": false,
+        "h": 17,
+        "w": 172
+      }
+    ],
+    "footerLinks": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Our Mission",
+      "Our Approach",
+      "Our Community",
+      "Educational Courses",
+      "Essential Supplies",
+      "Employment Support",
+      "Mental Health Information",
+      "Community Connections",
+      "Volunteer",
+      "Donate Funds",
+      "Become a Community Partner",
+      "Helpful Links",
+      "Community Partners",
+      "News and Updates",
+      "Get in Touch",
+      "Locations",
+      "Accessibility",
+      "Privacy",
+      "Community Care"
+    ],
+    "footerH": 735
+  },
+  "report": [
+    {
+      "width": 1280,
+      "path": "/",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 1280,
+      "path": "/get-involved",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 1280,
+      "path": "/get-involved/volunteer",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 1280,
+      "path": "/get-involved/donate",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 1280,
+      "path": "/about",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 1280,
+      "path": "/programs",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 1280,
+      "path": "/contact",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 768,
+      "path": "/get-involved",
+      "buttons": [
+        {
+          "text": "Donate",
+          "href": "/get-involved/donate",
+          "inHeader": true,
+          "inFooter": false,
+          "inMenu": false,
+          "h": 44,
+          "w": 117
+        },
+        {
+          "text": "Learn more about donating",
+          "href": "/get-involved/donate",
+          "inHeader": false,
+          "inFooter": false,
+          "inMenu": false,
+          "h": 68,
+          "w": 170
+        },
+        {
+          "text": "Donate Funds",
+          "href": "/get-involved/donate",
+          "inHeader": false,
+          "inFooter": true,
+          "inMenu": false,
+          "h": 17,
+          "w": 134
+        }
+      ],
+      "footerLinks": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Our Mission",
+        "Our Approach",
+        "Our Community",
+        "Educational Courses",
+        "Essential Supplies",
+        "Employment Support",
+        "Mental Health Information",
+        "Community Connections",
+        "Volunteer",
+        "Donate Funds",
+        "Become a Community Partner",
+        "Helpful Links",
+        "Community Partners",
+        "News and Updates",
+        "Get in Touch",
+        "Locations",
+        "Accessibility",
+        "Privacy",
+        "Community Care"
+      ],
+      "footerH": 516
+    },
+    {
+      "width": 768,
+      "path": "/get-involved/volunteer",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 768,
+      "path": "/get-involved/donate",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 768,
+      "path": "/about",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 768,
+      "path": "/programs",
+      "buttons": [
+        {
+          "text": "Donate",
+          "href": "/get-involved/donate",
+          "inHeader": true,
+          "inFooter": false,
+          "inMenu": false,
+          "h": 44,
+          "w": 119
+        },
+        {
+          "text": "Donate Funds",
+          "href": "/get-involved/donate",
+          "inHeader": false,
+          "inFooter": true,
+          "inMenu": false,
+          "h": 17,
+          "w": 134
+        }
+      ],
+      "footerLinks": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Our Mission",
+        "Our Approach",
+        "Our Community",
+        "Educational Courses",
+        "Essential Supplies",
+        "Employment Support",
+        "Mental Health Information",
+        "Community Connections",
+        "Volunteer",
+        "Donate Funds",
+        "Become a Community Partner",
+        "Helpful Links",
+        "Community Partners",
+        "News and Updates",
+        "Get in Touch",
+        "Locations",
+        "Accessibility",
+        "Privacy",
+        "Community Care"
+      ],
+      "footerH": 552
+    },
+    {
+      "width": 768,
+      "path": "/contact",
+      "buttons": [
+        {
+          "text": "Donate",
+          "href": "/get-involved/donate",
+          "inHeader": true,
+          "inFooter": false,
+          "inMenu": false,
+          "h": 44,
+          "w": 119
+        },
+        {
+          "text": "Donate Funds",
+          "href": "/get-involved/donate",
+          "inHeader": false,
+          "inFooter": true,
+          "inMenu": false,
+          "h": 17,
+          "w": 134
+        }
+      ],
+      "footerLinks": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Our Mission",
+        "Our Approach",
+        "Our Community",
+        "Educational Courses",
+        "Essential Supplies",
+        "Employment Support",
+        "Mental Health Information",
+        "Community Connections",
+        "Volunteer",
+        "Donate Funds",
+        "Become a Community Partner",
+        "Helpful Links",
+        "Community Partners",
+        "News and Updates",
+        "Get in Touch",
+        "Locations",
+        "Accessibility",
+        "Privacy",
+        "Community Care"
+      ],
+      "footerH": 552
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 390,
+      "path": "/get-involved",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 390,
+      "path": "/get-involved/volunteer",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 390,
+      "path": "/get-involved/donate",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 390,
+      "path": "/about",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 390,
+      "path": "/programs",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    },
+    {
+      "width": 390,
+      "path": "/contact",
+      "buttons": [],
+      "footerLinks": [],
+      "footerH": 0
+    }
+  ]
+}

@@ -67,7 +67,7 @@
       "titleLine1": "Soutien, compétences et",
       "titleLine2": "opportunités pour tous",
       "description": "Make A Difference est un organisme sans but lucratif canadien qui soutient les femmes, les enfants et les jeunes, les personnes LGBTQ2S+, les parents et les familles, ainsi que les personnes confrontées au chômage, à des difficultés financières ou à l'isolement social.",
-      "imageAlt": "Professionnels divers collaborant dans un espace communautaire lumineux",
+      "imageAlt": "Trois jeunes adultes marchant ensemble à l'extérieur sur un campus",
       "imagePlaceholder": "Espace réservé pour la photo. L'image du bandeau d'accueil sera ajoutée ici.",
       "cta": {
         "programs": "Découvrir nos programmes",
@@ -186,11 +186,10 @@
     },
     "impact": {
       "title": "Notre impact",
-      "description": "Créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
-      "peopleSupported": "Personnes soutenues",
-      "coursesCompleted": "Cours complétés",
-      "suppliesDistributed": "Fournitures distribuées",
-      "employmentOutcomes": "Résultats en emploi"
+      "lead": "Créer des personnes plus fortes, des familles plus saines et des communautés plus rayonnantes partout au Canada.",
+      "body": "Chez Make A Difference, nous croyons qu’un changement significatif commence par l’accès au bon soutien et aux bonnes possibilités. Par l’éducation, l’aide à l’emploi, des ressources pratiques et des initiatives communautaires, nous aidons les personnes et les familles à prendre confiance, à surmonter les défis et à avancer vers un avenir plus sûr.",
+      "closing": "Chaque lien compte. Chaque possibilité crée du changement.",
+      "imageAlt": "Membres de la communauté réunis lors d’un événement extérieur de Make A Difference"
     },
     "getInvolved": {
       "title": "S'impliquer",
@@ -401,7 +400,7 @@
     "hero": {
       "title": "À propos",
       "description": "Make A Difference accompagne les femmes, les enfants, les personnes LGBTQ2S+ et les familles grâce à une éducation inclusive, des ressources concrètes, du soutien à l'emploi et des programmes communautaires bienveillants.",
-      "imageAlt": "Membres de la communauté vus de dos, ensemble, regardant une ville à l'horizon",
+      "imageAlt": "L'équipe Make A Difference réunie, portant des chandails de l'organisme",
       "imagePlaceholder": "Espace réservé pour la photo. L'image du bandeau À propos sera ajoutée ici.",
       "learn": "Apprendre.",
       "grow": "Grandir.",
@@ -411,7 +410,7 @@
     "story": {
       "title": "Notre histoire",
       "description": "Make A Difference réunit l'éducation, l'aide concrète, le soutien à l'emploi, la participation communautaire et les dons sur une seule plateforme accessible. Nous accompagnons les femmes, les enfants, les personnes LGBTQ2S+ et les familles en les reliant aux ressources, aux possibilités et à la communauté dont ils ont besoin pour bâtir une vie plus forte, plus saine et plus inclusive partout au Canada.",
-      "imageAlt": "Des membres de la communauté réunis ensemble",
+      "imageAlt": "Des personnes réunies pour une conférence communautaire",
       "imagePlaceholder": "Espace réservé pour la photo. L'image de Notre histoire sera ajoutée ici."
     },
     "mission": {
@@ -605,22 +604,6 @@
           "Articles pour bébés et parents",
           "Aide saisonnière"
         ]
-      }
-    },
-    "related": {
-      "title": "Explorer les pages connexes",
-      "description": "Apprenez-en davantage sur nos principaux programmes et services grâce à ces sous-pages directes.",
-      "courses": {
-        "title": "Cours",
-        "description": "Développez de nouvelles compétences et gagnez en confiance grâce à des occasions d'apprentissage pratiques."
-      },
-      "employment": {
-        "title": "Soutien à l'emploi",
-        "description": "Obtenez des outils et des conseils pour avancer vers un travail porteur de sens."
-      },
-      "requestHelp": {
-        "title": "Demander de l'aide",
-        "description": "Accédez à du soutien et à des articles essentiels, et établissez des liens avec des services communautaires."
       }
     }
   },

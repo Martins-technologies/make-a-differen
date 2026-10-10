@@ -1,7 +1,7 @@
-/** Approved WEBP assets served from public/updated. */
+/** Approved WEBP assets. Numbered heroes live in public/images. */
 
 export const updatedImages = {
-  ourStory: '/01_Our_Story.webp',
+  ourStory: '/new/02_About_Our_Story.webp',
   courses: {
     cooking: '/updated/02_Cooking_and_Nutrition.webp',
     mentalHealth: '/updated/03_Mental_Health_and_Self_Care.webp',

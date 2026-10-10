@@ -2,7 +2,6 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { ProgramCategories } from '@/components/sections/programs/ProgramCategories';
 import { ProgramsHero } from '@/components/sections/programs/ProgramsHero';
-import { RelatedSubpages } from '@/components/sections/programs/RelatedSubpages';
 
 export default function ProgramsPage() {
   const { t } = useTranslation();
@@ -15,7 +14,6 @@ export default function ProgramsPage() {
       </Helmet>
       <ProgramsHero />
       <ProgramCategories />
-      <RelatedSubpages />
     </>
   );
 }

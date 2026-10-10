@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { buttonVariants } from '@/components/ui/Button';
@@ -16,7 +16,7 @@ export function GetInvolvedHero() {
       {/* Desktop Background Image with Gradient Dissolve matching Homepage Hero */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
         <MergedMedia
-          src="/getinvolved/img1.webp"
+          src="/new/04_Get_Involved_Hero.webp"
           alt={t('getInvolvedPage.hero.imageAlt')}
           placeholderLabel="Photo placeholder — Get Involved hero image"
           priority
@@ -42,7 +42,7 @@ export function GetInvolvedHero() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
+          <div className="flex flex-wrap items-center pt-1">
             <Link
               to="/get-involved/volunteer"
               className={cn(
@@ -53,24 +53,13 @@ export function GetInvolvedHero() {
               <span>{t('getInvolvedPage.hero.ctaVolunteer')}</span>
               <ArrowRight className="h-4 w-4 stroke-[2.5]" />
             </Link>
-
-            <Link
-              to="/get-involved/donate"
-              className={cn(
-                buttonVariants({ variant: 'cta', size: 'lg' }),
-                'shrink-0 gap-2 rounded-lg font-medium shadow-sm',
-              )}
-            >
-              <Heart className="h-4 w-4 fill-current" aria-hidden />
-              <span>{t('getInvolvedPage.hero.ctaDonate')}</span>
-            </Link>
           </div>
         </div>
 
         {/* Mobile Media View matching Homepage Hero */}
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
           <MergedMedia
-            src="/getinvolved/img1.webp"
+            src="/new/04_Get_Involved_Hero.webp"
             alt={t('getInvolvedPage.hero.imageAlt')}
             placeholderLabel="Photo placeholder — Get Involved hero image"
             edge="top"

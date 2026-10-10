@@ -1,4 +1,4 @@
-import { ArrowRight, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/utils/cn';
@@ -7,17 +7,7 @@ export function DonateActions({ className }) {
   const { t } = useTranslation();
 
   return (
-    <div className={cn('flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap', className)}>
-      <a
-        href="#ways-to-give"
-        className={cn(
-          buttonVariants({ variant: 'cta', size: 'lg' }),
-          'shrink-0 gap-2 rounded-lg font-medium shadow-sm',
-        )}
-      >
-        <Heart className="h-4 w-4 fill-current" aria-hidden />
-        <span>{t('donatePage.hero.ctaDonate')}</span>
-      </a>
+    <div className={cn('flex flex-wrap items-center pt-1', className)}>
       <a
         href="#donate-supplies"
         className={cn(

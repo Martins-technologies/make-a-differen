@@ -1,0 +1,48 @@
+{
+  "desktopFooter": {
+    "red": false,
+    "links": [
+      "Our Mission",
+      "Our Approach",
+      "Our Community",
+      "Educational Courses",
+      "Essential Supplies",
+      "Employment Support",
+      "Mental Health Information",
+      "Community Connections",
+      "Volunteer",
+      "Donate Funds",
+      "Become a Community Partner",
+      "Helpful Links",
+      "Community Partners",
+      "News and Updates",
+      "Get in Touch",
+      "Locations",
+      "Accessibility",
+      "Privacy",
+      "Community Care"
+    ]
+  },
+  "header": {
+    "href": "/get-involved/donate",
+    "h": 44,
+    "w": 117
+  },
+  "donatePage": {
+    "path": "/get-involved/donate",
+    "ctas": [
+      "Donate Supplies",
+      "Donate Supplies"
+    ]
+  },
+  "mobileMenu": {
+    "open": false,
+    "found": false
+  },
+  "volunteer": [
+    "Apply to Volunteer",
+    "Apply to Volunteer",
+    "Donate Funds Help us provide programs, essential supplies and support.",
+    "Donate Supplies Contribute essential items for individuals and families."
+  ]
+}
