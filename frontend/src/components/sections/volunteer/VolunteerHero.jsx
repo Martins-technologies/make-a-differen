@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
-import { DONATE_PATH } from '@/components/layout/navConfig';
 import { HomeIcon } from '../home/homeIcons';
 import { updatedImages } from '@/data/updatedImages';
 
@@ -45,7 +43,7 @@ export function VolunteerHero() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
+          <div className="flex flex-wrap items-center pt-1">
             <a
               href="#volunteer-form"
               className={cn(
@@ -56,17 +54,6 @@ export function VolunteerHero() {
               <span>{t('volunteerPage.hero.ctaApply', 'Apply to Volunteer')}</span>
               <ArrowRight className="h-4 w-4 stroke-[2.5]" />
             </a>
-
-            <Link
-              to={DONATE_PATH}
-              className={cn(
-                buttonVariants({ variant: 'cta', size: 'lg' }),
-                'shrink-0 gap-2 rounded-lg font-medium shadow-sm',
-              )}
-            >
-              <Heart className="h-4 w-4 fill-current" aria-hidden />
-              <span>{t('nav.donate')}</span>
-            </Link>
           </div>
 
           {/* Trust Highlights matching Homepage Hero */}

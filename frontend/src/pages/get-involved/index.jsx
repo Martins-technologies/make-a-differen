@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { GetInvolvedHero } from '@/components/sections/get-involved/GetInvolvedHero';
 import { ThreeWaysSection } from '@/components/sections/get-involved/ThreeWaysSection';
 import { WaysToMakeDifference } from '@/components/sections/get-involved/WaysToMakeDifference';
-import { ReadyToGetInvolved } from '@/components/sections/get-involved/ReadyToGetInvolved';
 
 export default function GetInvolvedPage() {
   const { t } = useTranslation();
@@ -20,7 +19,6 @@ export default function GetInvolvedPage() {
       <GetInvolvedHero />
       <ThreeWaysSection />
       <WaysToMakeDifference />
-      <ReadyToGetInvolved />
     </>
   );
 }

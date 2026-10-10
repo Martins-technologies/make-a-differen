@@ -93,28 +93,28 @@ export const featuredCourses = [
     slug: 'cooking-nutrition',
     titleKey: 'home.featuredCourses.cooking.title',
     descriptionKey: 'home.featuredCourses.cooking.description',
-    image: '/cooking.webp',
+    image: '/images/course-cooking-nutrition.jpg',
     imageAltKey: 'home.featuredCourses.cooking.imageAlt',
   },
   {
     slug: 'mental-health-self-care',
     titleKey: 'home.featuredCourses.mentalHealth.title',
     descriptionKey: 'home.featuredCourses.mentalHealth.description',
-    image: '/mentalhealth.webp',
+    image: '/images/course-mental-health-wellness.jpg',
     imageAltKey: 'home.featuredCourses.mentalHealth.imageAlt',
   },
   {
     slug: 'parenting-child-development',
     titleKey: 'home.featuredCourses.parenting.title',
     descriptionKey: 'home.featuredCourses.parenting.description',
-    image: '/parentingskils.webp',
+    image: '/images/course-parenting-skills.jpg',
     imageAltKey: 'home.featuredCourses.parenting.imageAlt',
   },
   {
     slug: 'resume-interview-preparation',
     titleKey: 'home.featuredCourses.employment.title',
     descriptionKey: 'home.featuredCourses.employment.description',
-    image: '/employmentreadiness.webp',
+    image: '/images/course-employment-readiness.jpg',
     imageAltKey: 'home.featuredCourses.employment.imageAlt',
   },
 ];
@@ -151,13 +151,6 @@ export const employmentSupportPreview = [
     bgClass: 'bg-[#F2FAF7]',
     to: '/employment',
   },
-];
-
-export const impactStats = [
-  { icon: 'users', labelKey: 'home.impact.peopleSupported' },
-  { icon: 'graduationCap', labelKey: 'home.impact.coursesCompleted' },
-  { icon: 'package', labelKey: 'home.impact.suppliesDistributed' },
-  { icon: 'barChart', labelKey: 'home.impact.employmentOutcomes' },
 ];
 
 export const getInvolvedCards = [

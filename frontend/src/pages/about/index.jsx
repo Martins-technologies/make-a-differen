@@ -4,7 +4,6 @@ import { AboutHero } from '@/components/sections/about/AboutHero';
 import { MissionVisionSection } from '@/components/sections/about/MissionVisionSection';
 import { OurCommunitySection } from '@/components/sections/about/OurCommunitySection';
 import { OurStorySection } from '@/components/sections/about/OurStorySection';
-import { TransparencySection } from '@/components/sections/about/TransparencySection';
 import { ValuesSection } from '@/components/sections/about/ValuesSection';
 
 export default function AboutPage() {
@@ -21,7 +20,6 @@ export default function AboutPage() {
       <MissionVisionSection />
       <ValuesSection />
       <OurCommunitySection />
-      <TransparencySection />
     </>
   );
 }

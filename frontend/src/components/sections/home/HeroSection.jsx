@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Heart } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
-import { DONATE_PATH } from '@/components/layout/navConfig';
 import { HomeIcon } from './homeIcons';
+
+const HOME_HERO_IMAGE = '/new/01_Home_Hero.webp';
 
 export function HeroSection() {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ export function HeroSection() {
     <Section className="relative overflow-hidden py-8 md:py-12 lg:min-h-[32rem] lg:py-16">
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] lg:block">
         <MergedMedia
-          src="/images/hero-community-professionals.jpg"
+          src={HOME_HERO_IMAGE}
           alt={t('home.hero.imageAlt')}
           placeholderLabel={t('home.hero.imagePlaceholder')}
           priority
@@ -33,7 +33,7 @@ export function HeroSection() {
             <p className="text-body-lg max-w-xl leading-relaxed text-primary/80">{t('home.hero.description')}</p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
+          <div className="flex flex-wrap items-center gap-3 pt-1">
             <Link
               to="/programs"
               className={cn(
@@ -43,25 +43,6 @@ export function HeroSection() {
             >
               <span>{t('home.hero.cta.programs')}</span>
               <HomeIcon name="arrowRight" className="h-4 w-4 stroke-[2.5]" />
-            </Link>
-            <Link
-              to="/request-help"
-              className={cn(
-                buttonVariants({ variant: 'outline', size: 'lg' }),
-                'shrink-0 rounded-lg border-2 border-primary bg-transparent font-medium text-primary hover:bg-primary/5',
-              )}
-            >
-              {t('home.hero.cta.requestSupport')}
-            </Link>
-            <Link
-              to={DONATE_PATH}
-              className={cn(
-                buttonVariants({ variant: 'cta', size: 'lg' }),
-                'shrink-0 gap-2 rounded-lg font-medium shadow-sm',
-              )}
-            >
-              <Heart className="h-4 w-4 fill-current" aria-hidden />
-              <span>{t('nav.donate')}</span>
             </Link>
           </div>
 
@@ -98,10 +79,11 @@ export function HeroSection() {
 
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">
           <MergedMedia
-            src="/images/hero-community-professionals.jpg"
+            src={HOME_HERO_IMAGE}
             alt={t('home.hero.imageAlt')}
             placeholderLabel={t('home.hero.imagePlaceholder')}
             edge="top"
+            imgClassName="object-cover object-center"
           />
         </div>
       </Container>

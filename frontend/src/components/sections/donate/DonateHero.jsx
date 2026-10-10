@@ -30,17 +30,7 @@ export function DonateHero() {
             <p className="text-body-lg max-w-xl leading-relaxed text-primary/80">{t('donatePage.hero.description')}</p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 pt-1 sm:flex-nowrap">
-            <a
-              href="#ways-to-give"
-              className={cn(
-                buttonVariants({ variant: 'primary', size: 'lg' }),
-                'shrink-0 gap-2 rounded-lg bg-primary font-medium text-primary-contrast shadow-sm hover:bg-primary-700',
-              )}
-            >
-              <span>{t('donatePage.hero.ctaDonate')}</span>
-              <HomeIcon name="arrowRight" className="h-4 w-4 stroke-[2.5]" />
-            </a>
+          <div className="flex flex-wrap items-center pt-1">
             <a
               href="#donate-supplies"
               className={cn(

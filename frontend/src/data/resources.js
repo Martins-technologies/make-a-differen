@@ -1,6 +1,6 @@
 /** Resources page photography served from public/. */
 export const resourceImages = {
-  hero: '/resourcehero.jfif',
+  hero: '/new/05_Resources_Hero.webp',
 };
 
 export const resourceTopics = [

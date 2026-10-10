@@ -3,7 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 
-const COURSES_HERO_IMAGE = '/courseshero.jfif';
+const COURSES_HERO_IMAGE = '/new/03_Courses_Hero.webp';
 
 export function CoursesHero() {
   const { t } = useTranslation();
