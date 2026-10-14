@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Briefcase, GraduationCap, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { LeafCluster } from '@/components/sections/about/LeafCluster';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
@@ -12,21 +13,21 @@ const HERO_LINKS = [
   {
     to: '/courses',
     labelKey: 'nav.courses',
-    icon: GraduationCap,
+    icon: 'graduationCap',
     className: 'bg-[#E7F6F3] hover:bg-[#D7EFEA]',
     iconClassName: 'text-[#1F8F78]',
   },
   {
     to: '/employment',
     labelKey: 'nav.employment',
-    icon: Briefcase,
+    icon: 'briefcase',
     className: 'bg-[#FDECEC] hover:bg-[#F8DEDE]',
     iconClassName: 'text-[#E36A58]',
   },
   {
     to: '/request-help',
     labelKey: 'nav.requestHelp',
-    icon: Heart,
+    icon: 'users',
     className: 'bg-[#F3EEF8] hover:bg-[#E8DFF2]',
     iconClassName: 'text-[#7B62B3]',
   },
@@ -64,7 +65,7 @@ export function ProgramsHero() {
             </p>
 
             <nav className="flex max-w-full flex-col items-start gap-2.5 pt-1 sm:flex-row sm:flex-wrap" aria-label={t('programsPage.hero.title')}>
-              {HERO_LINKS.map(({ to, labelKey, icon: Icon, className, iconClassName }) => (
+              {HERO_LINKS.map(({ to, labelKey, icon, className, iconClassName }) => (
                 <Link
                   key={to}
                   to={to}
@@ -73,7 +74,7 @@ export function ProgramsHero() {
                     className,
                   )}
                 >
-                  <Icon className={cn('h-4 w-4 shrink-0', iconClassName)} strokeWidth={2} aria-hidden />
+                  <SiteIcon name={icon} className={cn('h-4 w-4 shrink-0', iconClassName)} aria-hidden />
                   <span className="whitespace-nowrap">{t(labelKey)}</span>
                   <ArrowRight className="h-4 w-4 shrink-0" strokeWidth={2} aria-hidden />
                 </Link>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { GraduationCap, Heart, Users, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 
@@ -17,7 +18,7 @@ export function ThreeWaysSection() {
       ctaKey: 'getInvolvedPage.threeWays.paths.volunteer.cta',
       link: '/get-involved/volunteer',
       image: '/getinvolved/volunteer.webp',
-      icon: GraduationCap,
+      icon: 'graduationCap',
       iconBg: 'bg-[#F3F3FF]',
       iconColor: 'text-[#4F46E5]',
       cardBg: 'bg-[#FAF8FF]',
@@ -31,7 +32,7 @@ export function ThreeWaysSection() {
       ctaKey: 'getInvolvedPage.threeWays.paths.donate.cta',
       link: '/get-involved/donate',
       image: '/getinvolved/donate.webp',
-      icon: Heart,
+      icon: 'heart',
       iconBg: 'bg-[#FFF1F1]',
       iconColor: 'text-[#EF4444]',
       cardBg: 'bg-[#FFF9F9]',
@@ -45,7 +46,7 @@ export function ThreeWaysSection() {
       ctaKey: 'getInvolvedPage.threeWays.paths.partner.cta',
       link: '/get-involved/partner',
       image: '/getinvolved/partnerwithus.webp',
-      icon: Users,
+      icon: 'users',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       cardBg: 'bg-[#F4FBFB]',
@@ -69,7 +70,6 @@ export function ThreeWaysSection() {
         {/* 3 Pathway Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {paths.map((path) => {
-            const IconComp = path.icon;
             const bullets = t(path.bulletsKey, { returnObjects: true }) || [];
 
             return (
@@ -90,7 +90,7 @@ export function ThreeWaysSection() {
                 <div className="flex flex-col flex-1 p-6 sm:p-7 space-y-5">
                   <div className="flex items-center gap-3.5">
                     <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${path.iconBg}`}>
-                      <IconComp className={`h-6 w-6 ${path.iconColor}`} />
+                      <SiteIcon name={path.icon} className={`h-6 w-6 ${path.iconColor}`} />
                     </div>
                     <h3 className="font-heading text-2xl font-bold text-primary">
                       {t(path.titleKey)}

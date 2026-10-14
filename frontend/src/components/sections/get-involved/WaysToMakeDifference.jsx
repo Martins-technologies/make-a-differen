@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Users, Heart, ArrowRight } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { updatedImages } from '@/data/updatedImages';
@@ -19,7 +19,7 @@ export function WaysToMakeDifference() {
   const cards = [
     {
       id: 'time',
-      icon: Users,
+      icon: 'users',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.time.title',
@@ -28,7 +28,7 @@ export function WaysToMakeDifference() {
     },
     {
       id: 'resources',
-      icon: Heart,
+      icon: 'heart',
       iconBg: 'bg-[#FFF1F1]',
       iconColor: 'text-[#EF4444]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.resources.title',
@@ -37,7 +37,7 @@ export function WaysToMakeDifference() {
     },
     {
       id: 'communities',
-      icon: Users,
+      icon: 'users',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.communities.title',
@@ -62,8 +62,6 @@ export function WaysToMakeDifference() {
         {/* 3 Feature Cards */}
         <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-3 lg:gap-8">
           {cards.map((card) => {
-            const IconComp = card.icon;
-
             return (
               <div
                 key={card.id}
@@ -72,7 +70,7 @@ export function WaysToMakeDifference() {
                 {/* Top Info Header */}
                 <div className="flex items-start gap-3.5 min-h-[90px]">
                   <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg}`}>
-                    <IconComp className={`h-6 w-6 ${card.iconColor}`} />
+                    <SiteIcon name={card.icon} className={`h-6 w-6 ${card.iconColor}`} />
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-heading text-xl font-bold text-primary">

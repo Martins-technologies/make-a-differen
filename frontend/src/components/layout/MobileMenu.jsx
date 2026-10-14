@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 
-import { Heart } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 
 import { cn } from '@/utils/cn';
 
@@ -73,7 +73,7 @@ export function MobileMenu({ open, onClose }) {
 
               className={cn(buttonVariants({ variant: 'cta', size: 'md' }), 'w-full')}
             >
-              <Heart className="h-4 w-4 fill-current" aria-hidden />
+              <SiteIcon name="heart" className="h-4 w-4 text-current" aria-hidden />
 
               {t('nav.donate')}
             </Link>

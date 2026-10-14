@@ -1,4 +1,4 @@
-import { Gift } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
@@ -25,7 +25,7 @@ export function CorporateMatching() {
           <p className="text-body-lg leading-relaxed text-primary/80">{t('donatePage.corporate.description')}</p>
           <div className="flex gap-4 rounded-2xl border border-secondary-100 bg-secondary-50 p-5">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-surface text-secondary">
-              <Gift className="h-5 w-5" aria-hidden />
+              <SiteIcon name="gift" className="h-5 w-5" aria-hidden />
             </div>
             <p className="text-sm leading-relaxed text-primary/85">{t('donatePage.corporate.note')}</p>
           </div>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Heart, Users, Hand, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 
@@ -11,7 +12,7 @@ export function OtherWaysToGetInvolved() {
   const cards = [
     {
       id: 'donateFunds',
-      icon: Heart,
+      icon: 'heart',
       iconBg: 'bg-[#FFF1F1]',
       iconColor: 'text-[#EF4444]',
       titleKey: 'volunteerPage.otherWays.cards.donateFunds.title',
@@ -20,7 +21,7 @@ export function OtherWaysToGetInvolved() {
     },
     {
       id: 'partner',
-      icon: Users,
+      icon: 'users',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       titleKey: 'volunteerPage.otherWays.cards.partner.title',
@@ -29,7 +30,7 @@ export function OtherWaysToGetInvolved() {
     },
     {
       id: 'donateSupplies',
-      icon: Hand,
+      icon: 'hand',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0D9488]',
       titleKey: 'volunteerPage.otherWays.cards.donateSupplies.title',
@@ -54,8 +55,6 @@ export function OtherWaysToGetInvolved() {
         {/* 3 Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card) => {
-            const IconComp = card.icon;
-
             return (
               <Link
                 key={card.id}
@@ -64,7 +63,7 @@ export function OtherWaysToGetInvolved() {
               >
                 <div className="flex items-center gap-4">
                   <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${card.iconBg} transition-transform duration-200 group-hover:scale-105`}>
-                    <IconComp className={`h-7 w-7 ${card.iconColor}`} />
+                    <SiteIcon name={card.icon} className={`h-7 w-7 ${card.iconColor}`} />
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-heading text-lg font-bold text-primary group-hover:text-secondary transition-colors">

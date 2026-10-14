@@ -6,7 +6,7 @@ import { Section } from '@/components/ui/Section';
 import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
-import { HomeIcon } from '../home/homeIcons';
+import { HeroTrustBar } from '../home/HeroTrustBar';
 import { updatedImages } from '@/data/updatedImages';
 
 export function VolunteerHero() {
@@ -56,36 +56,7 @@ export function VolunteerHero() {
             </a>
           </div>
 
-          {/* Trust Highlights matching Homepage Hero */}
-          <div
-            className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border/80 pt-6 sm:flex-nowrap sm:gap-x-5"
-            aria-label={t('home.hero.trust.label')}
-          >
-            <div className="flex shrink-0 items-center gap-2.5">
-              <HomeIcon name="mapleLeaf" className="h-5 w-5 shrink-0 text-accent" />
-              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
-                {t('home.hero.trust.strongerPeople')}
-              </span>
-            </div>
-
-            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
-
-            <div className="flex shrink-0 items-center gap-2.5">
-              <HomeIcon name="users" className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
-                {t('home.hero.trust.healthierFamilies')}
-              </span>
-            </div>
-
-            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
-
-            <div className="flex shrink-0 items-center gap-2.5">
-              <HomeIcon name="leaf" className="h-5 w-5 shrink-0 text-secondary-400" />
-              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
-                {t('home.hero.trust.brighterCommunities')}
-              </span>
-            </div>
-          </div>
+          <HeroTrustBar />
         </div>
 
         {/* Mobile Media View matching Homepage Hero */}

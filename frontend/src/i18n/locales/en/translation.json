@@ -189,7 +189,13 @@
       "lead": "Creating stronger people, healthier families and brighter communities across Canada.",
       "body": "At Make A Difference, we believe meaningful change begins with access to the right support and opportunities. Through education, employment assistance, practical resources, and community initiatives, we help individuals and families build confidence, overcome challenges, and move toward a more secure future.",
       "closing": "Every connection matters. Every opportunity creates change.",
-      "imageAlt": "Make A Difference community members celebrating together at an outdoor event"
+      "imageAlt": "Make A Difference community members celebrating together at an outdoor event",
+      "metrics": {
+        "people": "People supported",
+        "courses": "Courses completed",
+        "supplies": "Supplies distributed",
+        "employment": "Employment outcomes"
+      }
     },
     "getInvolved": {
       "title": "Get Involved",

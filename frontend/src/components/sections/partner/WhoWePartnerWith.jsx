@@ -1,15 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import {
-  Users,
-  Briefcase,
-  GraduationCap,
-  Heart,
-  Package,
-  Landmark,
-  ChevronRight,
-} from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { partnerImages } from '@/data/partnerImages';
@@ -20,7 +13,7 @@ export function WhoWePartnerWith() {
   const items = [
     {
       id: 'community',
-      icon: Users,
+      icon: 'users',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       titleKey: 'partnerPage.whoWePartnerWith.items.community.title',
@@ -29,7 +22,7 @@ export function WhoWePartnerWith() {
     },
     {
       id: 'employers',
-      icon: Briefcase,
+      icon: 'briefcase',
       iconBg: 'bg-[#F3F3FF]',
       iconColor: 'text-[#3730A3]',
       titleKey: 'partnerPage.whoWePartnerWith.items.employers.title',
@@ -38,7 +31,7 @@ export function WhoWePartnerWith() {
     },
     {
       id: 'schools',
-      icon: GraduationCap,
+      icon: 'graduationCap',
       iconBg: 'bg-[#FFF1F1]',
       iconColor: 'text-[#EF4444]',
       titleKey: 'partnerPage.whoWePartnerWith.items.schools.title',
@@ -47,7 +40,7 @@ export function WhoWePartnerWith() {
     },
     {
       id: 'healthcare',
-      icon: Heart,
+      icon: 'heart',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       titleKey: 'partnerPage.whoWePartnerWith.items.healthcare.title',
@@ -56,7 +49,7 @@ export function WhoWePartnerWith() {
     },
     {
       id: 'retailers',
-      icon: Package,
+      icon: 'package',
       iconBg: 'bg-[#F3F3FF]',
       iconColor: 'text-[#4F46E5]',
       titleKey: 'partnerPage.whoWePartnerWith.items.retailers.title',
@@ -65,7 +58,7 @@ export function WhoWePartnerWith() {
     },
     {
       id: 'government',
-      icon: Landmark,
+      icon: 'landmark',
       iconBg: 'bg-[#FFF1F1]',
       iconColor: 'text-[#EF4444]',
       titleKey: 'partnerPage.whoWePartnerWith.items.government.title',
@@ -90,8 +83,6 @@ export function WhoWePartnerWith() {
         {/* 6 Partner Type Cards (2 Columns Grid) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {items.map((item) => {
-            const IconComp = item.icon;
-
             return (
               <div
                 key={item.id}
@@ -109,7 +100,7 @@ export function WhoWePartnerWith() {
                 <div className="flex items-start justify-between gap-4 p-6 sm:p-7 bg-[#FFFDF9]/60 flex-1">
                   <div className="flex items-start gap-4 flex-1">
                     <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${item.iconBg}`}>
-                      <IconComp className={`h-7 w-7 ${item.iconColor}`} />
+                      <SiteIcon name={item.icon} className={`h-7 w-7 ${item.iconColor}`} />
                     </div>
 
                     <div className="space-y-1.5 flex-1">

@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 
-import { Heart, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 
 import { cn } from '@/utils/cn';
 
@@ -45,7 +46,7 @@ export function Header() {
             to={DONATE_PATH}
             className={cn(buttonVariants({ variant: 'cta', size: 'md' }), 'hidden sm:inline-flex')}
           >
-            <Heart className="h-4 w-4 fill-current" aria-hidden />
+            <SiteIcon name="heart" className="h-4 w-4 text-current" aria-hidden />
             {t('nav.donate')}
           </Link>
 
