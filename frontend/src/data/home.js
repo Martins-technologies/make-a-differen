@@ -93,13 +93,6 @@ export const howWeHelpItems = [
   },
 ];
 
-export const impactMetrics = [
-  { icon: 'communityGroup', labelKey: 'home.impact.metrics.people' },
-  { icon: 'educationalCap', labelKey: 'home.impact.metrics.courses' },
-  { icon: 'suppliesBox', labelKey: 'home.impact.metrics.supplies' },
-  { icon: 'barChart', labelKey: 'home.impact.metrics.employment' },
-];
-
 export const featuredCourses = [
   {
     slug: 'cooking-nutrition',
