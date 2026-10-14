@@ -1,15 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { MediaImage } from '@/components/ui/MediaImage';
-import { programCategories } from '@/data/programs';
+import { programCategories, programIcons } from '@/data/programs';
 import { cn } from '@/utils/cn';
-
-const ICONS = {
-  users: 'users',
-  heart: 'heart',
-  package: 'package',
-};
 
 function ProgramPhoto({ src, alt, label }) {
   return (
@@ -59,14 +52,12 @@ export function ProgramCategories() {
                   imageRight && 'lg:order-1',
                 )}
               >
-                <span
-                  className={cn(
-                    'mb-4 flex h-14 w-14 items-center justify-center rounded-full',
-                    category.iconWrap,
-                  )}
-                >
-                  <SiteIcon name={ICONS[category.icon]} className="h-7 w-7" aria-hidden />
-                </span>
+                <img
+                  src={programIcons[category.key]}
+                  alt=""
+                  className="-ml-2 mb-2 h-[4.5rem] w-[4.5rem]"
+                  aria-hidden
+                />
                 <h2 className="font-heading text-[1.65rem] font-bold leading-tight tracking-tight text-primary sm:text-[1.9rem]">
                   {title}
                 </h2>

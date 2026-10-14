@@ -1,39 +1,33 @@
 import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
+import { donateIcons } from '@/data/donateImages';
 
 const OPTIONS = [
   {
     id: 'oneTime',
-    icon: 'heart',
-    iconWrap: 'bg-accent-50 text-accent',
+    iconWrap: 'bg-accent-50',
   },
   {
     id: 'monthly',
-    icon: 'calendar',
-    iconWrap: 'bg-secondary-50 text-secondary',
+    iconWrap: 'bg-secondary-50',
   },
   {
     id: 'course',
-    icon: 'graduationCap',
-    iconWrap: 'bg-accent-50 text-accent',
+    iconWrap: 'bg-accent-50',
   },
   {
     id: 'family',
-    icon: 'users',
-    iconWrap: 'bg-secondary-50 text-secondary',
+    iconWrap: 'bg-secondary-50',
   },
   {
     id: 'supplies',
-    icon: 'package',
     iconWrap: 'bg-accent-50',
   },
   {
     id: 'corporate',
-    icon: 'briefcase',
-    iconWrap: 'bg-secondary-50 text-secondary',
+    iconWrap: 'bg-secondary-50',
   },
 ];
 
@@ -57,7 +51,7 @@ export function WaysToGive() {
               className="relative flex h-full flex-col rounded-2xl border border-border/80 bg-surface p-6 shadow-sm"
             >
               <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${option.iconWrap}`}>
-                <SiteIcon name={option.icon} className="h-7 w-7" aria-hidden />
+                <img src={donateIcons[option.id]} alt="" className="h-8 w-8" aria-hidden />
               </div>
               <h3 className="mt-4 font-heading text-xl font-bold text-primary">
                 {t(`donatePage.ways.options.${option.id}.title`)}

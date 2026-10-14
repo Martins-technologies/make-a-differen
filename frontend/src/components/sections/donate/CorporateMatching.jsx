@@ -1,8 +1,7 @@
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
-import { donateImages } from '@/data/donateImages';
+import { donateIcons, donateImages } from '@/data/donateImages';
 
 export function CorporateMatching() {
   const { t } = useTranslation();
@@ -24,8 +23,8 @@ export function CorporateMatching() {
           </h2>
           <p className="text-body-lg leading-relaxed text-primary/80">{t('donatePage.corporate.description')}</p>
           <div className="flex gap-4 rounded-2xl border border-secondary-100 bg-secondary-50 p-5">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-surface text-secondary">
-              <SiteIcon name="gift" className="h-5 w-5" aria-hidden />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-surface">
+              <img src={donateIcons.corporateGift} alt="" className="h-7 w-7" aria-hidden />
             </div>
             <p className="text-sm leading-relaxed text-primary/85">{t('donatePage.corporate.note')}</p>
           </div>

@@ -1,14 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
+import { aboutIcons } from '@/data/about';
 import { Container } from '@/components/ui/Container';
 
-function PurposeCard({ id, title, body, icon, className, iconClassName }) {
+function PurposeCard({ id, title, body, className }) {
   return (
     <article id={id} className={`scroll-mt-32 rounded-2xl p-6 sm:p-8 ${className}`}>
       <div className="flex gap-4 sm:gap-5">
-        <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${iconClassName}`}>
-          <SiteIcon name={icon} className="h-7 w-7" aria-hidden />
-        </span>
+        <img src={aboutIcons[id]} alt="" className="h-14 w-14 shrink-0" aria-hidden />
         <div className="space-y-3">
           <h3 className="font-heading text-primary">{title}</h3>
           <p className="text-body text-primary/80">{body}</p>
@@ -32,17 +30,13 @@ export function MissionVisionSection() {
             id="mission"
             title={t('about.mission.title')}
             body={t('about.mission.description')}
-            icon="compass"
             className="bg-tint-mint"
-            iconClassName="bg-secondary-50 text-secondary"
           />
           <PurposeCard
             id="vision"
             title={t('about.vision.title')}
             body={t('about.vision.description')}
-            icon="heart"
             className="bg-tint-blush"
-            iconClassName="bg-accent-50 text-accent"
           />
         </div>
       </Container>

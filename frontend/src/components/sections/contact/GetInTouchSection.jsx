@@ -1,50 +1,32 @@
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
+import { contactIcons } from '@/data/contactImages';
 
 const CARDS = [
   {
     id: 'email',
-    icon: 'mail',
     cardBg: 'bg-[#E7F6F3]',
-    iconBg: 'bg-[#D4EFE9]',
-    iconColor: 'text-[#0F766E]',
   },
   {
     id: 'phone',
-    icon: 'phone',
     cardBg: 'bg-[#FDECEC]',
-    iconBg: 'bg-[#FAD9D9]',
-    iconColor: 'text-[#E25C5C]',
   },
   {
     id: 'office',
-    icon: 'mapPin',
     cardBg: 'bg-[#E8F6F4]',
-    iconBg: 'bg-[#D4EFE9]',
-    iconColor: 'text-[#0F766E]',
   },
   {
     id: 'hours',
-    icon: 'clock',
     cardBg: 'bg-[#EEEAF8]',
-    iconBg: 'bg-[#DDD6F3]',
-    iconColor: 'text-[#5B4BBE]',
   },
   {
     id: 'accessibility',
-    icon: 'accessibility',
     cardBg: 'bg-[#E7F6F0]',
-    iconBg: 'bg-[#D2F0E4]',
-    iconColor: 'text-[#0D9488]',
   },
   {
     id: 'media',
-    icon: 'users',
     cardBg: 'bg-[#FDECEC]',
-    iconBg: 'bg-[#FAD9D9]',
-    iconColor: 'text-[#E25C5C]',
   },
 ];
 
@@ -76,11 +58,7 @@ export function GetInTouchSection() {
                 key={card.id}
                 className={`flex h-full gap-4 rounded-3xl p-5 sm:p-6 ${card.cardBg}`}
               >
-                <div
-                  className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg}`}
-                >
-                  <SiteIcon name={card.icon} className={`h-6 w-6 ${card.iconColor}`} aria-hidden />
-                </div>
+                <img src={contactIcons[card.id]} alt="" className="h-12 w-12 shrink-0" aria-hidden />
                 <div className="min-w-0 space-y-1.5">
                   <h3 className="font-heading text-lg font-bold leading-snug text-primary">
                     {t(`contactPage.getInTouch.cards.${card.id}.title`)}

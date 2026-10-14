@@ -8,6 +8,7 @@ import {
   requestSupportPreview,
 } from '@/data/home';
 import { HomeIcon } from './homeIcons';
+import { HomeImageIcon } from './HomeImageIcon';
 
 function SupportColumn({ title, description, items, moreLink, moreLabelKey }) {
   const { t } = useTranslation();
@@ -31,9 +32,7 @@ function SupportColumn({ title, description, items, moreLink, moreLabelKey }) {
               className="group flex h-full min-h-[145px] flex-col justify-between rounded-2xl bg-white border border-border/75 p-5 shadow-2xs transition-all duration-200 hover:-translate-y-1 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
             >
               <div className="flex items-start gap-3.5 mb-2.5">
-                <div className="flex h-11 w-11 items-center justify-center shrink-0">
-                  <HomeIcon name={item.icon} className="h-10 w-10 shrink-0" />
-                </div>
+                <HomeImageIcon src={item.icon} className="h-11 w-11" />
                 <h3 className="font-bold text-primary text-[0.95rem] sm:text-[1rem] leading-snug pt-0.5">
                   {t(item.titleKey)}
                 </h3>

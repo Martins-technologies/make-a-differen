@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronRight } from 'lucide-react';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
-import { partnerImages } from '@/data/partnerImages';
+import { partnerIcons, partnerImages } from '@/data/partnerImages';
 
 export function WhoWePartnerWith() {
   const { t } = useTranslation();
@@ -13,54 +12,36 @@ export function WhoWePartnerWith() {
   const items = [
     {
       id: 'community',
-      icon: 'users',
-      iconBg: 'bg-[#E0F2F1]',
-      iconColor: 'text-[#0F766E]',
       titleKey: 'partnerPage.whoWePartnerWith.items.community.title',
       descKey: 'partnerPage.whoWePartnerWith.items.community.description',
       image: partnerImages.community,
     },
     {
       id: 'employers',
-      icon: 'briefcase',
-      iconBg: 'bg-[#F3F3FF]',
-      iconColor: 'text-[#3730A3]',
       titleKey: 'partnerPage.whoWePartnerWith.items.employers.title',
       descKey: 'partnerPage.whoWePartnerWith.items.employers.description',
       image: partnerImages.employers,
     },
     {
       id: 'schools',
-      icon: 'graduationCap',
-      iconBg: 'bg-[#FFF1F1]',
-      iconColor: 'text-[#EF4444]',
       titleKey: 'partnerPage.whoWePartnerWith.items.schools.title',
       descKey: 'partnerPage.whoWePartnerWith.items.schools.description',
       image: partnerImages.schools,
     },
     {
       id: 'healthcare',
-      icon: 'heart',
-      iconBg: 'bg-[#E0F2F1]',
-      iconColor: 'text-[#0F766E]',
       titleKey: 'partnerPage.whoWePartnerWith.items.healthcare.title',
       descKey: 'partnerPage.whoWePartnerWith.items.healthcare.description',
       image: partnerImages.healthcare,
     },
     {
       id: 'retailers',
-      icon: 'package',
-      iconBg: 'bg-[#F3F3FF]',
-      iconColor: 'text-[#4F46E5]',
       titleKey: 'partnerPage.whoWePartnerWith.items.retailers.title',
       descKey: 'partnerPage.whoWePartnerWith.items.retailers.description',
       image: partnerImages.retailers,
     },
     {
       id: 'government',
-      icon: 'landmark',
-      iconBg: 'bg-[#FFF1F1]',
-      iconColor: 'text-[#EF4444]',
       titleKey: 'partnerPage.whoWePartnerWith.items.government.title',
       descKey: 'partnerPage.whoWePartnerWith.items.government.description',
       image: partnerImages.government,
@@ -99,9 +80,7 @@ export function WhoWePartnerWith() {
                 {/* Card Content Footer */}
                 <div className="flex items-start justify-between gap-4 p-6 sm:p-7 bg-[#FFFDF9]/60 flex-1">
                   <div className="flex items-start gap-4 flex-1">
-                    <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${item.iconBg}`}>
-                      <SiteIcon name={item.icon} className={`h-7 w-7 ${item.iconColor}`} />
-                    </div>
+                    <img src={partnerIcons[item.id]} alt="" className="h-14 w-14 shrink-0" aria-hidden />
 
                     <div className="space-y-1.5 flex-1">
                       <h3 className="font-heading text-xl font-bold text-primary">

@@ -1,23 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { MediaImage } from '@/components/ui/MediaImage';
-import { employmentServices } from '@/data/employment';
-import { cn } from '@/utils/cn';
-
-const ICONS = {
-  resume: 'resume',
-  interview: 'interview',
-  workshops: 'workshops',
-  communication: 'communication',
-  skills: 'skills',
-  directory: 'directory',
-};
-
-const TONES = {
-  coral: 'bg-accent text-accent-contrast',
-  teal: 'bg-secondary-500 text-secondary-contrast',
-};
+import { employmentIcons, employmentServices } from '@/data/employment';
 
 export function EmploymentServices() {
   const { t } = useTranslation();
@@ -59,14 +43,7 @@ export function EmploymentServices() {
                 />
                 <div className="flex flex-1 flex-col px-5 pb-5 pt-4">
                   <div className="flex items-start gap-3">
-                    <span
-                      className={cn(
-                        'mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full',
-                        TONES[service.tone],
-                      )}
-                    >
-                      <SiteIcon name={ICONS[service.icon]} className="h-[1.125rem] w-[1.125rem]" aria-hidden />
-                    </span>
+                    <img src={employmentIcons[service.key]} alt="" className="-mt-0.5 h-10 w-10 shrink-0" aria-hidden />
                     <h3 className="font-body text-[1.05rem] font-bold leading-snug text-primary">
                       {t(`employment.services.items.${service.key}.title`)}
                     </h3>

@@ -7,6 +7,7 @@ import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
 import { HeroTrustBar } from '@/components/sections/home/HeroTrustBar';
 import { employmentImages } from '@/data/employment';
+import { trustBarItems } from '@/data/donateImages';
 
 export function EmploymentHero() {
   const { t } = useTranslation();
@@ -49,7 +50,7 @@ export function EmploymentHero() {
             </Link>
           </div>
 
-          <HeroTrustBar />
+          <HeroTrustBar items={trustBarItems} />
         </div>
 
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">

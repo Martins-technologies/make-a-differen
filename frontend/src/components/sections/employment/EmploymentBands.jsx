@@ -1,23 +1,8 @@
-import { ChevronRight, Laptop } from 'lucide-react';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { MediaImage } from '@/components/ui/MediaImage';
-import { employmentImages } from '@/data/employment';
+import { employmentIcons, employmentImages } from '@/data/employment';
 import { EmploymentCta } from './EmploymentCta';
-
-function CalendarCtaIcon({ className }) {
-  return <SiteIcon name="calendar" className={className} aria-hidden />;
-}
-
-function FutureMarks() {
-  return (
-    <svg viewBox="0 0 78 56" className="h-12 w-16 text-accent sm:h-14 sm:w-[4.5rem]" aria-hidden="true">
-      <path d="M16 8 L34 48" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-      <path d="M40 8 L58 48" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-    </svg>
-  );
-}
 
 export function EmploymentBands() {
   const { t } = useTranslation();
@@ -42,7 +27,7 @@ export function EmploymentBands() {
                 {t('employment.appointment.description')}
               </p>
               <div className="mt-6">
-                <EmploymentCta to="/contact" icon={CalendarCtaIcon}>
+                <EmploymentCta to="/contact" iconSrc={employmentIcons.calendar}>
                   {t('employment.appointment.action')}
                 </EmploymentCta>
               </div>
@@ -84,6 +69,11 @@ export function EmploymentBands() {
               <p className="mt-4 max-w-md text-[0.98rem] leading-relaxed text-muted sm:text-base">
                 {t('employment.opportunities.description')}
               </p>
+              <div className="mt-6">
+                <EmploymentCta to="#job-board" iconSrc={employmentIcons.arrow} iconPosition="end">
+                  {t('employment.opportunities.action')}
+                </EmploymentCta>
+              </div>
             </div>
           </div>
         </section>
@@ -94,7 +84,7 @@ export function EmploymentBands() {
           aria-labelledby="employment-job-board-title"
         >
           <div className="flex items-center gap-4 px-6 py-6 sm:gap-6 sm:px-8 sm:py-7 lg:px-10">
-            <Laptop className="h-11 w-11 shrink-0 text-primary sm:h-12 sm:w-12" strokeWidth={1.5} aria-hidden />
+            <img src={employmentIcons.laptop} alt="" className="h-14 w-14 shrink-0 sm:h-16 sm:w-16" aria-hidden />
             <div className="flex min-w-0 flex-1 flex-col">
               <h2
                 id="employment-job-board-title"
@@ -106,8 +96,9 @@ export function EmploymentBands() {
                 {t('employment.jobBoard.description')}
               </p>
             </div>
-            <div className="hidden shrink-0 sm:block">
-              <FutureMarks />
+            <div className="hidden shrink-0 items-center sm:flex" aria-hidden="true">
+              <img src={employmentIcons.rays} alt="" className="-mr-5 h-16 w-16" />
+              <img src={employmentIcons.mapleLeaf} alt="" className="h-16 w-16" />
             </div>
           </div>
         </section>

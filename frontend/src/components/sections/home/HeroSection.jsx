@@ -7,6 +7,7 @@ import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
 import { HomeIcon } from './homeIcons';
 import { HeroTrustBar } from './HeroTrustBar';
+import { homeTrustBarItems } from '@/data/donateImages';
 
 const HOME_HERO_IMAGE = '/new/01_Home_Hero.webp';
 
@@ -47,7 +48,7 @@ export function HeroSection() {
             </Link>
           </div>
 
-          <HeroTrustBar />
+          <HeroTrustBar items={homeTrustBarItems} />
         </div>
 
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">

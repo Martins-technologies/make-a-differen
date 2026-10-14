@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { updatedImages } from '@/data/updatedImages';
+import { volunteerIcons } from '@/data/volunteerIcons';
 
 export function VolunteerApplicationBanner() {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ export function VolunteerApplicationBanner() {
                 className="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent px-8 py-3.5 text-base font-semibold text-accent-contrast shadow-sm transition-all hover:bg-accent-600 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
               >
                 <span>{t('volunteerPage.application.cta')}</span>
-                <ArrowRight className="h-5 w-5 stroke-[2.5]" aria-hidden />
+                <img src={volunteerIcons.applyArrow} alt="" className="-my-1 h-8 w-8" aria-hidden />
               </Link>
             </div>
           </div>

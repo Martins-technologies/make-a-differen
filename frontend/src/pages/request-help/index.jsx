@@ -6,6 +6,8 @@ import { HowWeCanHelp } from '@/components/sections/request-help/HowWeCanHelp';
 import { RequestHelpForm } from '@/components/sections/request-help/RequestHelpForm';
 import { WhatToExpect } from '@/components/sections/request-help/WhatToExpect';
 import { EmergencyNotice } from '@/components/sections/request-help/EmergencyNotice';
+import { ConnectWithUsSection } from '@/components/sections/contact/ConnectWithUsSection';
+import { requestHelpIcons } from '@/data/requestHelp';
 
 export default function RequestHelpPage() {
   const { t } = useTranslation();
@@ -24,6 +26,7 @@ export default function RequestHelpPage() {
       <RequestHelpForm selectedCategory={selectedCategory} />
       <WhatToExpect />
       <EmergencyNotice />
+      <ConnectWithUsSection icons={requestHelpIcons} />
     </>
   );
 }

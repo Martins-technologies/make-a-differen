@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { howWeHelpItems } from '@/data/home';
-import { HomeIcon } from './homeIcons';
+import { HomeImageIcon } from './HomeImageIcon';
 
 export function HowWeMakeDifferenceSection() {
   const { t } = useTranslation();
@@ -30,11 +30,7 @@ export function HowWeMakeDifferenceSection() {
                 <div
                   className={`flex h-full min-h-[14rem] flex-col items-center justify-start rounded-2xl ${item.bgClass} p-6 sm:p-5 text-center transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-md`}
                 >
-                  <div
-                    className={`mb-4 flex h-16 w-16 items-center justify-center rounded-2xl shrink-0 ${item.iconWrap}`}
-                  >
-                    <HomeIcon name={item.icon} className="h-11 w-11" />
-                  </div>
+                  <HomeImageIcon src={item.icon} className={`mb-4 h-16 w-16 rounded-2xl ${item.iconWrap}`} />
                   <h3 className="text-[1.05rem] font-bold text-primary mb-2 leading-snug">
                     {t(item.titleKey)}
                   </h3>

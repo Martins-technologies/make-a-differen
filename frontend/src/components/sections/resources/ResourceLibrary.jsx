@@ -1,9 +1,8 @@
 import { Clock, Info } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
-import { resourceTopics } from '@/data/resources';
+import { resourceIcons, resourceTopics } from '@/data/resources';
 import { cn } from '@/utils/cn';
-import { ResourceIcon } from './resourceIcons';
 
 export function ResourceLibrary() {
   const { t } = useTranslation();
@@ -32,15 +31,7 @@ export function ResourceLibrary() {
                   topic.cardBg,
                 )}
               >
-                <span
-                  className={cn(
-                    'mb-4 flex h-12 w-12 items-center justify-center rounded-full',
-                    topic.iconBg,
-                    topic.iconColor,
-                  )}
-                >
-                  <ResourceIcon name={topic.icon} className="h-6 w-6" />
-                </span>
+                <img src={resourceIcons[topic.key]} alt="" className="mb-4 h-12 w-12" aria-hidden />
                 <h3 className="font-heading text-xl font-bold leading-snug tracking-tight text-primary">
                   {t(`resourcesPage.topics.${topic.key}.title`)}
                 </h3>
