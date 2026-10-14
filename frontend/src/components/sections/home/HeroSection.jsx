@@ -6,6 +6,7 @@ import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
 import { HomeIcon } from './homeIcons';
+import { HeroTrustBar } from './HeroTrustBar';
 
 const HOME_HERO_IMAGE = '/new/01_Home_Hero.webp';
 
@@ -46,35 +47,7 @@ export function HeroSection() {
             </Link>
           </div>
 
-          <div
-            className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border/80 pt-6 sm:flex-nowrap sm:gap-x-5"
-            aria-label={t('home.hero.trust.label')}
-          >
-            <div className="flex shrink-0 items-center gap-2.5">
-              <HomeIcon name="mapleLeaf" className="h-5 w-5 shrink-0 text-accent" />
-              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
-                {t('home.hero.trust.strongerPeople')}
-              </span>
-            </div>
-
-            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
-
-            <div className="flex shrink-0 items-center gap-2.5">
-              <HomeIcon name="users" className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
-                {t('home.hero.trust.healthierFamilies')}
-              </span>
-            </div>
-
-            <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
-
-            <div className="flex shrink-0 items-center gap-2.5">
-              <HomeIcon name="leaf" className="h-5 w-5 shrink-0 text-secondary-400" />
-              <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
-                {t('home.hero.trust.brighterCommunities')}
-              </span>
-            </div>
-          </div>
+          <HeroTrustBar />
         </div>
 
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">

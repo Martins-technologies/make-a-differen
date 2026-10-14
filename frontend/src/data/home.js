@@ -1,9 +1,9 @@
 /** Home page structured content — labels resolved via i18n keys in section components. */
 
 export const heroTrustItems = [
-  { icon: 'mapleLeaf', labelKey: 'home.hero.trust.strongerPeople' },
-  { icon: 'users', labelKey: 'home.hero.trust.healthierFamilies' },
-  { icon: 'leaf', labelKey: 'home.hero.trust.brighterCommunities' },
+  { icon: 'personBust', labelKey: 'home.hero.trust.strongerPeople', iconClass: 'text-accent' },
+  { icon: 'familiesBust', labelKey: 'home.hero.trust.healthierFamilies', iconClass: 'text-secondary' },
+  { icon: 'leafCommunity', labelKey: 'home.hero.trust.brighterCommunities', iconClass: 'text-secondary' },
 ];
 
 export const whoWeSupportItems = [
@@ -51,6 +51,7 @@ export const howWeHelpItems = [
     titleKey: 'home.howWeHelp.courses.title',
     descriptionKey: 'home.howWeHelp.courses.description',
     icon: 'educationalCap',
+    iconWrap: 'bg-[#E8EAF8]',
     bgClass: 'bg-[#F3F4FD]',
     to: '/courses',
   },
@@ -59,6 +60,7 @@ export const howWeHelpItems = [
     titleKey: 'home.howWeHelp.supplies.title',
     descriptionKey: 'home.howWeHelp.supplies.description',
     icon: 'suppliesBox',
+    iconWrap: 'bg-[#D9F2EB]',
     bgClass: 'bg-[#EBF8F4]',
     to: '/request-help',
   },
@@ -67,6 +69,7 @@ export const howWeHelpItems = [
     titleKey: 'home.howWeHelp.employment.title',
     descriptionKey: 'home.howWeHelp.employment.description',
     icon: 'employmentBriefcase',
+    iconWrap: 'bg-[#D6EEF3]',
     bgClass: 'bg-[#EDF8FA]',
     to: '/employment',
   },
@@ -75,6 +78,7 @@ export const howWeHelpItems = [
     titleKey: 'home.howWeHelp.mentalHealth.title',
     descriptionKey: 'home.howWeHelp.mentalHealth.description',
     icon: 'mentalHealthHeart',
+    iconWrap: 'bg-[#FFE4DC]',
     bgClass: 'bg-[#FFF4F0]',
     to: '/resources',
   },
@@ -83,9 +87,17 @@ export const howWeHelpItems = [
     titleKey: 'home.howWeHelp.community.title',
     descriptionKey: 'home.howWeHelp.community.description',
     icon: 'communityGroup',
+    iconWrap: 'bg-[#D9F2EB]',
     bgClass: 'bg-[#EFF9F6]',
     to: '/contact',
   },
+];
+
+export const impactMetrics = [
+  { icon: 'communityGroup', labelKey: 'home.impact.metrics.people' },
+  { icon: 'educationalCap', labelKey: 'home.impact.metrics.courses' },
+  { icon: 'suppliesBox', labelKey: 'home.impact.metrics.supplies' },
+  { icon: 'barChart', labelKey: 'home.impact.metrics.employment' },
 ];
 
 export const featuredCourses = [
@@ -123,7 +135,7 @@ export const requestSupportPreview = [
   {
     titleKey: 'home.requestSupport.food.title',
     descriptionKey: 'home.requestSupport.food.description',
-    icon: 'foodSupplies',
+    icon: 'groceryBag',
     bgClass: 'bg-[#FFF8F6]',
     to: '/request-help',
   },

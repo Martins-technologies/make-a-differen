@@ -1,9 +1,14 @@
-import { Calendar, ChevronRight, Laptop } from 'lucide-react';
+import { ChevronRight, Laptop } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { MediaImage } from '@/components/ui/MediaImage';
 import { employmentImages } from '@/data/employment';
 import { EmploymentCta } from './EmploymentCta';
+
+function CalendarCtaIcon({ className }) {
+  return <SiteIcon name="calendar" className={className} aria-hidden />;
+}
 
 function FutureMarks() {
   return (
@@ -37,7 +42,7 @@ export function EmploymentBands() {
                 {t('employment.appointment.description')}
               </p>
               <div className="mt-6">
-                <EmploymentCta to="/contact" icon={Calendar}>
+                <EmploymentCta to="/contact" icon={CalendarCtaIcon}>
                   {t('employment.appointment.action')}
                 </EmploymentCta>
               </div>

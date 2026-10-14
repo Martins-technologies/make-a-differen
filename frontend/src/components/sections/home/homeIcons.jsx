@@ -1,27 +1,68 @@
 import {
   ArrowRight,
-  BarChart3,
   Bandage,
   Briefcase,
   ChevronRight,
   FileText,
   GraduationCap,
   Heart,
-  Leaf,
   Package,
   Users,
 } from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 
-function MapleLeafIcon({ className, ...props }) {
+function siteIconBridge(name) {
+  return function Bridge({ className, ...props }) {
+    return <SiteIcon name={name} className={className} {...props} />;
+  };
+}
+
+/** Hero trust row — single bust silhouette (Stronger People). */
+function PersonBustIcon({ className, ...props }) {
   return (
-    <svg
-      viewBox="0 0 512 512"
-      fill="currentColor"
-      className={className}
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M495.2 284.1c-14.8-1.7-27.1-10.4-33.8-23.7l-26.6-53.1c-3.1-6.1-8.5-10.7-15.1-12.7s-13.6-.9-19.3 3.1l-24.1 17c-13.1 9.2-30.7 7.9-42.5-3.1l-22.1-20.7c-5.7-5.3-8.8-12.8-8.5-20.6s4-15 10.3-19.7l30.4-22.7c11.3-8.4 17.1-22.6 14.8-36.6s-12.7-25.3-26.6-28.8l-41.9-10.5c-7.6-1.9-13.8-7-16.7-14.1s-2-15.2 2.5-21.7l19.8-28.7c7.4-10.8 7.7-24.8.8-35.8S324.9-.7 312 0l-56 3.1-56-3.1C187.1-.7 174.1 5.4 167.2 16.4s-6.6 25 .8 35.8l19.8 28.7c4.5 6.5 5.4 14.6 2.5 21.7s-9.1 12.2-16.7 14.1l-41.9 10.5c-13.9 3.5-24.3 14.8-26.6 28.8s3.5 28.2 14.8 36.6l30.4 22.7c6.3 4.7 10 11.9 10.3 19.7s-2.8 15.3-8.5 20.6l-22.1 20.7c-11.8 11-29.4 12.3-42.5 3.1l-24.1-17c-5.7-4-12.7-5.1-19.3-3.1s-12 6.6-15.1 12.7l-26.6 53.1c-6.7 13.3-19 22-33.8 23.7l-3.3.4c-3.7.4-7 2.3-9.1 5.3s-2.7 6.8-1.7 10.4c5.1 18.6 15.1 35.6 29 48.9 16.3 15.6 37 25.4 59.2 28.1 4.5.5 8.7 2.7 11.8 6.1s4.8 7.8 4.7 12.4l-1.3 54.3c-.3 13.6 5.8 26.6 16.7 35.1 10.9 8.5 25.1 11.6 38.6 8.3l26.9-6.5c10.4-2.5 21.3-1.4 31 3.2 9.7 4.6 17.5 12.5 22.1 22.2l12.7 26.6c6.4 13.4 18.8 22.3 33.6 24.3 1.9.3 3.8.4 5.7.4v70c0 13.3 10.7 24 24 24s24-10.7 24-24v-70c1.9 0 3.8-.1 5.7-.4 14.8-2 27.2-10.9 33.6-24.3l12.7-26.6c4.6-9.7 12.4-17.6 22.1-22.2 9.7-4.6 20.6-5.7 31-3.2l26.9 6.5c13.5 3.3 27.7.2 38.6-8.3 10.9-8.5 17-21.5 16.7-35.1l-1.3-54.3c-.1-4.6 1.6-9 4.7-12.4s7.3-5.6 11.8-6.1c22.2-2.7 42.9-12.5 59.2-28.1 13.9-13.3 23.9-30.3 29-48.9 1-3.6.4-7.4-1.7-10.4s-5.4-4.9-9.1-5.3l-3.3-.4z" />
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true" {...props}>
+      <circle cx="16" cy="8.75" r="5.25" fill="currentColor" />
+      <path
+        d="M5.5 27.25c0-5.8 4.7-10.5 10.5-10.5s10.5 4.7 10.5 10.5v.75H5.5v-.75Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+/** Hero trust row — two equal bust silhouettes (Healthier Families). */
+function FamiliesBustIcon({ className, ...props }) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true" {...props}>
+      <circle cx="10.5" cy="9.5" r="4.25" fill="currentColor" />
+      <path
+        d="M3.5 26.5c0-4.35 3.15-7.85 7-7.85s7 3.5 7 7.85v.5H3.5v-.5Z"
+        fill="currentColor"
+      />
+      <circle cx="21.5" cy="9.5" r="4.25" fill="currentColor" />
+      <path
+        d="M14.5 26.5c0-4.35 3.15-7.85 7-7.85s7 3.5 7 7.85v.5h-14v-.5Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+/** Hero trust row — tilted leaf with midrib (Brighter Communities). */
+function LeafCommunityIcon({ className, ...props }) {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true" {...props}>
+      <path
+        d="M23.5 4.5C15.5 5 9.5 10.5 8 18.5c4.5.25 8.5-1.75 10.5-6.5 1.75 4.25 5.5 7 10.5 7.5C26.5 14 25 8.5 23.5 4.5Z"
+        fill="currentColor"
+      />
+      <path
+        d="M8.5 18c2.25 3.25 5.25 5.75 9 7.25"
+        stroke="currentColor"
+        strokeWidth="1.35"
+        strokeLinecap="round"
+        opacity="0.4"
+      />
     </svg>
   );
 }
@@ -144,17 +185,19 @@ function InterviewPrepIcon({ className, ...props }) {
 
 const ICONS = {
   arrowRight: ArrowRight,
-  barChart: BarChart3,
+  barChart: siteIconBridge('barChart'),
   briefcase: Briefcase,
   chevronRight: ChevronRight,
   fileText: FileText,
   firstAid: Bandage,
   graduationCap: GraduationCap,
   heart: Heart,
-  leaf: Leaf,
-  mapleLeaf: MapleLeafIcon,
+  personBust: PersonBustIcon,
   package: Package,
   users: Users,
+  familiesBust: FamiliesBustIcon,
+  leafCommunity: LeafCommunityIcon,
+  groceryBag: siteIconBridge('groceryBag'),
   educationalCap: EducationalCapIcon,
   suppliesBox: SuppliesBoxIcon,
   employmentBriefcase: EmploymentBriefcaseIcon,

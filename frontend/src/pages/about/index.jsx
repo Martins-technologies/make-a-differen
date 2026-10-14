@@ -4,6 +4,7 @@ import { AboutHero } from '@/components/sections/about/AboutHero';
 import { MissionVisionSection } from '@/components/sections/about/MissionVisionSection';
 import { OurCommunitySection } from '@/components/sections/about/OurCommunitySection';
 import { OurStorySection } from '@/components/sections/about/OurStorySection';
+import { AboutTransparencySection } from '@/components/sections/about/AboutTransparencySection';
 import { ValuesSection } from '@/components/sections/about/ValuesSection';
 
 export default function AboutPage() {
@@ -20,6 +21,7 @@ export default function AboutPage() {
       <MissionVisionSection />
       <ValuesSection />
       <OurCommunitySection />
+      <AboutTransparencySection />
     </>
   );
 }

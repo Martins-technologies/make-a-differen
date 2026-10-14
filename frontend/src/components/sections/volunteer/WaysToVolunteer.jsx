@@ -1,14 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  GraduationCap,
-  Users,
-  Package,
-  Calendar,
-  FileText,
-  Heart,
-  Settings,
-} from 'lucide-react';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 
@@ -18,7 +10,7 @@ export function WaysToVolunteer() {
   const items = [
     {
       id: 'teaching',
-      icon: GraduationCap,
+      icon: 'graduationCap',
       iconBg: 'bg-[#F3F3FF]',
       iconColor: 'text-[#4F46E5]',
       cardBg: 'bg-[#FAF8FF]',
@@ -27,7 +19,7 @@ export function WaysToVolunteer() {
     },
     {
       id: 'mentorship',
-      icon: Users,
+      icon: 'users',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       cardBg: 'bg-[#F4FBFB]',
@@ -36,7 +28,7 @@ export function WaysToVolunteer() {
     },
     {
       id: 'supplies',
-      icon: Package,
+      icon: 'package',
       iconBg: 'bg-[#FFF1F1]',
       iconColor: 'text-[#EF4444]',
       cardBg: 'bg-[#FFF9F9]',
@@ -45,7 +37,7 @@ export function WaysToVolunteer() {
     },
     {
       id: 'events',
-      icon: Calendar,
+      icon: 'calendar',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0D9488]',
       cardBg: 'bg-[#F4FBFB]',
@@ -54,7 +46,7 @@ export function WaysToVolunteer() {
     },
     {
       id: 'admin',
-      icon: FileText,
+      icon: 'fileText',
       iconBg: 'bg-[#FDE8E8]',
       iconColor: 'text-[#E54848]',
       cardBg: 'bg-[#FFF9F9]',
@@ -63,7 +55,7 @@ export function WaysToVolunteer() {
     },
     {
       id: 'fundraising',
-      icon: Heart,
+      icon: 'heart',
       iconBg: 'bg-[#F3F3FF]',
       iconColor: 'text-[#6366F1]',
       cardBg: 'bg-[#FAF8FF]',
@@ -72,7 +64,7 @@ export function WaysToVolunteer() {
     },
     {
       id: 'professional',
-      icon: Settings,
+      icon: 'settings',
       iconBg: 'bg-[#E0F2F1]',
       iconColor: 'text-[#0F766E]',
       cardBg: 'bg-[#F4FBFB]',
@@ -97,15 +89,13 @@ export function WaysToVolunteer() {
         {/* 7 Opportunity Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item) => {
-            const IconComp = item.icon;
-
             return (
               <div
                 key={item.id}
                 className={`flex flex-col space-y-4 rounded-3xl border border-slate-200/80 ${item.cardBg} p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-1`}
               >
                 <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${item.iconBg}`}>
-                  <IconComp className={`h-7 w-7 ${item.iconColor}`} />
+                  <SiteIcon name={item.icon} className={`h-7 w-7 ${item.iconColor}`} />
                 </div>
 
                 <div className="space-y-2 flex-1">

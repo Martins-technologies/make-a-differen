@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 
 import { cn } from '@/utils/cn';
 
-/** Official lockup in public/logo.jpeg (mark + “Make A Difference”). */
-export const LOGO_SRC = '/logo.jpeg';
+/** Official lockup in public/make_a_difference_logo_TRANSPARENT.png */
+export const LOGO_SRC = '/make_a_difference_logo_TRANSPARENT.png';
 
 export function Logo({ className, linkClassName, showTagline = false }) {
   const { t } = useTranslation();

@@ -101,13 +101,10 @@ export function CoursesCatalogPage() {
                           {t('coursesPage.viewDetails')}
                         </span>
                         <span
-                          className={cn(
-                            'flex h-9 w-9 shrink-0 items-center justify-center rounded-full',
-                            course.chipClass,
-                          )}
+                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#E7F0FE] text-primary"
                           aria-hidden
                         >
-                          <ChevronRight className="h-4 w-4" />
+                          <ChevronRight className="h-4 w-4 stroke-[2.5]" />
                         </span>
                       </div>
                     </div>

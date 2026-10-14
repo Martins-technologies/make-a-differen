@@ -1,14 +1,14 @@
-import { Heart, Package, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
 import { MediaImage } from '@/components/ui/MediaImage';
 import { programCategories } from '@/data/programs';
 import { cn } from '@/utils/cn';
 
 const ICONS = {
-  users: Users,
-  heart: Heart,
-  package: Package,
+  users: 'users',
+  heart: 'heart',
+  package: 'package',
 };
 
 function ProgramPhoto({ src, alt, label }) {
@@ -34,7 +34,6 @@ export function ProgramCategories() {
     <section className="bg-bg pb-4 pt-2 md:pb-6" aria-label={t('programsPage.hero.title')}>
       <Container className="space-y-5 md:space-y-6">
         {programCategories.map((category) => {
-          const Icon = ICONS[category.icon];
           const title = t(`programsPage.categories.${category.key}.title`);
           const items = t(`programsPage.categories.${category.key}.items`, { returnObjects: true });
           const imageRight = category.imageSide === 'right';
@@ -66,7 +65,7 @@ export function ProgramCategories() {
                     category.iconWrap,
                   )}
                 >
-                  <Icon className="h-7 w-7" strokeWidth={1.75} aria-hidden />
+                  <SiteIcon name={ICONS[category.icon]} className="h-7 w-7" aria-hidden />
                 </span>
                 <h2 className="font-heading text-[1.65rem] font-bold leading-tight tracking-tight text-primary sm:text-[1.9rem]">
                   {title}

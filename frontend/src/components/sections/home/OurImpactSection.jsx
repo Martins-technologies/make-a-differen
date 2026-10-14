@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { PAGE_GUTTER, PAGE_GUTTER_LEFT } from '@/components/layout/pageGutter';
+import { impactMetrics } from '@/data/home';
+import { HomeIcon } from './homeIcons';
 
 const IMPACT_BANNER = '/impactbanner.png';
 
@@ -40,6 +42,19 @@ export function OurImpactSection() {
             <p className="mt-5 text-base font-bold leading-snug text-primary lg:mt-3 lg:text-sm xl:text-base">
               {t('home.impact.closing')}
             </p>
+
+            <ul className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:mt-6">
+              {impactMetrics.map((metric) => (
+                <li key={metric.labelKey} className="flex flex-col items-center gap-2 text-center">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#D7EEE9] text-[#0F766E]">
+                    <HomeIcon name={metric.icon} className="h-7 w-7" />
+                  </span>
+                  <span className="text-xs font-semibold leading-snug text-primary sm:text-[0.8125rem]">
+                    {t(metric.labelKey)}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         </Container>
       </div>
