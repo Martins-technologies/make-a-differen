@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
+import { getInvolvedIcons } from '@/data/getInvolvedIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { updatedImages } from '@/data/updatedImages';
@@ -19,27 +19,18 @@ export function WaysToMakeDifference() {
   const cards = [
     {
       id: 'time',
-      icon: 'users',
-      iconBg: 'bg-[#E0F2F1]',
-      iconColor: 'text-[#0F766E]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.time.title',
       descKey: 'getInvolvedPage.waysToMakeDifference.cards.time.description',
       image: '/getinvolved/givetime.webp',
     },
     {
       id: 'resources',
-      icon: 'heart',
-      iconBg: 'bg-[#FFF1F1]',
-      iconColor: 'text-[#EF4444]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.resources.title',
       descKey: 'getInvolvedPage.waysToMakeDifference.cards.resources.description',
       image: updatedImages.getInvolved.giveResources,
     },
     {
       id: 'communities',
-      icon: 'users',
-      iconBg: 'bg-[#E0F2F1]',
-      iconColor: 'text-[#0F766E]',
       titleKey: 'getInvolvedPage.waysToMakeDifference.cards.communities.title',
       descKey: 'getInvolvedPage.waysToMakeDifference.cards.communities.description',
       image: '/getinvolved/buildconnections.webp',
@@ -69,9 +60,7 @@ export function WaysToMakeDifference() {
               >
                 {/* Top Info Header */}
                 <div className="flex items-start gap-3.5 min-h-[90px]">
-                  <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg}`}>
-                    <SiteIcon name={card.icon} className={`h-6 w-6 ${card.iconColor}`} />
-                  </div>
+                  <img src={getInvolvedIcons[card.id]} alt="" className="h-12 w-12 shrink-0" aria-hidden />
                   <div className="space-y-1">
                     <h3 className="font-heading text-xl font-bold text-primary">
                       {t(card.titleKey)}

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronRight } from 'lucide-react';
-import { SiteIcon } from '@/components/icons/siteIcons';
+import { volunteerIcons } from '@/data/volunteerIcons';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 
@@ -12,27 +11,18 @@ export function OtherWaysToGetInvolved() {
   const cards = [
     {
       id: 'donateFunds',
-      icon: 'heart',
-      iconBg: 'bg-[#FFF1F1]',
-      iconColor: 'text-[#EF4444]',
       titleKey: 'volunteerPage.otherWays.cards.donateFunds.title',
       descKey: 'volunteerPage.otherWays.cards.donateFunds.description',
       link: '/get-involved/donate',
     },
     {
       id: 'partner',
-      icon: 'users',
-      iconBg: 'bg-[#E0F2F1]',
-      iconColor: 'text-[#0F766E]',
       titleKey: 'volunteerPage.otherWays.cards.partner.title',
       descKey: 'volunteerPage.otherWays.cards.partner.description',
       link: '/get-involved/partner',
     },
     {
       id: 'donateSupplies',
-      icon: 'hand',
-      iconBg: 'bg-[#E0F2F1]',
-      iconColor: 'text-[#0D9488]',
       titleKey: 'volunteerPage.otherWays.cards.donateSupplies.title',
       descKey: 'volunteerPage.otherWays.cards.donateSupplies.description',
       link: '/get-involved/donate#donate-supplies',
@@ -62,9 +52,12 @@ export function OtherWaysToGetInvolved() {
                 className="flex items-center justify-between gap-4 rounded-3xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-slate-300 group"
               >
                 <div className="flex items-center gap-4">
-                  <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full ${card.iconBg} transition-transform duration-200 group-hover:scale-105`}>
-                    <SiteIcon name={card.icon} className={`h-7 w-7 ${card.iconColor}`} />
-                  </div>
+                  <img
+                    src={volunteerIcons[card.id]}
+                    alt=""
+                    className="h-14 w-14 shrink-0 transition-transform duration-200 group-hover:scale-105"
+                    aria-hidden
+                  />
                   <div className="space-y-1">
                     <h3 className="font-heading text-lg font-bold text-primary group-hover:text-secondary transition-colors">
                       {t(card.titleKey)}
@@ -75,9 +68,12 @@ export function OtherWaysToGetInvolved() {
                   </div>
                 </div>
 
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-red-200/80 bg-red-50/50 text-accent transition-transform duration-200 group-hover:translate-x-1 group-hover:bg-accent group-hover:text-white">
-                  <ChevronRight className="h-4 w-4 stroke-[2.5]" />
-                </div>
+                <img
+                  src={volunteerIcons[`${card.id}Arrow`]}
+                  alt=""
+                  className="h-10 w-10 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
+                  aria-hidden
+                />
               </Link>
             );
           })}

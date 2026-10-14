@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
+import { requestHelpIcons } from '@/data/requestHelp';
 
 export function WhatToExpect() {
   const { t } = useTranslation();
@@ -39,9 +40,12 @@ export function WhatToExpect() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-2">
           {steps.map((step) => (
             <div key={step.number} className="flex items-start gap-4">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-contrast font-bold text-lg shadow-sm">
-                {step.number}
-              </div>
+              <img
+                src={requestHelpIcons[`step${step.number}`]}
+                alt=""
+                className="h-12 w-12 shrink-0"
+                aria-hidden
+              />
               <div className="space-y-1.5 pt-0.5">
                 <h3 className="font-sans text-lg font-bold text-primary">
                   {t(step.titleKey)}

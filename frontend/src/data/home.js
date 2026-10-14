@@ -1,5 +1,23 @@
 /** Home page structured content — labels resolved via i18n keys in section components. */
 
+/** Icons supplied in public/homeicons for the home page (used as-is). */
+const ICON_DIR = '/homeicons';
+
+export const homeIcons = {
+  mapleLeaf: `${ICON_DIR}/01_maple_leaf.webp`,
+  strongerPeople: `${ICON_DIR}/02_stronger_people.webp`,
+  brighterCommunities: `${ICON_DIR}/03_brighter_communities_leaf.webp`,
+  courses: `${ICON_DIR}/08_educational_courses.webp`,
+  supplies: `${ICON_DIR}/09_essential_supplies.webp`,
+  employment: `${ICON_DIR}/10_employment_assistance.webp`,
+  mentalHealth: `${ICON_DIR}/11_mental_health.webp`,
+  community: `${ICON_DIR}/12_community_connections.webp`,
+  food: `${ICON_DIR}/13_food_household_supplies.webp`,
+  resume: `${ICON_DIR}/14_resume_assistance.webp`,
+  interview: `${ICON_DIR}/15_interview_preparation.webp`,
+  employmentOutcomes: `${ICON_DIR}/16_employment_outcomes.webp`,
+};
+
 export const heroTrustItems = [
   { icon: 'personBust', labelKey: 'home.hero.trust.strongerPeople', iconClass: 'text-accent' },
   { icon: 'familiesBust', labelKey: 'home.hero.trust.healthierFamilies', iconClass: 'text-secondary' },
@@ -50,7 +68,7 @@ export const howWeHelpItems = [
     key: 'courses',
     titleKey: 'home.howWeHelp.courses.title',
     descriptionKey: 'home.howWeHelp.courses.description',
-    icon: 'educationalCap',
+    icon: homeIcons.courses,
     iconWrap: 'bg-[#E8EAF8]',
     bgClass: 'bg-[#F3F4FD]',
     to: '/courses',
@@ -59,7 +77,7 @@ export const howWeHelpItems = [
     key: 'supplies',
     titleKey: 'home.howWeHelp.supplies.title',
     descriptionKey: 'home.howWeHelp.supplies.description',
-    icon: 'suppliesBox',
+    icon: homeIcons.supplies,
     iconWrap: 'bg-[#D9F2EB]',
     bgClass: 'bg-[#EBF8F4]',
     to: '/request-help',
@@ -68,7 +86,7 @@ export const howWeHelpItems = [
     key: 'employment',
     titleKey: 'home.howWeHelp.employment.title',
     descriptionKey: 'home.howWeHelp.employment.description',
-    icon: 'employmentBriefcase',
+    icon: homeIcons.employment,
     iconWrap: 'bg-[#D6EEF3]',
     bgClass: 'bg-[#EDF8FA]',
     to: '/employment',
@@ -77,7 +95,7 @@ export const howWeHelpItems = [
     key: 'mentalHealth',
     titleKey: 'home.howWeHelp.mentalHealth.title',
     descriptionKey: 'home.howWeHelp.mentalHealth.description',
-    icon: 'mentalHealthHeart',
+    icon: homeIcons.mentalHealth,
     iconWrap: 'bg-[#FFE4DC]',
     bgClass: 'bg-[#FFF4F0]',
     to: '/resources',
@@ -86,7 +104,7 @@ export const howWeHelpItems = [
     key: 'community',
     titleKey: 'home.howWeHelp.community.title',
     descriptionKey: 'home.howWeHelp.community.description',
-    icon: 'communityGroup',
+    icon: homeIcons.community,
     iconWrap: 'bg-[#D9F2EB]',
     bgClass: 'bg-[#EFF9F6]',
     to: '/contact',
@@ -128,14 +146,14 @@ export const requestSupportPreview = [
   {
     titleKey: 'home.requestSupport.food.title',
     descriptionKey: 'home.requestSupport.food.description',
-    icon: 'groceryBag',
+    icon: homeIcons.food,
     bgClass: 'bg-[#FFF8F6]',
     to: '/request-help',
   },
   {
     titleKey: 'home.requestSupport.referrals.title',
     descriptionKey: 'home.requestSupport.referrals.description',
-    icon: 'referrals',
+    icon: homeIcons.community,
     bgClass: 'bg-[#FFF8F6]',
     to: '/request-help',
   },
@@ -145,14 +163,14 @@ export const employmentSupportPreview = [
   {
     titleKey: 'home.employmentSupport.resume.title',
     descriptionKey: 'home.employmentSupport.resume.description',
-    icon: 'resumeDoc',
+    icon: homeIcons.resume,
     bgClass: 'bg-[#F2FAF7]',
     to: '/employment',
   },
   {
     titleKey: 'home.employmentSupport.interview.title',
     descriptionKey: 'home.employmentSupport.interview.description',
-    icon: 'interviewPrep',
+    icon: homeIcons.interview,
     bgClass: 'bg-[#F2FAF7]',
     to: '/employment',
   },

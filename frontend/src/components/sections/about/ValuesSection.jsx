@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { Container } from '@/components/ui/Container';
-import { aboutValues } from '@/data/about';
+import { aboutIcons, aboutValues } from '@/data/about';
 
 export function ValuesSection() {
   const { t } = useTranslation();
@@ -18,9 +17,7 @@ export function ValuesSection() {
           {aboutValues.map((value) => (
             <li key={value.key}>
               <div className={`flex h-full min-h-36 flex-col items-center justify-center gap-4 rounded-2xl px-3 py-6 text-center ${value.tile}`}>
-                <span className={`flex h-14 w-14 items-center justify-center rounded-full ${value.iconWrap}`}>
-                  <SiteIcon name={value.icon} className={value.iconClass} aria-hidden />
-                </span>
+                <img src={aboutIcons[value.key]} alt="" className="h-14 w-14" aria-hidden />
                 <span className="text-small font-semibold text-primary">{t(`about.values.items.${value.key}`)}</span>
               </div>
             </li>

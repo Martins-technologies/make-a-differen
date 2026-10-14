@@ -4,15 +4,15 @@ import { ArrowRight, ChevronUp } from 'lucide-react';
 import { MediaImage } from '@/components/ui/MediaImage';
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/utils/cn';
-import { CourseIcon } from './courseIcons';
+import { courseIcons } from '@/data/coursesCatalog';
 
 const DETAIL_FIELDS = [
-  { id: 'description', icon: 'file', textKey: 'description', iconStyle: 'outline' },
-  { id: 'audience', icon: 'users', textKey: 'audience', iconStyle: 'badge' },
-  { id: 'instructor', icon: 'user', sharedKey: 'instructor', iconStyle: 'badge' },
-  { id: 'schedule', icon: 'calendar', sharedKey: 'schedule', iconStyle: 'outline' },
-  { id: 'format', icon: 'monitor', sharedKey: 'format', iconStyle: 'badge' },
-  { id: 'accessibility', icon: 'accessibility', sharedKey: 'accessibility', iconStyle: 'badge' },
+  { id: 'description', textKey: 'description' },
+  { id: 'audience', textKey: 'audience' },
+  { id: 'instructor', sharedKey: 'instructor' },
+  { id: 'schedule', sharedKey: 'schedule' },
+  { id: 'format', sharedKey: 'format' },
+  { id: 'accessibility', sharedKey: 'accessibility' },
 ];
 
 export function CourseDetailPanel({ course, panelRef, onClose }) {
@@ -41,14 +41,12 @@ export function CourseDetailPanel({ course, panelRef, onClose }) {
             roundedClassName="rounded-xl"
             className="w-16 sm:w-20"
           />
-          <span
-            className={cn(
-              'absolute -bottom-3 -right-3 flex h-11 w-11 items-center justify-center rounded-full shadow-sm',
-              course.chipClass,
-            )}
-          >
-            <CourseIcon name={course.icon} className="h-5 w-5" />
-          </span>
+          <img
+            src={course.icon}
+            alt=""
+            className="absolute -bottom-3 -right-3 h-11 w-11 rounded-full shadow-sm"
+            aria-hidden
+          />
         </div>
 
         <div className="min-w-0 flex-1 pt-1">
@@ -78,15 +76,14 @@ export function CourseDetailPanel({ course, panelRef, onClose }) {
         {DETAIL_FIELDS.filter((field) => field.textKey).map((field) => (
           <DetailBlock
             key={field.id}
-            icon={field.icon}
-            iconStyle={field.iconStyle}
+            icon={courseIcons[field.id]}
             label={t(`coursesPage.fields.${field.id}`)}
           >
             <p>{t(`${base}.${field.textKey}`)}</p>
           </DetailBlock>
         ))}
 
-        <DetailBlock icon="target" iconStyle="badge" label={t('coursesPage.fields.outcomes')}>
+        <DetailBlock icon={courseIcons.outcomes} label={t('coursesPage.fields.outcomes')}>
           <ul className="list-disc space-y-1 pl-4">
             {outcomeList.map((item) => (
               <li key={item}>{item}</li>
@@ -99,8 +96,7 @@ export function CourseDetailPanel({ course, panelRef, onClose }) {
         {DETAIL_FIELDS.filter((field) => field.sharedKey).map((field) => (
           <DetailBlock
             key={field.id}
-            icon={field.icon}
-            iconStyle={field.iconStyle}
+            icon={courseIcons[field.id]}
             label={t(`coursesPage.fields.${field.id}`)}
           >
             <p>{t(`coursesPage.shared.${field.sharedKey}`)}</p>
@@ -122,19 +118,10 @@ export function CourseDetailPanel({ course, panelRef, onClose }) {
   );
 }
 
-function DetailBlock({ icon, label, children, iconStyle = 'badge' }) {
-  const isOutline = iconStyle === 'outline';
-
+function DetailBlock({ icon, label, children }) {
   return (
     <div className="flex gap-3">
-      <span
-        className={cn(
-          'flex h-11 w-11 shrink-0 items-center justify-center',
-          isOutline ? 'text-primary' : 'rounded-full bg-primary text-primary-contrast',
-        )}
-      >
-        <CourseIcon name={icon} className="h-5 w-5" />
-      </span>
+      <img src={icon} alt="" className="h-11 w-11 shrink-0" aria-hidden />
       <div className="min-w-0">
         <h4 className="font-body text-body font-bold text-primary">{label}</h4>
         <div className="mt-1 text-small leading-relaxed text-muted">{children}</div>

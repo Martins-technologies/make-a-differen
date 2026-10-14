@@ -1,12 +1,10 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { ChevronRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { MediaImage } from '@/components/ui/MediaImage';
 import { cn } from '@/utils/cn';
-import { courseCatalog } from '@/data/coursesCatalog';
-import { CourseIcon } from './courseIcons';
+import { courseCatalog, courseIcons } from '@/data/coursesCatalog';
 import { CourseDetailPanel } from './CourseDetailPanel';
 import { CoursesHero } from './CoursesHero';
 
@@ -79,14 +77,12 @@ export function CoursesCatalogPage() {
                         roundedClassName="rounded-xl"
                         className="w-full"
                       />
-                      <span
-                        className={cn(
-                          'absolute -bottom-5 left-3 flex h-11 w-11 items-center justify-center rounded-full border border-surface shadow-sm',
-                          course.chipClass,
-                        )}
-                      >
-                        <CourseIcon name={course.icon} className="h-5 w-5" />
-                      </span>
+                      <img
+                        src={course.icon}
+                        alt=""
+                        className="absolute -bottom-5 left-3 h-11 w-11 rounded-full shadow-sm"
+                        aria-hidden
+                      />
                     </div>
 
                     <div className="flex flex-1 flex-col px-1 pb-1 pt-8">
@@ -100,12 +96,7 @@ export function CoursesCatalogPage() {
                         <span className="text-small font-semibold text-primary">
                           {t('coursesPage.viewDetails')}
                         </span>
-                        <span
-                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#E7F0FE] text-primary"
-                          aria-hidden
-                        >
-                          <ChevronRight className="h-4 w-4 stroke-[2.5]" />
-                        </span>
+                        <img src={courseIcons.viewDetails} alt="" className="h-9 w-9 shrink-0" aria-hidden />
                       </div>
                     </div>
                   </button>

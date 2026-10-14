@@ -6,54 +6,50 @@ export const aboutImages = {
   community: '/updated/11_Multigenerational_Community_Group.webp',
 };
 
+/** Icons supplied in public/aboutus icons for the About Us page (used as-is; each includes its own circle). */
+const ICON_DIR = '/aboutus%20icons';
+
+export const aboutIcons = {
+  mission: `${ICON_DIR}/01-our-mission.webp`,
+  vision: `${ICON_DIR}/02-our-vision.webp`,
+  inclusion: `${ICON_DIR}/03-inclusion.webp`,
+  dignity: `${ICON_DIR}/04-dignity.webp`,
+  safety: `${ICON_DIR}/05-safety.webp`,
+  education: `${ICON_DIR}/06-education.webp`,
+  equity: `${ICON_DIR}/07-equity.webp`,
+  accountability: `${ICON_DIR}/08-accountability.webp`,
+  community: `${ICON_DIR}/09-community.webp`,
+  reports: `${ICON_DIR}/10-annual-reports.webp`,
+  registration: `${ICON_DIR}/11-registration-information.webp`,
+};
+
 export const aboutValues = [
   {
     key: 'inclusion',
-    icon: 'users',
     tile: 'bg-tint-mint',
-    iconWrap: 'bg-secondary-50',
-    iconClass: 'text-secondary h-8 w-8',
   },
   {
     key: 'dignity',
-    icon: 'heart',
     tile: 'bg-tint-blush',
-    iconWrap: 'bg-accent-50',
-    iconClass: 'text-accent h-8 w-8',
   },
   {
     key: 'safety',
-    icon: 'shield',
     tile: 'bg-tint-lilac',
-    iconWrap: 'bg-primary-50',
-    iconClass: 'text-primary-400 h-8 w-8',
   },
   {
     key: 'education',
-    icon: 'book',
     tile: 'bg-tint-mint',
-    iconWrap: 'bg-secondary-50',
-    iconClass: 'text-secondary h-8 w-8',
   },
   {
     key: 'equity',
-    icon: 'scale',
     tile: 'bg-tint-blush',
-    iconWrap: 'bg-accent-50',
-    iconClass: 'text-accent h-8 w-8',
   },
   {
     key: 'accountability',
-    icon: 'handshake',
     tile: 'bg-tint-sky',
-    iconWrap: 'bg-primary-50',
-    iconClass: 'text-primary-500 h-8 w-8',
   },
   {
     key: 'community',
-    icon: 'communityFive',
     tile: 'bg-tint-turquoise',
-    iconWrap: 'bg-secondary-50',
-    iconClass: 'text-secondary h-8 w-8',
   },
 ];

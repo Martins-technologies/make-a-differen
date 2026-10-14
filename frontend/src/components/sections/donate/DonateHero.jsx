@@ -5,7 +5,7 @@ import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
 import { HeroTrustBar } from '@/components/sections/home/HeroTrustBar';
-import { donateImages } from '@/data/donateImages';
+import { donateImages, trustBarItems } from '@/data/donateImages';
 
 export function DonateHero() {
   const { t } = useTranslation();
@@ -42,7 +42,7 @@ export function DonateHero() {
             </a>
           </div>
 
-          <HeroTrustBar />
+          <HeroTrustBar items={trustBarItems} />
         </div>
 
         <div className="relative min-h-72 overflow-hidden rounded-2xl lg:col-span-5 lg:hidden">

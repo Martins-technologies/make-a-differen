@@ -1,35 +1,31 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
-import { SiteIcon } from '@/components/icons/siteIcons';
 import { LeafCluster } from '@/components/sections/about/LeafCluster';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { MergedMedia } from '@/components/ui/MergedMedia';
-import { programImages } from '@/data/programs';
+import { programIcons, programImages } from '@/data/programs';
 import { cn } from '@/utils/cn';
 
 const HERO_LINKS = [
   {
     to: '/courses',
     labelKey: 'nav.courses',
-    icon: 'graduationCap',
+    icon: programIcons.courses,
     className: 'bg-[#E7F6F3] hover:bg-[#D7EFEA]',
-    iconClassName: 'text-[#1F8F78]',
   },
   {
     to: '/employment',
     labelKey: 'nav.employment',
-    icon: 'briefcase',
+    icon: programIcons.employment,
     className: 'bg-[#FDECEC] hover:bg-[#F8DEDE]',
-    iconClassName: 'text-[#E36A58]',
   },
   {
     to: '/request-help',
     labelKey: 'nav.requestHelp',
-    icon: 'users',
+    icon: programIcons.requestHelp,
     className: 'bg-[#F3EEF8] hover:bg-[#E8DFF2]',
-    iconClassName: 'text-[#7B62B3]',
   },
 ];
 
@@ -65,16 +61,16 @@ export function ProgramsHero() {
             </p>
 
             <nav className="flex max-w-full flex-col items-start gap-2.5 pt-1 sm:flex-row sm:flex-wrap" aria-label={t('programsPage.hero.title')}>
-              {HERO_LINKS.map(({ to, labelKey, icon, className, iconClassName }) => (
+              {HERO_LINKS.map(({ to, labelKey, icon, className }) => (
                 <Link
                   key={to}
                   to={to}
                   className={cn(
-                    'inline-flex w-fit max-w-full items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold text-primary shadow-sm transition-colors',
+                    'inline-flex w-fit max-w-full items-center gap-1.5 rounded-full py-1.5 pl-2 pr-4 text-sm font-semibold text-primary shadow-sm transition-colors',
                     className,
                   )}
                 >
-                  <SiteIcon name={icon} className={cn('h-4 w-4 shrink-0', iconClassName)} aria-hidden />
+                  <img src={icon} alt="" className="h-8 w-8 shrink-0" aria-hidden />
                   <span className="whitespace-nowrap">{t(labelKey)}</span>
                   <ArrowRight className="h-4 w-4 shrink-0" strokeWidth={2} aria-hidden />
                 </Link>

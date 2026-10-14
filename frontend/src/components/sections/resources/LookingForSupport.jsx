@@ -2,9 +2,8 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/components/ui/Container';
-import { resourceSupportLinks } from '@/data/resources';
+import { resourceIcons, resourceSupportLinks } from '@/data/resources';
 import { cn } from '@/utils/cn';
-import { ResourceIcon } from './resourceIcons';
 
 export function LookingForSupport() {
   const { t } = useTranslation();
@@ -29,15 +28,7 @@ export function LookingForSupport() {
             {resourceSupportLinks.map((card) => (
               <li key={card.key} className="h-full">
                 <article className="flex h-full flex-col rounded-3xl border border-slate-200/80 bg-white px-5 py-6 shadow-sm">
-                  <span
-                    className={cn(
-                      'mb-4 flex h-12 w-12 items-center justify-center rounded-full',
-                      card.iconBg,
-                      card.iconColor,
-                    )}
-                  >
-                    <ResourceIcon name={card.icon} className="h-6 w-6" />
-                  </span>
+                  <img src={resourceIcons[card.key]} alt="" className="mb-4 h-12 w-12" aria-hidden />
                   <h3 className="font-heading text-[1.15rem] font-bold leading-snug text-primary">
                     {t(`resourcesPage.support.cards.${card.key}.title`)}
                   </h3>

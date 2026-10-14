@@ -3,8 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { cn } from '@/utils/cn';
 import { heroTrustItems } from '@/data/home';
 import { HomeIcon } from './homeIcons';
+import { HomeImageIcon } from './HomeImageIcon';
 
-export function HeroTrustBar({ className }) {
+export function HeroTrustBar({ className, items = heroTrustItems }) {
   const { t } = useTranslation();
 
   return (
@@ -15,13 +16,17 @@ export function HeroTrustBar({ className }) {
       )}
       aria-label={t('home.hero.trust.label')}
     >
-      {heroTrustItems.map((item, index) => (
+      {items.map((item, index) => (
         <Fragment key={item.labelKey}>
           {index > 0 ? (
             <div className="hidden h-4 w-px shrink-0 bg-border/90 sm:block" aria-hidden="true" />
           ) : null}
           <div className="flex shrink-0 items-center gap-2.5">
-            <HomeIcon name={item.icon} className={cn('h-5 w-5 shrink-0', item.iconClass)} />
+            {item.iconSrc ? (
+              <HomeImageIcon src={item.iconSrc} className="h-6 w-6" zoom={item.iconZoom ?? ''} />
+            ) : (
+              <HomeIcon name={item.icon} className={cn('h-5 w-5 shrink-0', item.iconClass)} />
+            )}
             <span className="whitespace-nowrap text-sm font-semibold text-primary sm:text-[0.9375rem]">
               {t(item.labelKey)}
             </span>

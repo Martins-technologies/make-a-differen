@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { PartnerHero } from '@/components/sections/partner/PartnerHero';
 import { WhoWePartnerWith } from '@/components/sections/partner/WhoWePartnerWith';
 import { PartnerCtaBanner } from '@/components/sections/partner/PartnerCtaBanner';
+import { ConnectWithUsSection } from '@/components/sections/contact/ConnectWithUsSection';
+import { partnerIcons } from '@/data/partnerImages';
 
 export default function PartnerPage() {
   const { t } = useTranslation();
@@ -19,6 +21,7 @@ export default function PartnerPage() {
       <PartnerHero />
       <WhoWePartnerWith />
       <PartnerCtaBanner />
+      <ConnectWithUsSection icons={partnerIcons} />
     </>
   );
 }

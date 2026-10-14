@@ -9,50 +9,54 @@ export const programImages = {
   supplies: '/programsandservices/essentialsupplies.jfif',
 };
 
+/** Icons supplied in public/programsandservices icons (used as-is; each includes its own circle). */
+const ICON_DIR = '/programsandservices%20icons';
+
+export const programIcons = {
+  women: `${ICON_DIR}/womens-support-icon.webp`,
+  children: `${ICON_DIR}/children-and-youth-icon.webp`,
+  lgbtq: `${ICON_DIR}/lgbtq2s-support-icon.webp`,
+  family: `${ICON_DIR}/family-and-parenting-support-icon.webp`,
+  supplies: `${ICON_DIR}/essential-supplies-icon.webp`,
+  courses: `${ICON_DIR}/courses-icon.webp`,
+  employment: `${ICON_DIR}/employment-support-icon.webp`,
+  requestHelp: `${ICON_DIR}/request-help-icon.webp`,
+};
+
 export const programCategories = [
   {
     key: 'women',
-    icon: 'users',
     image: programImages.women,
     imageSide: 'left',
     panel: 'bg-[#FFF3F0]',
-    iconWrap: 'bg-[#FDE3DC] text-[#E36A58]',
     bullet: 'bg-[#E3923A]',
   },
   {
     key: 'children',
-    icon: 'users',
     image: programImages.children,
     imageSide: 'right',
     panel: 'bg-[#F3FBF6]',
-    iconWrap: 'bg-[#E3F6EC] text-[#1F8F78]',
     bullet: 'bg-[#2F9E64]',
   },
   {
     key: 'lgbtq',
-    icon: 'heart',
     image: programImages.lgbtq,
     imageSide: 'left',
     panel: 'bg-[#FFF4F6]',
-    iconWrap: 'bg-[#FDE4E8] text-[#E25B78]',
     bullet: 'bg-[#7B62B3]',
   },
   {
     key: 'family',
-    icon: 'users',
     image: programImages.family,
     imageSide: 'right',
     panel: 'bg-[#F3FBF6]',
-    iconWrap: 'bg-[#E3F6EC] text-[#1F8F78]',
     bullet: 'bg-[#2F9E64]',
   },
   {
     key: 'supplies',
-    icon: 'package',
     image: programImages.supplies,
     imageSide: 'left',
     panel: 'bg-[#FFF3F0]',
-    iconWrap: 'bg-[#FDE3DC] text-[#E36A58]',
     bullet: 'bg-[#E3923A]',
   },
 ];

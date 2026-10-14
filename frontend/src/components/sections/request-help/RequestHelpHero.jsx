@@ -8,6 +8,7 @@ import { buttonVariants } from '@/components/ui/Button';
 import { MergedMedia } from '@/components/ui/MergedMedia';
 import { cn } from '@/utils/cn';
 import { HeroTrustBar } from '../home/HeroTrustBar';
+import { trustBarItems } from '@/data/donateImages';
 
 export function RequestHelpHero() {
   const { t } = useTranslation();
@@ -71,7 +72,7 @@ export function RequestHelpHero() {
             </Link>
           </div>
 
-          <HeroTrustBar />
+          <HeroTrustBar items={trustBarItems} />
         </div>
 
         {/* Mobile Media View matching Homepage Hero */}
